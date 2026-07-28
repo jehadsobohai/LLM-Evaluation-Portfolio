@@ -4,7 +4,7 @@ Welcome to my LLM Evaluation Portfolio.
 
 This repository showcases practical case studies focused on evaluating Large Language Models (LLMs) using structured, transparent, and evidence-based methodologies. It demonstrates my approach to prompt engineering, AI response evaluation, linguistic quality assessment, and technical documentation through reproducible evaluation workflows.
 
-> **New to this portfolio?** Start with **Egyptian Arabic LLM Evaluation Case Study 01 – Conversational Support**, which provides a complete example of my evaluation methodology, including the prompt, structured evaluation rubric, scoring rationale, methodology, and study limitations.
+> **New to this portfolio?** Start with **[Egyptian Arabic LLM Evaluation Case Study 01 – Conversational Support](./prompts/egyptian-arabic-llm-evaluation-case-study-01-conversational-support.md)**, which provides a complete example of my evaluation methodology, including the prompt, structured evaluation rubric, scoring rationale, methodology, and study limitations.
 
 ---
 

@@ -50,9 +50,15 @@ Prompt engineering case study focused on designing and refining prompts for pati
 
 ---
 
-### 📄 [Modern Standard Arabic LLM Evaluation Case Study 01](https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/arabic_llm_evaluation_01.md)
+### 📄 [Medical Prompt Engineering Case Study 01 – Patient Education](./prompts/medical_prompt_01.md)
 
-Comparative evaluation of ChatGPT (GPT-5.5) and Google Gemini using a structured evaluation rubric to assess instruction following, fluency, grammar, clarity, and linguistic quality in Modern Standard Arabic.
+Prompt engineering case study focused on designing and refining prompts for patient education.
+
+---
+
+### 📄 [Modern Standard Arabic LLM Evaluation Case Study 01](./prompts/modern-standard-arabic-llm-evaluation-case-study-01.md)
+
+Comparative evaluation of ChatGPT (GPT-5.5) and Google Gemini (3.6 Flash) using a structured evaluation rubric to assess instruction following, fluency, grammar, clarity, and linguistic quality in Modern Standard Arabic.
 
 ---
 

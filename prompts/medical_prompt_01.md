@@ -6,9 +6,11 @@
 
 **Domain:** Medical AI
 
-**AI Model:** Google Gemini
+**Model:** Google Gemini
 
 **Status:** Completed
+
+**Version:** 1.0
 
 **Date:** July 2026
 
@@ -16,23 +18,19 @@
 
 ## Objective
 
-Create an AI prompt that explains hypertension to a newly diagnosed patient using simple, non-medical language.
+Design and evaluate an LLM prompt that explains hypertension to a newly diagnosed patient using simple, non-medical language.
 
 ---
 
 ## Initial Prompt
 
+```text
 Explain hypertension.
+```
 
 ---
 
-## AI Model (Initial Response)
-
-Google Gemini
-
----
-
-## AI Response (Initial Prompt)
+## LLM Response (Initial Prompt)
 
 Hypertension is the medical term for **high blood pressure**—a condition where the force of blood pushing against your artery walls is consistently too high.
 
@@ -68,21 +66,17 @@ Most cases can be effectively managed through lifestyle changes and medications 
 
 ## Evaluation of Initial Response
 
-### AI Model
-
-Google Gemini
-
 ### Accuracy — 5/5
 
 The response is medically accurate and provides comprehensive information about hypertension, including its definition, blood pressure categories, complications, causes, and management.
 
 ### Clarity — 3.5/5
 
-The explanation of hypertension, its risks, and why it is called the "silent killer" is clear and easy to understand. However, the blood pressure classification table, numerical ranges, and medical terms such as **systolic**, **diastolic**, and **mmHg** may confuse patients without a medical background.
+The explanation of hypertension and its complications is clear. However, the blood pressure classification table, numerical ranges, and technical terms such as **systolic**, **diastolic**, and **mmHg** may confuse readers without a medical background.
 
 ### Instruction Following — 4/5
 
-The model successfully explained hypertension as requested. However, the response was more detailed than necessary for a general prompt and could have been shorter while still answering the user's question.
+The model successfully explained hypertension as requested. However, the response was more detailed than necessary for a broad prompt and could have been shorter while still satisfying the request.
 
 ### Strengths
 
@@ -96,41 +90,54 @@ The model successfully explained hypertension as requested. However, the respons
 - Too detailed for a newly diagnosed patient.
 - Uses technical medical terminology.
 - Includes unnecessary numerical classifications.
-- Does not reassure the patient emotionally.
-- Reads more like a health article than a patient explanation.
+- Lacks reassurance and empathy.
+- Reads more like a health article than patient education.
 
 ### Overall Assessment
 
-The response is medically reliable and comprehensive. However, it is better suited for educational reading than for explaining hypertension to a patient immediately after diagnosis.
+The response is medically reliable and comprehensive but is better suited for general educational reading than for explaining hypertension to a newly diagnosed patient.
+
+---
+
+## Prompt Improvement Strategy
+
+Based on the evaluation, the following improvements were identified:
+
+- Clearly define the target audience.
+- Use simple, reassuring language.
+- Reduce unnecessary medical terminology.
+- Remove detailed blood pressure classifications.
+- Keep the explanation concise.
+- Encourage consultation with a healthcare professional.
 
 ---
 
 ## Improved Prompt
 
+**Role:**
+
 You are an experienced family physician.
 
-A patient has just been diagnosed with hypertension and is worried.
+**Task:**
 
-Explain hypertension in simple, reassuring language that anyone without a medical background can understand.
+A patient has just been diagnosed with hypertension and is worried. Explain hypertension in a way that is easy to understand and reassuring.
 
 ### Requirements
 
-- Explain what hypertension is in no more than 150 words.
-- Avoid medical jargon and unnecessary technical details.
-- Do not include blood pressure classifications or detailed numerical ranges unless essential.
-- Briefly explain why hypertension should not be ignored.
-- Mention that lifestyle changes and medication can help control hypertension.
-- Encourage the patient to consult their healthcare provider for personalised advice rather than self-treating.
+- Use simple, non-medical language.
+- Keep the response under 150 words.
+- Explain:
+  - What hypertension is.
+  - Why it is important to treat.
+  - How lifestyle changes and medication can help.
+- Avoid unnecessary medical terminology, classifications, and detailed blood pressure numbers.
+- Use a calm, supportive, and reassuring tone.
+- Encourage the patient to work with their healthcare provider for personalised treatment rather than self-managing the condition.
+- End with one short reassuring sentence.
 
 ---
 
-## AI Model (Improved Response)
-
-Google Gemini
-
----
-
-## Improved AI Response
+## LLM Response (Improved Prompt)
 
 Here is what I would say as your family physician:
 
@@ -150,37 +157,35 @@ Because everyone's situation is different, please work closely with your healthc
 
 | Aspect | Initial Response | Improved Response |
 |--------|------------------|-------------------|
-| Target audience | General audience | Newly diagnosed patient |
+| Target Audience | General audience | Newly diagnosed patient |
 | Language | Technical | Simple and reassuring |
 | Length | Long | Concise |
-| Medical terminology | High | Minimal |
-| Patient reassurance | None | Excellent |
-| User friendliness | Moderate | Excellent |
-| Encourages medical follow-up | Limited | Strong |
+| Medical Terminology | High | Minimal |
+| Empathy | Minimal | High |
+| User Friendliness | Moderate | Excellent |
+| Encourages Medical Follow-up | Limited | Strong |
 
 ---
 
-## Improvements Compared with the Initial Response
+## Improvements Achieved
 
 - Better adapted to the target audience.
-- Uses clear, patient-friendly language.
-- Removes unnecessary technical details.
-- Avoids complex blood pressure classifications.
-- Uses a reassuring tone.
-- Encourages professional medical follow-up.
-- Provides practical information without overwhelming the reader.
+- Clear and patient-friendly language.
+- Reduced technical terminology.
+- Removed unnecessary classifications.
+- Improved empathy and reassurance.
+- Stronger encouragement to seek professional medical advice.
+- More focused and easier to understand.
 
 ---
 
 ## Lessons Learned
 
-This project demonstrates how prompt engineering can significantly improve AI-generated responses.
+This project demonstrates that prompt engineering can significantly improve AI-generated responses without changing the underlying LLM.
 
-Although the initial response was medically accurate, it was too detailed for a newly diagnosed patient and included technical terminology that could reduce understanding.
+By clearly defining the audience, tone, response length, and communication goals, the same model produced a response that was more understandable, empathetic, and appropriate for patient education.
 
-By clearly defining the target audience, desired tone, response length, and content requirements, the improved prompt produced a response that was easier to understand, more empathetic, and better suited to patient education.
-
-This case study highlights that effective AI evaluation is not only about factual accuracy but also about clarity, audience appropriateness, instruction following, and overall user experience.
+Effective AI evaluation involves more than checking factual accuracy. It also requires assessing clarity, instruction following, audience appropriateness, safety, and overall user experience.
 
 ---
 
@@ -199,8 +204,6 @@ This case study highlights that effective AI evaluation is not only about factua
 
 ## Conclusion
 
-This project demonstrates how prompt engineering can significantly improve the quality of AI-generated responses.
+This project demonstrates a complete prompt engineering workflow: creating an initial prompt, evaluating the LLM response, identifying improvement opportunities, redesigning the prompt, and comparing the final output.
 
-By defining the target audience, tone, level of detail, and communication goals, the same AI model produced a response that was clearer, more empathetic, and more useful for patient education.
-
-This case study highlights the importance of evaluating AI responses not only for accuracy but also for clarity, audience appropriateness, instruction following, and user experience.
+The case study shows how thoughtful prompt design can produce responses that are more useful, empathetic, and better aligned with the needs of the intended audience.

@@ -6,11 +6,11 @@
 
 **Domain:** Medical AI
 
-**Model:** Google Gemini
+**Model:** Google Gemini (3.6 Flash)
 
 **Status:** Completed
 
-**Version:** 1.0
+**Version:** 1.1
 
 **Date:** July 2026
 
@@ -19,6 +19,12 @@
 ## Objective
 
 Design and evaluate an LLM prompt that explains hypertension to a newly diagnosed patient using simple, non-medical language.
+
+---
+
+## Project Scope
+
+This case study demonstrates a structured prompt engineering workflow using a single LLM and one representative task. Its objective is to illustrate how iterative prompt refinement can improve response quality for patient education rather than evaluate the overall capabilities of the model.
 
 ---
 
@@ -64,6 +70,21 @@ Most cases can be effectively managed through lifestyle changes and medications 
 
 ---
 
+## Evaluation Framework
+
+The initial response was evaluated using the following criteria:
+
+- Medical Accuracy
+- Clarity
+- Instruction Following
+- Audience Appropriateness
+- Empathy
+- User Friendliness
+
+The evaluation focuses on how effectively the response meets the communication needs of a newly diagnosed patient.
+
+---
+
 ## Evaluation of Initial Response
 
 ### Accuracy — 5/5
@@ -99,7 +120,7 @@ The response is medically reliable and comprehensive but is better suited for ge
 
 ---
 
-## Prompt Improvement Strategy
+## Prompt Refinement Strategy
 
 Based on the evaluation, the following improvements were identified:
 
@@ -155,16 +176,19 @@ Because everyone's situation is different, please work closely with your healthc
 
 ## Comparison
 
-| Aspect | Initial Response | Improved Response |
-|--------|------------------|-------------------|
-| Target Audience | General audience | Newly diagnosed patient |
-| Language | Technical | Simple and reassuring |
-| Length | Long | Concise |
-| Medical Terminology | High | Minimal |
-| Empathy | Minimal | High |
-| User Friendliness | Moderate | Excellent |
-| Encourages Medical Follow-up | Limited | Strong |
-
+| Aspect | Initial Prompt | Refined Prompt |
+|--------|----------------|----------------|
+| Prompt Detail | Minimal, open-ended instruction | Clearly structured with defined role, audience, and requirements |
+| Target Audience | Not specified | Newly diagnosed patient |
+| Language | No guidance provided | Simple, non-medical language |
+| Tone | Not specified | Calm, supportive, and reassuring |
+| Length | No limit | Under 150 words |
+| Medical Terminology | Unrestricted | Minimized |
+| Required Content | General explanation only | Explanation, importance of treatment, lifestyle changes, medication, and medical follow-up |
+| Empathy | Not required | Explicitly required |
+| Professional Advice | Not specified | Encourages consultation with a healthcare provider |
+| Closing Statement | None | Ends with a brief reassuring sentence |
+| Overall Response Quality | Accurate but technical and general | Accurate, patient-friendly, empathetic, and well aligned with the communication goal |
 ---
 
 ## Improvements Achieved
@@ -204,6 +228,20 @@ Effective AI evaluation involves more than checking factual accuracy. It also re
 
 ## Conclusion
 
-This project demonstrates a complete prompt engineering workflow: creating an initial prompt, evaluating the LLM response, identifying improvement opportunities, redesigning the prompt, and comparing the final output.
+This case study demonstrates a complete prompt engineering workflow, including prompt design, response evaluation, structured refinement, and comparative analysis.
 
-The case study shows how thoughtful prompt design can produce responses that are more useful, empathetic, and better aligned with the needs of the intended audience.
+The results illustrate that carefully designed prompts can substantially improve AI-generated responses without changing the underlying model. By explicitly defining the audience, tone, communication goals, and response constraints, the refined prompt produced output that was more understandable, empathetic, and appropriate for patient education.
+
+The project highlights the value of systematic prompt engineering as a practical method for improving the quality and usability of LLM-generated content.
+
+---
+
+## Study Limitations
+
+This case study is based on a single prompt refinement task using one LLM and one medical education scenario. The findings demonstrate the impact of prompt engineering for this specific use case and should not be interpreted as a general measure of model performance across other medical topics or domains.
+
+Response quality may vary depending on the model version, prompt design, and task complexity. Additional studies using different medical scenarios and multiple models would provide a broader assessment of prompt engineering strategies.
+
+---
+
+End of Report 

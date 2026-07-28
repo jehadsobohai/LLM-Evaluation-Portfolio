@@ -194,3 +194,13 @@ This case study highlights that effective AI evaluation is not only about factua
 - Instruction Design
 - User Experience Analysis
 - Comparative Response Analysis
+
+---
+
+## Conclusion
+
+This project demonstrates how prompt engineering can significantly improve the quality of AI-generated responses.
+
+By defining the target audience, tone, level of detail, and communication goals, the same AI model produced a response that was clearer, more empathetic, and more useful for patient education.
+
+This case study highlights the importance of evaluating AI responses not only for accuracy but also for clarity, audience appropriateness, instruction following, and user experience.

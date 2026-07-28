@@ -1,37 +1,38 @@
-# LLM Prompt Engineering Portfolio
+# LLM Evaluation Portfolio
 
-Welcome to my AI Prompt Engineering and LLM Evaluation portfolio.
+Welcome to my AI Evaluation portfolio.
 
-## About Me
+This repository documents practical projects focused on evaluating Large Language Models (LLMs) across multiple domains using structured evaluation methodologies.
 
-I am a Medical Doctor with a growing interest in Artificial Intelligence, Prompt Engineering, AI Evaluation, and Data Annotation.
-
-This repository documents my learning journey through practical projects.
-
-## Skills
+## Areas of Focus
 
 - Prompt Engineering
-- AI Evaluation
-- Data Annotation
-- Image Prompt Design
-- Medical AI
-- Large Language Models (LLMs)
-
-## Current Projects
-
-### Prompt Engineering
-
-- Medical Prompt 01 – Patient Education
-
-## Upcoming Projects
-
+- LLM Evaluation
 - AI Response Evaluation
-- Image Prompt Engineering
-- Data Annotation Examples
-- Safety Evaluation
+- Arabic Language Evaluation (MSA)
+- Egyptian Arabic Evaluation
+- Levantine Arabic Evaluation
+- Medical AI Evaluation
+- Translation Quality Assessment
 - Hallucination Detection
-- Medical AI Benchmark
+- AI Safety Evaluation
+- Website & Mobile App QA Testing
+- Data Annotation
 
-## Goal
+## Projects
 
-Build a professional portfolio demonstrating practical AI evaluation skills for freelance and full-time AI roles.
+### ✅ Project 1
+Medical Prompt 01 – Patient Education
+
+Prompt engineering and response optimisation for patient education.
+
+### ✅ Project 2
+Arabic LLM Evaluation 01 – Modern Standard Arabic
+
+Comparative evaluation of ChatGPT and Google Gemini using a structured Arabic language evaluation rubric.
+
+More projects will be added as the portfolio grows.
+
+---
+
+**Author:** Jehad Soboh

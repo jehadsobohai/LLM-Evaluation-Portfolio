@@ -50,7 +50,7 @@ Prompt engineering case study focused on designing and refining prompts for pati
 
 ---
 
-### 📄 [Modern Standard Arabic LLM Evaluation Case Study 01](./prompts/arabic-llm-evaluation-01.md)
+### 📄 [Modern Standard Arabic LLM Evaluation Case Study 01](./prompts/arabic_llm_evaluation_01.md)
 
 Comparative evaluation of ChatGPT (GPT-5.5) and Google Gemini (3.6 Flash) using a structured evaluation rubric to assess instruction following, fluency, grammar, clarity, and linguistic quality in Modern Standard Arabic.
 

@@ -1,5 +1,19 @@
 # Medical Prompt 01 – Patient Education
 
+---
+
+**Project Type:** Prompt Engineering Case Study
+
+**Domain:** Medical AI
+
+**AI Model:** Google Gemini
+
+**Status:** Completed
+
+**Date:** July 2026
+
+---
+
 ## Objective
 
 Create an AI prompt that explains hypertension to a newly diagnosed patient using simple, non-medical language.

@@ -376,7 +376,7 @@ Like Gemini, Claude uses the stronger adjective *"هائلة"*, which slightly i
 
 ## Revision Process
 
-Following the Human Expert Review, all reviewer observations were independently assessed against the source text, the model responses, and the AI Evaluation Framework.
+Following the Human Linguistic Analysis, all reviewer observations were independently assessed against the source text, the model responses, and the AI Evaluation Framework.
 
 Each proposed revision was evaluated according to the following principles:
 
@@ -548,7 +548,7 @@ All three translations are accurate, fluent, and suitable for publication. This 
 
 ## Key Changes After Human Review
 
-The Human Expert Review refined the initial AI-generated evaluation by strengthening the supporting evidence and improving consistency between qualitative observations and quantitative scores. The review confirmed the original ranking while identifying stylistic distinctions that warranted more detailed analysis.
+The Human Linguistic Analysis refined the initial AI-generated evaluation by strengthening the supporting evidence and improving consistency between qualitative observations and quantitative scores. The review confirmed the original ranking while identifying stylistic distinctions that warranted more detailed analysis.
 
 The principal revisions included:
 
@@ -673,7 +673,7 @@ Future case studies may extend this work by:
 
 This case study demonstrates the value of combining a structured AI evaluation framework with evidence-based Human-in-the-Loop (HITL) review to assess machine translation quality. Although all three models produced accurate, publication-quality Modern Standard Arabic translations, the evaluation shows that stylistic fidelity, vocabulary selection, and consistency with the source text's register become the primary differentiators once meaning preservation and accuracy are satisfied.
 
-The Human Expert Review strengthened the supporting evidence and improved the consistency between qualitative analysis and assigned scores while preserving the original methodology, decision rules, and overall ranking. This illustrates how structured human review can enhance the transparency and reliability of AI-assisted evaluations without altering their methodological integrity.
+The Human Linguistic Analysis strengthened the supporting evidence and improved the consistency between qualitative analysis and assigned scores while preserving the original methodology, decision rules, and overall ranking. This illustrates how structured human review can enhance the transparency and reliability of AI-assisted evaluations without altering their methodological integrity.
 
 ---
 
@@ -699,7 +699,7 @@ The following resources were used to conduct and document this evaluation.
 ## Evaluation Documentation
 
 - Initial Evaluation Report
-- Human Expert Review
+- Human Linguistic Analysis
 - Revised Evaluation Report
 
 ## Document Information

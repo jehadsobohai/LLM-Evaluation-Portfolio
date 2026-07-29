@@ -33,7 +33,7 @@ All three models produced accurate, publication-quality Modern Standard Arabic t
 - [Evaluation Criteria](#evaluation-criteria)
 - [Evaluation Methodology](#evaluation-methodology)
 - [Initial Evaluation](#initial-evaluation)
-- [Human Expert Review](#human-expert-review)
+- [Human Linguistic Analysis](#human-linguistic-analysis)
 - [Revised Evaluation](#revised-evaluation)
 - [Key Changes After Human Review](#key-changes-after-human-review)
 - [Lessons Learned](#lessons-learned)

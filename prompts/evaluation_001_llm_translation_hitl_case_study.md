@@ -1,4 +1,4 @@
-# English–Arabic Translation Evaluation 01 – Healthcare Translation
+# Human-in-the-Loop LLM Translation Evaluation Case Study
 
 ---
 

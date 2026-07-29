@@ -53,8 +53,8 @@ All three models produced accurate, publication-quality Modern Standard Arabic t
 | **Task** | English → Modern Standard Arabic (MSA) Translation |
 | **Models Compared** | ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), Claude (Sonnet 5 Thinking) |
 | **Evaluation Framework** | AI Evaluation Framework |
-| **Methodology** | Translation Rubric, Arabic Language Rubric, Standard 1–5 Scoring Guide, Human Expert Review, Evidence-Based Revision |
-| **Evaluation Workflow** | Initial Evaluation → Human Expert Review → Evidence Validation → Revised Evaluation |
+| **Methodology** | Translation Rubric, Arabic Language Rubric, Standard 1–5 Scoring Guide, Human Linguistic Analysis , Evidence-Based Revision |
+| **Evaluation Workflow** | Initial Evaluation → Human Linguistic Analysis → Evidence Validation → Revised Evaluation |
 | **Status** | Completed |
 | **Version** | 1.1 |
 | **Date** | July 2026 |

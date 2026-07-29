@@ -8,7 +8,7 @@ Each case study follows a consistent evaluation process, including clearly defin
 
 > **New to this portfolio?**
 >
-> If you're interested in **translation evaluation**, start with **[English–Arabic Translation Evaluation Case Study 01 – Healthcare Translation](./prompts/evaluation-001-translation-en-ar.md)**, which demonstrates a complete Human-in-the-Loop (HITL) evaluation workflow from initial assessment through expert review and evidence-based revision.
+> If you're interested in **translation evaluation**, start with **[English–Arabic Translation Evaluation Case Study 01 – Healthcare Translation](./prompts/evaluation_001_translation_en_ar.md)**, which demonstrates a complete Human-in-the-Loop (HITL) evaluation workflow from initial assessment through expert review and evidence-based revision.
 >
 > If you're interested in **Arabic conversational evaluation**, see **[Egyptian Arabic LLM Evaluation Case Study 01 – Conversational Support](./prompts/egyptian-arabic-llm-evaluation-case-study-01-conversational-support.md)** for a comprehensive example of structured LLM response evaluation.
 
@@ -105,7 +105,7 @@ Comparative evaluation of English-to-Arabic healthcare translations using a stru
 
 **Case Study**
 
-[View Case Study](./prompts/evaluation-001-translation-en-ar.md)
+[View Case Study](./prompts/evaluation_001_translation_en_ar.md)
 
 ---
 

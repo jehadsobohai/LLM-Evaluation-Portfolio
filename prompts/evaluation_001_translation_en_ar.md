@@ -4,15 +4,15 @@
 
 ## Case Study Overview
 
-This case study evaluates and compares the English-to-Arabic translation capabilities of multiple large language models (LLMs) on a healthcare translation task.
+This case study compares the English-to-Arabic translation capabilities of multiple large language models (LLMs) on a healthcare translation task.
 
-The evaluation focuses on meaning preservation, accuracy, stylistic fidelity, terminology, fluency, and publication-quality Modern Standard Arabic (MSA).
+The evaluation assesses meaning preservation, accuracy, stylistic fidelity, terminology, fluency, and publication-quality Modern Standard Arabic (MSA).
 
-The evaluation was performed using a custom GPT built on the **AI Evaluation Framework**. The custom GPT applies the framework's evaluation methodology, Translation Rubric, Arabic Language Rubric, scoring guide, and decision rules to produce a structured evaluation report.
+The assessment was conducted using a custom GPT implementing the **AI Evaluation Framework**, including its Translation Rubric, Arabic Language Rubric, scoring methodology, and decision rules to produce a structured evaluation report.
 
-To improve reliability, the initial AI-generated evaluation was subsequently reviewed by a human evaluator with expertise in Modern Standard Arabic. Supported observations were incorporated into a revised evaluation, demonstrating a structured **human-in-the-loop evaluation workflow**.
+To improve reliability, the initial AI-generated assessment underwent an independent human expert review. Reviewer observations were validated against the framework and incorporated only when supported by textual evidence, demonstrating a structured **human-in-the-loop (HITL)** evaluation workflow.
 
-This case study documents the complete evaluation process, including the initial assessment, human expert review, and the final evidence-based revision.
+This case study documents the complete evaluation process, including the initial evaluation, human expert review, evidence-based revision, and final assessment.
 
 ---
 
@@ -47,56 +47,61 @@ All three models produced accurate, publication-quality translations. The final 
 
 ## Project Information
 
-**Project Type:** Comparative LLM Evaluation Case Study
-
-**Primary Domain:** Machine Translation
-
-**Secondary Domain:** Arabic Language Evaluation
-
-**Task:** English → Modern Standard Arabic (MSA) Translation
-
-**Models Compared:**
-- ChatGPT (GPT-5.5)
-- Google Gemini (3.6 Flash)
-- Claude (Sonnet 5 Thinking)
-
-**Evaluation Framework:** AI Evaluation Framework
-
-**Evaluation Methodology:**
-- Custom GPT implementing the AI Evaluation Framework
-- Translation Rubric (Primary)
-- Arabic Language Rubric (Secondary)
-- Standard 1–5 Scoring Guide
-- Human Expert Review
-- Evidence-Based Revision
-
-**Evaluation Workflow:**
-1. Initial evaluation using the AI Evaluation Framework Custom GPT.
-2. Independent human expert review.
-3. Validation of reviewer observations against the evaluation framework.
-4. Revised evaluation incorporating supported feedback.
-
-**Status:** Completed
-
-**Version:** 1.1
-
-**Date:** July 2026
+| Item | Details |
+|------|---------|
+| **Project Type** | Comparative LLM Evaluation Case Study |
+| **Primary Domain** | Machine Translation |
+| **Secondary Domain** | Arabic Language Evaluation |
+| **Task** | English → Modern Standard Arabic (MSA) Translation |
+| **Models Compared** | ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), Claude (Sonnet 5 Thinking) |
+| **Evaluation Framework** | AI Evaluation Framework |
+| **Methodology** | Translation Rubric, Arabic Language Rubric, Standard 1–5 Scoring Guide, Human Expert Review, Evidence-Based Revision |
+| **Evaluation Workflow** | Initial Evaluation → Human Expert Review → Evidence Validation → Revised Evaluation |
+| **Status** | Completed |
+| **Version** | 1.1 |
+| **Date** | July 2026 |
 
 ---
 
 ## Evaluation Objective
 
-Evaluate and compare the English-to-Arabic translation capabilities of ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), and Claude (Sonnet 5 Thinking) using a structured evaluation methodology.
+Evaluate and compare the English-to-Arabic translation capabilities of ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), and Claude (Sonnet 5 Thinking) using the AI Evaluation Framework.
 
-The evaluation examines each model's ability to:
+The evaluation assesses each model's ability to:
 
 - Preserve the original meaning without omission or distortion.
 - Maintain the source text's tone and level of formality.
-- Produce natural, publication-quality Modern Standard Arabic.
+- Produce natural, publication-quality Modern Standard Arabic (MSA).
 - Use accurate and appropriate healthcare terminology.
 - Follow all prompt instructions consistently.
 
-The evaluation also demonstrates a structured human-in-the-loop workflow, where an initial AI-generated assessment is reviewed by a human expert. Reviewer observations are validated against the AI Evaluation Framework before being incorporated into the final evaluation, improving transparency, consistency, and evidence-based decision-making.
+This case study also demonstrates a Human-in-the-Loop (HITL) evaluation workflow in which an initial AI-generated evaluation is independently reviewed by a human expert. Only observations supported by textual evidence and consistent with the evaluation framework are incorporated into the final assessment.
+
+---
+
+## Evaluation Scope
+
+This case study evaluates the translation quality of three large language models on a single English-to-Arabic healthcare translation task.
+
+The evaluation focuses on:
+
+- Meaning preservation
+- Accuracy
+- Style and tone
+- Modern Standard Arabic quality
+- Healthcare terminology
+- Fluency
+- Instruction following
+
+The evaluation does **not** assess:
+
+- Translation speed or latency
+- Computational efficiency
+- Cost or pricing
+- General multilingual capabilities
+- Performance on other translation domains or prompts
+
+The findings apply only to the prompt, source text, and model versions evaluated in this case study.
 
 ---
 
@@ -141,44 +146,70 @@ Translate the following paragraph into **Modern Standard Arabic (MSA)**.
 
 The translations were evaluated using the **AI Evaluation Framework**, which applies the **Translation Rubric** (primary) and the **Arabic Language Rubric** (secondary).
 
-The evaluation considers the following criteria:
+Each translation was assessed against the following criteria:
 
-- Meaning Preservation
-- Accuracy
-- Language Quality
-- Fluency
-- Style & Tone
-- Terminology
-- Instruction Following
-- Overall Preference
+| Criterion | Description |
+|-----------|-------------|
+| **Meaning Preservation** | Accuracy in conveying the original meaning without omission, distortion, or unnecessary additions. |
+| **Accuracy** | Correct representation of factual content, relationships, and medical concepts. |
+| **Language Quality** | Grammatical correctness, vocabulary choice, punctuation, and adherence to Modern Standard Arabic conventions. |
+| **Fluency** | Naturalness, readability, and coherence of the translation. |
+| **Style & Tone** | Faithfulness to the source text's tone, level of formality, and stylistic register. |
+| **Terminology** | Appropriate and consistent use of healthcare and technical terminology. |
+| **Instruction Following** | Compliance with all prompt requirements, including preserving meaning, tone, and completeness. |
 
 Each criterion is scored on a **5-point scale**, where **5.0** represents excellent performance.
 
-Small score differences (for example, **4.5 vs. 5.0**) indicate meaningful qualitative distinctions between high-quality translations rather than large differences in overall capability.
-
-The final ranking is determined using the AI Evaluation Framework's decision rules. Critical criteria (Meaning Preservation and Accuracy) are evaluated first. When multiple responses satisfy the critical criteria, the final preference is based on qualitative differences in stylistic fidelity, terminology, instruction following, and overall translation quality.
+The final ranking follows the AI Evaluation Framework's decision rules. **Meaning Preservation** and **Accuracy** are treated as the primary evaluation criteria. When multiple translations satisfy these criteria, the final preference is determined using secondary criteria, including Style & Tone, Terminology, Instruction Following, and overall translation quality.
 
 ---
 
 ## Evaluation Methodology
 
-This case study follows the AI Evaluation Framework to perform a structured comparative evaluation of English-to-Arabic translation quality.
+This case study follows the **AI Evaluation Framework** to perform a structured, evidence-based comparison of English-to-Arabic translation quality.
 
-The initial evaluation was generated using a custom GPT specifically developed to implement the AI Evaluation Framework. The custom GPT applies the framework's evaluation methodology, Translation Rubric, Arabic Language Rubric, scoring guide, and decision rules to produce a standardized evaluation report.
+The evaluation was conducted in four phases.
 
-To improve evaluation reliability, the initial report underwent an independent human expert review. The reviewer assessed the linguistic analysis, evidence, and scoring, providing qualitative observations on translation fidelity, stylistic choices, terminology, and Modern Standard Arabic usage.
+### Phase 1 – Initial Evaluation
 
-Reviewer observations were not incorporated automatically. Each observation was validated against the source text, model responses, and the AI Evaluation Framework before determining whether revisions were warranted.
+A custom GPT implementing the AI Evaluation Framework generated the initial evaluation. The assessment applied the Translation Rubric, Arabic Language Rubric, standard scoring guide, and predefined decision rules to produce a structured evaluation report.
 
-This human-in-the-loop workflow ensures that the final evaluation remains evidence-based, transparent, and consistent with the predefined evaluation methodology.
+### Phase 2 – Human Expert Review
+
+An independent reviewer with expertise in Modern Standard Arabic examined the initial evaluation. The review focused on:
+
+- Linguistic accuracy
+- Meaning preservation
+- Stylistic fidelity
+- Tone and formality
+- Terminology
+- Quality of supporting evidence
+- Consistency between observations and assigned scores
+
+### Phase 3 – Evidence Validation
+
+Reviewer observations were independently validated against:
+
+- The source text
+- Each model response
+- The Translation Rubric
+- The Arabic Language Rubric
+- The AI Evaluation Framework
+
+Only observations supported by textual evidence and consistent with the evaluation methodology were accepted.
+
+### Phase 4 – Revised Evaluation
+
+Supported observations were incorporated into a revised evaluation. The final report retained the original evaluation methodology, scoring guide, and decision rules while improving the supporting evidence, score consistency, and linguistic analysis.
 
 ### Evaluation Workflow
 
-1. Generate an initial evaluation using the AI Evaluation Framework Custom GPT.
-2. Perform an independent human expert linguistic review.
-3. Validate reviewer observations against the evaluation framework and textual evidence.
-4. Revise the evaluation where supported by evidence.
-5. Produce the final evaluation report.
+1. Prompt and model response generation.
+2. Initial AI-generated evaluation.
+3. Independent human expert review.
+4. Evidence validation.
+5. Revised evaluation.
+6. Final conclusions.
 
 ---
 
@@ -321,24 +352,36 @@ All three translations are publication-quality and fully satisfy the prompt. Thi
 
 # Human Expert Review
 
-Following the initial evaluation, the report was independently reviewed by a human evaluator with expertise in Modern Standard Arabic.
+## Review Purpose
 
-The purpose of the review was not to replace the initial evaluation, but to assess whether the evidence, reasoning, and scoring accurately reflected the linguistic characteristics of the translations.
+The initial evaluation was independently reviewed by a human evaluator with expertise in Modern Standard Arabic (MSA). The purpose of the review was to assess whether the initial evaluation accurately reflected the quality of each translation and whether the assigned scores were supported by sufficient textual evidence.
 
-The review focused on:
+The review did not generate a new evaluation. Instead, it examined the validity, consistency, and completeness of the initial assessment.
+
+## Review Criteria
+
+The reviewer examined the following aspects:
 
 - Meaning preservation
-- Stylistic fidelity to the source text
-- Modern Standard Arabic quality
-- Vocabulary selection
+- Accuracy
+- Stylistic fidelity
 - Tone and level of formality
-- Healthcare terminology
-- Translation naturalness
-- Consistency between textual evidence and assigned scores
+- Terminology selection
+- Modern Standard Arabic quality
+- Fluency and naturalness
+- Consistency between evidence, scores, and conclusions
 
-Reviewer observations were treated as qualitative feedback rather than authoritative corrections. Each observation was subsequently validated against the source text, the model responses, and the AI Evaluation Framework before determining whether revisions to the evaluation were warranted.
+## Review Method
 
-The following qualitative analysis summarizes the reviewer's observations.
+Each observation was independently compared against:
+
+- The original English source text
+- The translation produced by each model
+- The Translation Evaluation Rubric
+- The Arabic Language Evaluation Rubric
+- The AI Evaluation Framework
+
+Observations were treated as hypotheses rather than automatic corrections. Only findings supported by textual evidence and consistent with the evaluation methodology were incorporated into the revised evaluation.
 
 ## Human Linguistic Analysis
 
@@ -368,11 +411,41 @@ Like Gemini, Claude uses the stronger adjective "هائلة", which slightly inc
 
 # Revised Evaluation
 
-Following the human expert review, each observation was independently validated against the source text, the model responses, and the AI Evaluation Framework.
+## Revision Process
 
-Only observations supported by textual evidence and consistent with the evaluation methodology were incorporated into the revised report. The overall evaluation methodology, scoring guide, and decision rules remained unchanged.
+Following the Human Expert Review, all reviewer observations were independently assessed against the source text, the model responses, and the AI Evaluation Framework.
 
-The revised evaluation presented below represents the final assessment for this case study.
+Each proposed revision was evaluated according to the following principles:
+
+- Supported by direct textual evidence.
+- Consistent with the Translation Evaluation Rubric.
+- Consistent with the Arabic Language Evaluation Rubric.
+- Compatible with the AI Evaluation Framework's scoring methodology and decision rules.
+
+Observations that did not satisfy these requirements were not incorporated into the final evaluation.
+
+## Scope of the Revisions
+
+The revision process focused on improving:
+
+- Supporting evidence.
+- Consistency between scores and qualitative analysis.
+- Stylistic fidelity assessment.
+- Terminology analysis.
+- Transparency of evaluation decisions.
+
+The following aspects remained unchanged:
+
+- Evaluation methodology.
+- Evaluation criteria.
+- Scoring guide.
+- Decision rules.
+- Source text.
+- Model responses.
+
+## Final Evaluation
+
+The report below represents the final evidence-based assessment following completion of the Human-in-the-Loop evaluation workflow.
 
 ---
 
@@ -519,45 +592,45 @@ All three translations are accurate, fluent, and suitable for publication. This 
 
 # Key Changes After Human Review
 
-The human expert review refined the initial evaluation by validating the consistency between the assigned scores, supporting evidence, and the AI Evaluation Framework. The review did not alter the overall ranking of the models but strengthened the justification for the final conclusions.
+## Revision Summary
 
-## Accepted Revisions
+The Human Expert Review resulted in targeted revisions to the initial evaluation. Each observation was independently validated against the source text, model responses, and the AI Evaluation Framework before a revision decision was made.
 
-### Instruction Verification
+### Accepted Revisions
 
-- Refined the assessment of **tone and formality** to distinguish stylistic differences between the translations.
+The following observations were supported by textual evidence and incorporated into the revised evaluation:
+
+#### Instruction Verification
+- Refined the assessment of tone and formality to distinguish stylistic differences between the translations.
 - Recognized that ChatGPT remained closest to the source's neutral register, while Gemini and Claude adopted a slightly more literary style.
 
-### Evidence Summary
+#### Gemini
+- Revised the **Style & Tone** score from **4.5/5** to **4.0/5**.
+- Revised **Instruction Following** from **5.0/5** to **4.5/5**.
+- Expanded the supporting evidence for stylistic adaptation and vocabulary choices.
 
-- Expanded the comparison of stylistic differences between the three translations.
-- Added evidence highlighting ChatGPT's consistent neutral style, Gemini's elevated vocabulary, and Claude's balanced approach.
+#### ChatGPT
+- Expanded the evidence supporting terminology and stylistic fidelity.
+- Clarified that suggested wording alternatives represented stylistic preferences rather than translation errors.
 
-### Gemini
+#### Claude
+- Expanded the discussion of stylistic balance and terminology.
+- Added evidence supporting the assessment of *هائلة* and *اتخاذ القرار السريري*.
 
-- Revised the **Style & Tone** score from **4.5/5** to **4.0/5** to reflect the use of literary expressions beyond the source text.
-- Revised **Instruction Following** from **5.0/5** to **4.5/5** because stylistic adaptations slightly reduced fidelity to the requested register.
-- Added supporting evidence for:
-  - *يرسم ملامح جديدة*
-  - *إمكانات هائلة*
-  - The discussion of *ينبغي أن يكون مكملاً* as a stylistic choice.
+### Rejected Revisions
 
-### ChatGPT
+No reviewer observations were rejected in this case study. All proposed revisions were supported by textual evidence and were consistent with the evaluation methodology.
 
-- Expanded the justification for terminology and stylistic fidelity.
-- Added evidence explaining how *أداةً مكملةً* reinforces the supporting role of AI without altering the source meaning.
-- Noted that alternatives such as *مساندة* or *داعمة* represent stylistic preferences rather than translation improvements.
+### Overall Impact
 
-### Claude
+The revision process improved:
 
-- Expanded the stylistic analysis to explain how Claude combines ChatGPT's structural fidelity with Gemini's elevated vocabulary.
-- Added evidence regarding the stronger wording (*هائلة*) and the singular form (*اتخاذ القرار السريري*).
+- Evidence quality.
+- Consistency between scores and qualitative analysis.
+- Transparency of evaluation decisions.
+- Documentation of stylistic differences.
 
-## Overall Impact
-
-The human expert review strengthened the evidence base, improved the consistency between qualitative observations and assigned scores, and provided more detailed linguistic justification for the final evaluation.
-
-The overall ranking remained unchanged:
+The final model ranking remained unchanged:
 
 1. 🥇 ChatGPT (GPT-5.5)
 2. 🥈 Claude (Sonnet 5 Thinking)
@@ -567,159 +640,146 @@ The overall ranking remained unchanged:
 
 # Lessons Learned
 
-This case study demonstrates several important principles for evaluating large language model (LLM) translations.
+This case study highlights several practical insights into evaluating English-to-Arabic translations generated by large language models.
 
-## 1. High-quality translations can still differ meaningfully
+## 1. Translation quality extends beyond correctness
 
-All three models produced accurate, fluent, publication-quality Modern Standard Arabic. The differences emerged primarily in stylistic fidelity rather than translation correctness.
+All three models accurately conveyed the source meaning and produced publication-quality Modern Standard Arabic. The primary differences arose from stylistic fidelity rather than translation accuracy.
 
-## 2. Meaning preservation alone is not sufficient
+## 2. Stylistic fidelity is an important differentiator
 
-Although all translations preserved the source meaning, subtle differences in tone, vocabulary, and register influenced the overall assessment. Expressions such as *يرسم ملامح جديدة* and *هائلة* illustrate how stylistic choices can shift a translation away from the source's neutral voice.
+When multiple translations satisfy the critical criteria of Meaning Preservation and Accuracy, differences in tone, vocabulary, and register become the primary basis for comparison. Small lexical choices, such as *يرسم ملامح جديدة* or *هائلة*, can influence how faithfully a translation reflects the source's style.
 
-## 3. Human review improves evaluation quality
+## 3. Structured evaluation improves consistency
 
-The human expert review strengthened the evaluation by identifying stylistic nuances that warranted additional evidence and minor score adjustments. The review improved consistency between qualitative observations and quantitative scores while preserving the original decision-making framework.
+Using predefined evaluation criteria, scoring guidance, and decision rules provides a consistent basis for comparing high-quality translations and reduces reliance on subjective preference.
 
-## 4. Evidence-based revisions increase transparency
+## 4. Human review strengthens evidence, not methodology
 
-Every modification in the revised evaluation was supported by observable textual evidence. Unsupported opinions or purely subjective preferences were not incorporated, ensuring that the evaluation remained objective and reproducible.
+The Human Expert Review refined the supporting evidence and strengthened the consistency between qualitative observations and assigned scores without changing the underlying evaluation framework or decision rules.
 
-## 5. Ranking should not rely solely on numerical scores
+## 5. Transparent documentation improves reproducibility
 
-This evaluation followed a qualitative decision-making approach. Since all models satisfied the critical criteria of Meaning Preservation and Accuracy, the final ranking was determined using secondary criteria, including stylistic fidelity, terminology, instruction following, and overall usefulness.
+Documenting the complete evaluation process—from the initial assessment through evidence validation and revised evaluation—allows other evaluators to understand, reproduce, and critically assess the methodology.
 
 ## Key Takeaway
 
-A rigorous LLM evaluation combines structured scoring with evidence-based human validation. Human reviewers should refine and strengthen the evaluation rather than replace the evaluation framework, resulting in more reliable, transparent, and reproducible assessments.
+This case study demonstrates that combining a structured evaluation framework with evidence-based human review produces transparent, consistent, and reproducible translation evaluations while maintaining methodological integrity.
 
 ---
 
 # Skills Demonstrated
 
-This case study demonstrates the following evaluation and analytical skills:
+This case study demonstrates practical experience in evaluating large language model (LLM) outputs using a structured, evidence-based methodology.
 
-## AI Evaluation
+## Evaluation Framework Application
 
-- Comparative evaluation of multiple LLM responses.
-- Application of structured evaluation rubrics.
-- Evidence-based scoring and qualitative analysis.
-- Consistent use of predefined decision rules.
-- Identification of critical and secondary evaluation criteria.
+- Applied the AI Evaluation Framework to a real-world translation task.
+- Used predefined evaluation criteria, scoring guidance, and decision rules.
+- Produced consistent and reproducible evaluation reports.
 
-## Translation Evaluation
+## Comparative LLM Evaluation
 
-- Assessment of meaning preservation.
-- Evaluation of stylistic fidelity.
-- Analysis of tone and level of formality.
-- Evaluation of terminology consistency.
-- Assessment of fluency and publication-quality Modern Standard Arabic.
+- Compared translation outputs from multiple LLMs.
+- Identified qualitative differences despite similar overall performance.
+- Applied evidence-based ranking using primary and secondary evaluation criteria.
 
-## Human-in-the-Loop Evaluation
+## Translation Quality Assessment
 
-- Independent validation of AI-generated evaluations.
-- Critical review of qualitative observations.
-- Evidence-based revision of scores and justifications.
-- Integration of expert linguistic feedback while maintaining methodological consistency.
+- Evaluated meaning preservation, accuracy, and stylistic fidelity.
+- Assessed Modern Standard Arabic quality and fluency.
+- Analyzed terminology consistency and instruction following.
 
-## Analytical Skills
+## Human-in-the-Loop (HITL) Evaluation
 
-- Comparative reasoning across multiple model outputs.
-- Identification of subtle linguistic differences.
-- Separation of objective evidence from subjective preference.
-- Transparent documentation of evaluation decisions.
+- Conducted an independent review of an AI-generated evaluation.
+- Validated reviewer observations against textual evidence and predefined rubrics.
+- Incorporated only supported revisions into the final evaluation.
 
-## Technical Communication
+## Analytical Reasoning
 
-- Production of structured evaluation reports.
-- Clear presentation of supporting evidence.
-- Consistent documentation of methodology.
-- Reproducible evaluation workflow suitable for future case studies.
+- Distinguished objective findings from stylistic preferences.
+- Justified score adjustments using observable textual evidence.
+- Maintained consistency between qualitative analysis and quantitative scoring.
+
+## Technical Documentation
+
+- Produced a structured Markdown case study suitable for GitHub.
+- Documented the complete evaluation workflow from initial assessment to final conclusions.
+- Presented methodology, evidence, revisions, and findings in a transparent and reproducible format.
 
 ---
 
 # Study Limitations
 
-This case study provides a structured comparison of three LLM-generated translations under a single translation task. While the evaluation follows a consistent methodology, several limitations should be considered.
+This case study provides a structured comparison of three large language models on a single English-to-Arabic healthcare translation task. While the evaluation follows a consistent methodology, the findings should be interpreted within the scope of the study.
 
-## Scope
+## Evaluation Scope
 
-- The evaluation is based on a single English-to-Arabic healthcare translation.
-- Results should not be generalized to all translation domains, language pairs, or prompt types.
+- The evaluation is based on a single translation prompt and source text.
+- Results should not be generalized to other translation domains, language pairs, or prompt designs without additional evaluation.
 
 ## Model Versions
 
-- The findings apply only to the specific model versions evaluated in this case study.
-- Future model updates may produce different outputs and evaluation outcomes.
+- The findings apply only to the model versions evaluated in this case study.
+- Future model updates may produce different outputs and rankings.
 
 ## Human Review
 
-- The revised evaluation incorporates feedback from a single human linguistic reviewer.
-- Although all revisions were validated against the evaluation framework, additional independent reviewers could provide further perspectives on stylistic preferences.
+- The revised evaluation incorporates feedback from one independent reviewer with expertise in Modern Standard Arabic.
+- Additional reviewers could provide further perspectives on stylistic preferences, although all accepted revisions in this study were supported by textual evidence and the evaluation framework.
 
 ## Subjectivity
 
-- Translation evaluation contains an inherent degree of subjectivity, particularly when assessing style, tone, and naturalness.
-- The evaluation framework minimizes subjectivity through predefined rubrics, evidence-based reasoning, and transparent decision rules, but it cannot eliminate it entirely.
+- Assessment of style, tone, and naturalness involves informed human judgment.
+- The AI Evaluation Framework reduces subjectivity through predefined criteria, structured scoring, evidence-based reasoning, and transparent decision rules, but it does not eliminate it entirely.
 
 ## Reproducibility
 
-- The methodology is reproducible when applied to the same prompt, source text, and model responses.
-- Different prompts or source texts may lead to different comparative outcomes.
+- The evaluation methodology is reproducible when applied to the same prompt, source text, model responses, and evaluation framework.
+- Different prompts or evaluation objectives may produce different comparative outcomes.
 
 ## Future Work
 
-Future case studies may expand this evaluation by:
+Future case studies may extend this work by:
 
-- Comparing additional LLMs.
-- Evaluating multiple translation domains (medical, legal, technical, literary, etc.).
-- Including larger translation datasets.
-- Measuring inter-rater agreement using multiple human evaluators.
-- Comparing performance across different prompt designs and translation strategies.
+- Evaluating additional LLMs.
+- Comparing multiple translation domains (e.g., medical, legal, technical, and literary).
+- Using larger benchmark datasets.
+- Measuring inter-rater agreement across multiple human reviewers.
+- Investigating the impact of different prompting strategies on translation quality.
 
 ---
 
 # References
 
-The evaluation methodology and conclusions presented in this case study are based on the following resources:
+The following resources were used to conduct and document this evaluation.
 
 ## Evaluation Framework
 
-- **AI Evaluation Framework** – Primary methodology used for planning, conducting, and documenting the evaluation.
+- AI Evaluation Framework
+- Translation Evaluation Rubric
+- Arabic Language Evaluation Rubric
+- Standard Scoring Guide
+- Standard Evaluation Report Template
 
-## Evaluation Rubrics
+## Source Materials
 
-- **Translation Evaluation Rubric** – Used to assess meaning preservation, accuracy, terminology, style, and instruction following.
+- Original English healthcare text
+- ChatGPT (GPT-5.5) translation
+- Google Gemini (3.6 Flash) translation
+- Claude (Sonnet 5 Thinking) translation
 
-- **Arabic Language Evaluation Rubric** – Used to evaluate Modern Standard Arabic quality, grammar, fluency, vocabulary, and naturalness.
+## Evaluation Documentation
 
-## Scoring Methodology
+- Initial Evaluation Report
+- Human Expert Review
+- Revised Evaluation Report
 
-- **Standard 1–5 Scoring Guide** – Applied consistently across all evaluation criteria.
+## Document Information
 
-- **Standard Evaluation Report Template** – Used to ensure a consistent structure for documenting findings.
-
-## Evaluation Process
-
-This case study followed a Human-in-the-Loop (HITL) evaluation workflow consisting of:
-
-1. Initial AI-generated evaluation.
-2. Independent human linguistic review.
-3. Evidence validation against the evaluation framework.
-4. Revised evaluation incorporating only supported observations.
-5. Documentation of accepted revisions and final conclusions.
-
-## Source Material
-
-- Original English healthcare paragraph provided in the evaluation prompt.
-- Translation responses generated by:
-  - ChatGPT (GPT-5.5)
-  - Google Gemini (3.6 Flash)
-  - Claude (Sonnet 5 Thinking)
-
----
-
-**Document Status:** Final  
-**Version:** 1.1  
-**Evaluation Status:** Completed  
-**Last Updated:** July 2026
+- **Case Study:** English–Arabic Translation Evaluation 01 – Healthcare Translation
+- **Version:** 1.1
+- **Status:** Final
+- **Workflow:** Human-in-the-Loop (HITL) Evaluation
+- **Last Updated:** July 2026

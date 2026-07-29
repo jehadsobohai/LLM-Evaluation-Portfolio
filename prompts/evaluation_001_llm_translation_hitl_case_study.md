@@ -1,5 +1,4 @@
-# Human-in-the-Loop LLM Translation Evaluation Case Study
-
+# Human-in-the-Loop English–Arabic LLM Translation Evaluation Case Study
 ---
 
 ## Case Study Overview

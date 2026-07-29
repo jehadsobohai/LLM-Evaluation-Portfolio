@@ -20,9 +20,7 @@ This case study documents the complete evaluation process, including the initial
 
 This case study compares the English-to-Arabic translation capabilities of ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), and Claude (Sonnet 5 Thinking) using the AI Evaluation Framework.
 
-An initial AI-generated evaluation was conducted using structured translation and Arabic language rubrics. The evaluation was then independently reviewed by a human expert in Modern Standard Arabic, and supported observations were incorporated into a revised evaluation through an evidence-based human-in-the-loop (HITL) workflow.
-
-All three models produced accurate, publication-quality translations. The final evaluation ranked ChatGPT first for its strong balance of meaning preservation, stylistic fidelity, and natural Modern Standard Arabic, followed by Claude and Google Gemini.
+All three models produced accurate, publication-quality Modern Standard Arabic translations. Following an evidence-based Human-in-the-Loop (HITL) evaluation workflow, ChatGPT was ranked first for its balance of meaning preservation, stylistic fidelity, and natural language quality, followed by Claude and Google Gemini.
 
 ---
 
@@ -41,6 +39,7 @@ All three models produced accurate, publication-quality translations. The final 
 - [Lessons Learned](#lessons-learned)
 - [Skills Demonstrated](#skills-demonstrated)
 - [Study Limitations](#study-limitations)
+- [Overall Conclusion](#overall-conclusion)
 - [References](#references)
 
 ---
@@ -350,62 +349,27 @@ All three translations are publication-quality and fully satisfy the prompt. Thi
 
 ---
 
-# Human Expert Review
-
-## Review Purpose
-
-The initial evaluation was independently reviewed by a human evaluator with expertise in Modern Standard Arabic (MSA). The purpose of the review was to assess whether the initial evaluation accurately reflected the quality of each translation and whether the assigned scores were supported by sufficient textual evidence.
-
-The review did not generate a new evaluation. Instead, it examined the validity, consistency, and completeness of the initial assessment.
-
-## Review Criteria
-
-The reviewer examined the following aspects:
-
-- Meaning preservation
-- Accuracy
-- Stylistic fidelity
-- Tone and level of formality
-- Terminology selection
-- Modern Standard Arabic quality
-- Fluency and naturalness
-- Consistency between evidence, scores, and conclusions
-
-## Review Method
-
-Each observation was independently compared against:
-
-- The original English source text
-- The translation produced by each model
-- The Translation Evaluation Rubric
-- The Arabic Language Evaluation Rubric
-- The AI Evaluation Framework
-
-Observations were treated as hypotheses rather than automatic corrections. Only findings supported by textual evidence and consistent with the evaluation methodology were incorporated into the revised evaluation.
-
 ## Human Linguistic Analysis
 
-*(Qualitative Analysis of the Translations
+The human expert conducted an independent linguistic assessment of the three translations, focusing on stylistic fidelity, vocabulary selection, grammatical quality, and consistency with the source text. The review confirmed that all three models accurately preserved the original meaning and produced fluent, publication-quality Modern Standard Arabic. The principal differences were stylistic rather than semantic and concerned the level of formality, vocabulary selection, and fidelity to the source's neutral register. The observations below summarize the findings that were subsequently validated and incorporated into the revised evaluation.
 
-All three models successfully satisfied the prompt requirements. They preserved the original meaning, maintained a formal register, and produced fluent Modern Standard Arabic suitable for publication. The differences lie primarily in stylistic choices, vocabulary selection, and consistency with the source text's tone.
+### Google Gemini
 
-Gemini
+Gemini employs a more elevated and literary writing style than the source. The expression *"يرسم ملامح جديدة"* is elegant and well suited to literary or motivational writing, but it is more rhetorical than the source's neutral expression *"is transforming"*. The translation also demonstrates the strongest use of formal vocabulary, including *"إمكانات"* and *"أخصائيي الرعاية الصحية"*, both of which are highly appropriate for formal publications.
 
-Gemini employs a more elevated and literary writing style than the source. The expression "يرسم ملامح جديدة" is elegant and effective in literary or inspirational contexts, but it is more rhetorical than the neutral expression "is transforming" used in the original text. The translation also demonstrates the strongest use of formal vocabulary, such as "إمكانات" and "أخصائيي الرعاية الصحية", which are highly appropriate for formal writing.
+However, the adjective *"هائلة"* is more emphatic than the source's *"great"*, slightly amplifying the intended meaning. Furthermore, while *"ينبغي أن يكون مكمّلًا"* is grammatically correct, an expression such as *"ينبغي أن يكون له دورٌ مكمّل"* could communicate the supporting role of AI more explicitly. These observations reflect stylistic preferences rather than translation errors.
 
-However, the adjective "هائلة" is more emphatic than the source's "great", slightly amplifying the intended meaning. Additionally, while "ينبغي أن يكون مكمّلًا" is grammatically correct, a formulation such as "ينبغي أن يكون له دورٌ مكمّل" would express the supporting role of AI more explicitly. Overall, Gemini introduces minor stylistic adaptations that make the translation less faithful to the source's neutral tone despite its excellent linguistic quality.
+### ChatGPT
 
-ChatGPT
+ChatGPT produces the most balanced translation for a journalistic or academic article. The grammar is accurate, the vocabulary is clear and precise, and the overall tone closely matches that of the original English text. The inclusion of *"أداةً"* effectively emphasizes that artificial intelligence serves as a supporting tool rather than a replacement for healthcare professionals while remaining faithful to the source.
 
-ChatGPT produces the most balanced translation for a journalistic or academic article. The grammar is accurate, the vocabulary is clear and precise, and the tone closely matches the original English text. The inclusion of "أداةً" effectively emphasizes that artificial intelligence serves as a supporting tool rather than a replacement for healthcare professionals, while remaining faithful to the source.
+The expression *"مكملة"* is appropriate and natural. Although alternatives such as *"مساندة"* or *"داعمة"* could provide a slightly more explicit description of the supporting role, this represents a stylistic preference rather than a translation issue.
 
-The expression "مكملة" is appropriate and natural; however, a more explicit alternative such as "مساندة" or "داعمة" could further clarify the intended supporting role. This is a stylistic preference rather than a translation issue.
+### Claude
 
-Claude
+Claude occupies a middle ground between ChatGPT and Gemini. It combines ChatGPT's relatively faithful sentence structure with Gemini's preference for more elevated vocabulary, resulting in a translation that shares many of the strengths and minor stylistic characteristics of both.
 
-Claude represents a middle ground between ChatGPT and Gemini. It combines ChatGPT's relatively faithful sentence structure with Gemini's preference for more elevated vocabulary. As a result, it shares many of the strengths and minor weaknesses observed in both translations.
-
-Like Gemini, Claude uses the stronger adjective "هائلة", which slightly increases the emphasis compared with the source. At the same time, its overall structure remains close to the original, making it more stylistically balanced than Gemini while still exhibiting occasional literary tendencies.)*
+Like Gemini, Claude uses the stronger adjective *"هائلة"*, which slightly increases the emphasis compared with the source text. At the same time, its sentence structure remains closer to the original, making it more stylistically balanced than Gemini while still exhibiting occasional literary tendencies.
 
 ---
 
@@ -467,10 +431,9 @@ The report below represents the final evidence-based assessment following comple
 
 #### Shared Strengths
 
-- All three translations accurately preserve the source meaning.
-- All use correct healthcare terminology.
-- All are grammatically correct and suitable for publication.
-- None omit or distort any information.
+All three translations satisfy the prompt requirements and demonstrate a high standard of translation quality. Each accurately preserves the source meaning, uses appropriate healthcare terminology, and produces fluent, publication-quality Modern Standard Arabic without omissions or factual inaccuracies.
+
+The primary differences between the translations arise from stylistic fidelity, vocabulary selection, and consistency with the source text's neutral register.
 
 #### Key Differences
 
@@ -496,9 +459,7 @@ The report below represents the final evidence-based assessment following comple
 
 **Evidence**
 
-- *يرسم ملامح جديدة* is a metaphorical expression that elevates the style beyond the original.
-- *هائلة* amplifies the intensity of *great potential*.
-- *ينبغي أن يكون مكملاً* is correct, although an expression such as *له دور مكمل* could sound more explicit and natural in formal prose.
+The assigned scores reflect the stylistic observations documented in the Human Linguistic Analysis. Gemini's use of metaphorical phrasing (*يرسم ملامح جديدة*) and stronger lexical emphasis (*هائلة*) results in a translation that is stylistically more elevated than the source while preserving its meaning.
 
 ---
 
@@ -516,9 +477,7 @@ The report below represents the final evidence-based assessment following comple
 
 **Evidence**
 
-- Uses straightforward, publication-style Arabic.
-- *أداةً مكملةً* clearly communicates that AI supports rather than replaces healthcare professionals.
-- While *مكملة* is appropriate, alternatives such as *مساندة* or *داعمة* could also be effective stylistic choices; however, this does not affect translation quality.
+The translation maintains the source's neutral professional tone, uses clear publication-quality Modern Standard Arabic, and consistently supports the assigned scores for stylistic fidelity and terminology.
 
 ---
 
@@ -536,9 +495,7 @@ The report below represents the final evidence-based assessment following comple
 
 **Evidence**
 
-- Uses *إمكانات هائلة*, similar to Gemini.
-- Retains a sentence structure closer to ChatGPT.
-- Represents a balance between literal fidelity and stylistic enhancement.
+Claude combines a structure that closely follows the source with vocabulary that is slightly more elevated, producing a balanced translation consistent with the observations presented in the Human Linguistic Analysis.
 
 ---
 
@@ -590,129 +547,91 @@ All three translations are accurate, fluent, and suitable for publication. This 
 
 ---
 
-# Key Changes After Human Review
+## Key Changes After Human Review
 
-## Revision Summary
+The Human Expert Review refined the initial AI-generated evaluation by strengthening the supporting evidence and improving consistency between qualitative observations and quantitative scores. The review confirmed the original ranking while identifying stylistic distinctions that warranted more detailed analysis.
 
-The Human Expert Review resulted in targeted revisions to the initial evaluation. Each observation was independently validated against the source text, model responses, and the AI Evaluation Framework before a revision decision was made.
+The principal revisions included:
 
-### Accepted Revisions
+- A more nuanced assessment of stylistic fidelity and register.
+- Expanded evidence supporting vocabulary and terminology choices.
+- Improved consistency between assigned scores and supporting justifications.
+- Clearer distinction between objective translation quality and stylistic preference.
 
-The following observations were supported by textual evidence and incorporated into the revised evaluation:
-
-#### Instruction Verification
-- Refined the assessment of tone and formality to distinguish stylistic differences between the translations.
-- Recognized that ChatGPT remained closest to the source's neutral register, while Gemini and Claude adopted a slightly more literary style.
-
-#### Gemini
-- Revised the **Style & Tone** score from **4.5/5** to **4.0/5**.
-- Revised **Instruction Following** from **5.0/5** to **4.5/5**.
-- Expanded the supporting evidence for stylistic adaptation and vocabulary choices.
-
-#### ChatGPT
-- Expanded the evidence supporting terminology and stylistic fidelity.
-- Clarified that suggested wording alternatives represented stylistic preferences rather than translation errors.
-
-#### Claude
-- Expanded the discussion of stylistic balance and terminology.
-- Added evidence supporting the assessment of *هائلة* and *اتخاذ القرار السريري*.
-
-### Rejected Revisions
-
-No reviewer observations were rejected in this case study. All proposed revisions were supported by textual evidence and were consistent with the evaluation methodology.
-
-### Overall Impact
-
-The revision process improved:
-
-- Evidence quality.
-- Consistency between scores and qualitative analysis.
-- Transparency of evaluation decisions.
-- Documentation of stylistic differences.
-
-The final model ranking remained unchanged:
-
-1. 🥇 ChatGPT (GPT-5.5)
-2. 🥈 Claude (Sonnet 5 Thinking)
-3. 🥉 Google Gemini (3.6 Flash)
+No revisions affected the evaluation methodology, scoring framework, decision rules, or final ranking.
 
 ---
 
 # Lessons Learned
 
-This case study highlights several practical insights into evaluating English-to-Arabic translations generated by large language models.
+This case study highlights several broader insights into evaluating AI-generated translations using a structured, evidence-based framework.
 
-## 1. Translation quality extends beyond correctness
+## 1. High-quality translations can differ stylistically
 
-All three models accurately conveyed the source meaning and produced publication-quality Modern Standard Arabic. The primary differences arose from stylistic fidelity rather than translation accuracy.
+Multiple models may accurately preserve the source meaning while varying in tone, vocabulary, and stylistic register. Evaluating these differences requires criteria that extend beyond semantic correctness.
 
-## 2. Stylistic fidelity is an important differentiator
+## 2. Structured evaluation improves consistency
 
-When multiple translations satisfy the critical criteria of Meaning Preservation and Accuracy, differences in tone, vocabulary, and register become the primary basis for comparison. Small lexical choices, such as *يرسم ملامح جديدة* or *هائلة*, can influence how faithfully a translation reflects the source's style.
+Applying predefined rubrics, scoring guidance, and decision rules provides a transparent and reproducible basis for comparing translation quality and reduces reliance on subjective preference.
 
-## 3. Structured evaluation improves consistency
+## 3. Human review strengthens evaluation quality
 
-Using predefined evaluation criteria, scoring guidance, and decision rules provides a consistent basis for comparing high-quality translations and reduces reliance on subjective preference.
+An independent human review can refine supporting evidence, clarify stylistic distinctions, and improve consistency between qualitative observations and quantitative scores without changing the underlying evaluation methodology.
 
-## 4. Human review strengthens evidence, not methodology
+## 4. Transparency supports reproducibility
 
-The Human Expert Review refined the supporting evidence and strengthened the consistency between qualitative observations and assigned scores without changing the underlying evaluation framework or decision rules.
-
-## 5. Transparent documentation improves reproducibility
-
-Documenting the complete evaluation process—from the initial assessment through evidence validation and revised evaluation—allows other evaluators to understand, reproduce, and critically assess the methodology.
+Documenting the complete evaluation workflow—from initial assessment through evidence validation and final revision—allows others to understand, reproduce, and critically assess the evaluation process.
 
 ## Key Takeaway
 
-This case study demonstrates that combining a structured evaluation framework with evidence-based human review produces transparent, consistent, and reproducible translation evaluations while maintaining methodological integrity.
+A structured evaluation framework combined with evidence-based Human-in-the-Loop (HITL) review enables more transparent, consistent, and reproducible assessments of AI-generated translations.
 
 ---
 
 # Skills Demonstrated
 
-This case study demonstrates practical experience in evaluating large language model (LLM) outputs using a structured, evidence-based methodology.
+This case study demonstrates the practical application of a structured AI evaluation methodology to a real-world machine translation task.
 
-## Evaluation Framework Application
+## AI Evaluation Framework Application
 
-- Applied the AI Evaluation Framework to a real-world translation task.
-- Used predefined evaluation criteria, scoring guidance, and decision rules.
-- Produced consistent and reproducible evaluation reports.
+- Applied a structured AI Evaluation Framework to assess LLM-generated translations.
+- Used predefined rubrics, scoring guidance, and decision rules to ensure consistent and reproducible evaluations.
+- Produced evidence-based evaluation reports aligned with the framework.
 
 ## Comparative LLM Evaluation
 
-- Compared translation outputs from multiple LLMs.
-- Identified qualitative differences despite similar overall performance.
-- Applied evidence-based ranking using primary and secondary evaluation criteria.
+- Performed comparative evaluation of multiple LLMs on the same translation task.
+- Identified qualitative differences using primary and secondary evaluation criteria.
+- Applied structured decision rules to determine the final ranking.
 
-## Translation Quality Assessment
+## Translation Evaluation
 
-- Evaluated meaning preservation, accuracy, and stylistic fidelity.
-- Assessed Modern Standard Arabic quality and fluency.
-- Analyzed terminology consistency and instruction following.
+- Evaluated meaning preservation, accuracy, stylistic fidelity, terminology, and Modern Standard Arabic quality.
+- Distinguished objective translation quality from stylistic preference.
+- Assessed compliance with prompt requirements.
 
 ## Human-in-the-Loop (HITL) Evaluation
 
-- Conducted an independent review of an AI-generated evaluation.
+- Integrated independent human review into the evaluation workflow.
 - Validated reviewer observations against textual evidence and predefined rubrics.
-- Incorporated only supported revisions into the final evaluation.
+- Incorporated only evidence-supported revisions into the final assessment.
 
-## Analytical Reasoning
+## Evidence-Based Analysis
 
-- Distinguished objective findings from stylistic preferences.
-- Justified score adjustments using observable textual evidence.
-- Maintained consistency between qualitative analysis and quantitative scoring.
+- Supported evaluation findings with observable textual evidence.
+- Maintained consistency between qualitative analysis, quantitative scores, and final conclusions.
+- Applied transparent reasoning throughout the evaluation process.
 
 ## Technical Documentation
 
-- Produced a structured Markdown case study suitable for GitHub.
-- Documented the complete evaluation workflow from initial assessment to final conclusions.
-- Presented methodology, evidence, revisions, and findings in a transparent and reproducible format.
+- Produced a structured Markdown case study suitable for technical documentation and GitHub portfolios.
+- Documented the complete evaluation workflow to support transparency and reproducibility.
 
 ---
 
 # Study Limitations
 
-This case study provides a structured comparison of three large language models on a single English-to-Arabic healthcare translation task. While the evaluation follows a consistent methodology, the findings should be interpreted within the scope of the study.
+This case study presents an evidence-based comparison of three large language models on a single English-to-Arabic healthcare translation task. Although the evaluation follows a structured and reproducible methodology, the findings are specific to the evaluated prompt, source text, and model versions, and should not be generalized without additional evidence.
 
 ## Evaluation Scope
 
@@ -748,6 +667,14 @@ Future case studies may extend this work by:
 - Using larger benchmark datasets.
 - Measuring inter-rater agreement across multiple human reviewers.
 - Investigating the impact of different prompting strategies on translation quality.
+
+---
+
+# Overall Conclusion
+
+This case study demonstrates the value of combining a structured AI evaluation framework with evidence-based Human-in-the-Loop (HITL) review to assess machine translation quality. Although all three models produced accurate, publication-quality Modern Standard Arabic translations, the evaluation shows that stylistic fidelity, vocabulary selection, and consistency with the source text's register become the primary differentiators once meaning preservation and accuracy are satisfied.
+
+The Human Expert Review strengthened the supporting evidence and improved the consistency between qualitative analysis and assigned scores while preserving the original methodology, decision rules, and overall ranking. This illustrates how structured human review can enhance the transparency and reliability of AI-assisted evaluations without altering their methodological integrity.
 
 ---
 

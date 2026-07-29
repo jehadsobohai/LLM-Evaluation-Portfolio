@@ -16,6 +16,35 @@ This case study documents the complete evaluation process, including the initial
 
 ---
 
+## Executive Summary
+
+This case study compares the English-to-Arabic translation capabilities of ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), and Claude (Sonnet 5 Thinking) using the AI Evaluation Framework.
+
+An initial AI-generated evaluation was conducted using structured translation and Arabic language rubrics. The evaluation was then independently reviewed by a human expert in Modern Standard Arabic, and supported observations were incorporated into a revised evaluation through an evidence-based human-in-the-loop (HITL) workflow.
+
+All three models produced accurate, publication-quality translations. The final evaluation ranked ChatGPT first for its strong balance of meaning preservation, stylistic fidelity, and natural Modern Standard Arabic, followed by Claude and Google Gemini.
+
+---
+
+## Table of Contents
+
+- [Project Information](#project-information)
+- [Evaluation Objective](#evaluation-objective)
+- [Prompt](#prompt)
+- [Model Responses](#model-responses)
+- [Evaluation Criteria](#evaluation-criteria)
+- [Evaluation Methodology](#evaluation-methodology)
+- [Initial Evaluation](#initial-evaluation)
+- [Human Expert Review](#human-expert-review)
+- [Revised Evaluation](#revised-evaluation)
+- [Key Changes After Human Review](#key-changes-after-human-review)
+- [Lessons Learned](#lessons-learned)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Study Limitations](#study-limitations)
+- [References](#references)
+
+---
+
 ## Project Information
 
 **Project Type:** Comparative LLM Evaluation Case Study

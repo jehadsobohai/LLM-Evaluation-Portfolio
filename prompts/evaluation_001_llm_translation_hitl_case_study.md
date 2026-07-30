@@ -172,7 +172,7 @@ The evaluation was conducted in four phases.
 
 A custom GPT implementing the AI Evaluation Framework generated the initial evaluation. The assessment applied the Translation Rubric, Arabic Language Rubric, standard scoring guide, and predefined decision rules to produce a structured evaluation report.
 
-### Phase 2 – Human Expert Review
+### Phase 2 – Human Linguistic Analysis
 
 An independent reviewer with expertise in Modern Standard Arabic examined the initial evaluation. The review focused on:
 
@@ -199,6 +199,8 @@ Only observations supported by textual evidence and consistent with the evaluati
 ### Phase 4 – Revised Evaluation
 
 Supported observations were incorporated into a revised evaluation. The final report retained the original evaluation methodology, scoring guide, and decision rules while improving the supporting evidence, score consistency, and linguistic analysis.
+
+To reduce evaluator bias, each model response was evaluated independently before any comparison was performed. The subsequent Human-in-the-Loop (HITL) review independently reassessed the evaluation against the source text, model responses, and the AI Evaluation Framework. Only observations supported by direct textual evidence and consistent with the framework were incorporated into the final assessment.
 
 ### Evaluation Workflow
 

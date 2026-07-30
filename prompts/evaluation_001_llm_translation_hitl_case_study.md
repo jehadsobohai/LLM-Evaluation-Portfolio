@@ -372,9 +372,11 @@ The translation also successfully conveys that artificial intelligence is intend
 
 Claude produces a translation that combines many of the strengths of both ChatGPT and Gemini. Its sentence structure remains close to the source while maintaining natural, publication-quality Modern Standard Arabic, making it stylistically close to the reviewer's preferred rendering.
 
-Unlike ChatGPT, Claude avoids expanding the complement–replace relationship through the addition of *"أداةً"*. However, it introduces minor stylistic elaborations such as *"فهو قادر على"* and *"عملية"*, which slightly expand the source's wording without affecting its meaning.
+Unlike ChatGPT, Claude avoids expanding the complement–replace relationship through the addition of "أداةً". However, it introduces minor stylistic elaborations such as "فهو قادر على" and "عملية", which slightly expand the source's wording without affecting its meaning.
 
-Like Gemini, Claude also uses the stronger adjective *"هائلة"*, which slightly increases the emphasis compared with the source. Overall, Claude achieves a balanced translation that remains faithful to the source while incorporating only limited stylistic refinement.
+Like Gemini, Claude also uses the stronger adjective "هائلة", which slightly increases the emphasis compared with the source.
+
+The reviewer also noted that any claim that Claude's use of "اتخاذ القرار السريري" constitutes a terminology weakness is not linguistically supported. The English expression "clinical decision-making" is an uncountable process noun, and "اتخاذ القرار السريري" is a natural and idiomatic Modern Standard Arabic rendering of that general concept. Although "اتخاذ القرارات السريرية" is also acceptable, the singular formulation does not reduce fidelity to the source, alter the meaning, or constitute a terminology issue.
 
 ---
 

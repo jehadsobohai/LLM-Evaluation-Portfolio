@@ -4,13 +4,19 @@
 
 | Field | Value |
 |--------|-------|
+| **Project ID** | Evaluation 002 |
 | **Project Type** | LLM Evaluation Case Study |
-| **Evaluation Method** | COMET Neural Evaluation |
 | **Domain** | English–Arabic Machine Translation |
-| **Models Compared** | ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), Claude (Sonnet 5 Thinking) |
+| **Task** | Translation Quality Evaluation |
+| **Evaluation Method** | Hybrid (COMET + Human Evaluation) |
+| **Models Compared** | ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), Claude Sonnet 5 Thinking |
 | **Status** | Completed |
 | **Version** | 1.0 |
 | **Date** | July 2026 |
+
+> **Project Standard**
+
+This evaluation follows the **LLM Evaluation Project Standard (LEPS) v1.0**, ensuring a standardized project structure, evaluation workflow, evidence-based scoring, transparent reporting, and reproducible methodology.
 
 ---
 
@@ -22,19 +28,22 @@
 4. [What is COMET?](#what-is-comet)
 5. [Why COMET?](#why-comet)
 6. [Evaluation Scope](#evaluation-scope)
-7. [Source Text](#source-text)
-8. [Reference Translation](#reference-translation)
-9. [Candidate Translations](#candidate-translations)
-10. [Model Responses](#model-responses)
-11. [COMET Evaluation Methodology](#comet-evaluation-methodology)
-12. [Installing COMET](#installing-comet)
-13. [Running COMET](#running-comet)
-14. [COMET Results](#comet-results)
-15. [Comparison with Human Evaluation](#comparison-with-human-evaluation)
-16. [Discussion](#discussion)
-17. [Limitations](#limitations)
-18. [Conclusion](#conclusion)
-19. [References](#references)
+7. [Evaluation Workflow](#evaluation-workflow)
+8. [Evaluation Criteria](#evaluation-criteria)
+9. [Evaluation Assets](#evaluation-assets)
+10. [Source Text](#source-text)
+11. [Reference Translation](#reference-translation)
+12. [Candidate Translations](#candidate-translations)
+13. [Model Responses](#model-responses)
+14. [COMET Evaluation Methodology](#comet-evaluation-methodology)
+15. [Installing COMET](#installing-comet)
+16. [Running COMET](#running-comet)
+17. [COMET Results](#comet-results)
+18. [Comparison with Human Evaluation](#comparison-with-human-evaluation)
+19. [Discussion](#discussion)
+20. [Limitations](#limitations)
+21. [Conclusion](#conclusion)
+22. [References](#references)
 
 ---
 
@@ -150,6 +159,56 @@ The study aims to:
 - Identify strengths and limitations of automatic translation evaluation.
 
 The evaluation does not attempt to benchmark overall translation capability across multiple domains. Instead, it serves as a practical demonstration of combining automatic and human evaluation methodologies for LLM-generated translations.
+
+---
+
+## Evaluation Workflow
+
+This evaluation follows the workflow defined in the **LLM Evaluation Project Standard (LEPS) v1.0**.
+
+1. Define the evaluation objective.
+2. Select the source text.
+3. Create a professional reference translation.
+4. Generate translations using the selected Large Language Models.
+5. Perform automatic evaluation using COMET.
+6. Compare automatic evaluation with expert human evaluation.
+7. Analyze the results.
+8. Document the findings, limitations, and conclusions.
+
+---
+
+## Evaluation Criteria
+
+This project combines automatic and expert human evaluation.
+
+### Automatic Evaluation
+
+- Semantic Similarity (COMET)
+
+### Human Evaluation
+
+- Accuracy
+- Faithfulness
+- Fluency
+- Terminology
+- Style
+- Overall Quality
+
+---
+
+## Evaluation Assets
+
+The evaluation was conducted using the following assets:
+
+| Asset | Description |
+|--------|-------------|
+| Source Text | Original English healthcare paragraph |
+| Reference Translation | Professional Modern Standard Arabic translation |
+| ChatGPT Translation | GPT-5.5 generated translation |
+| Gemini Translation | Gemini 3.6 Flash generated translation |
+| Claude Translation | Claude Sonnet 5 Thinking generated translation |
+| Automatic Evaluation | COMET (wmt22-comet-da) |
+| Human Evaluation | Expert linguistic assessment |
 
 ---
 
@@ -323,7 +382,7 @@ Because all candidate translations were generated from the same source text, the
 
 ---
 
-## COMET Results
+## Automatic Evaluation Results
 
 The COMET evaluation was performed using the **wmt22-comet-da** model. Each candidate translation was compared against the professional Arabic reference translation.
 
@@ -393,6 +452,17 @@ Overall, the human evaluation and COMET results demonstrate strong agreement, wi
 
 ---
 
+## Results Summary
+
+The automatic evaluation produced the following key findings:
+
+- All three models achieved COMET scores greater than **0.90**, indicating excellent semantic similarity to the professional reference translation.
+- ChatGPT achieved the highest COMET score (**0.9165**).
+- Gemini and Claude produced similarly high-quality translations, with only minor score differences.
+- The comparison between automatic and expert human evaluation showed strong agreement regarding overall translation quality, while minor ranking differences reflected stylistic preferences rather than semantic accuracy.
+
+---
+
 ## Discussion
 
 The findings illustrate both the strengths and limitations of automatic translation evaluation.
@@ -458,6 +528,47 @@ The COMET evaluation confirmed these findings by assigning high scores to all th
 The comparison between human evaluation and COMET demonstrates that the two approaches are complementary. COMET provides an objective, reproducible measure of semantic similarity, while human evaluation captures stylistic quality, register, fluency, and linguistic nuance that remain difficult to quantify automatically.
 
 Overall, the results indicate that modern Large Language Models are capable of producing high-quality English-to-Arabic translations suitable for many professional applications. At the same time, the study highlights the continued importance of expert human evaluation when assessing translation quality beyond semantic accuracy alone.
+
+---
+
+## Lessons Learned
+
+This case study demonstrates several important insights into LLM translation evaluation:
+
+- COMET provides a reliable and reproducible measure of semantic translation quality.
+- Automatic evaluation and expert human assessment are complementary rather than interchangeable.
+- Minor differences in COMET scores may reflect stylistic variation instead of meaningful differences in translation quality.
+- Combining neural evaluation metrics with expert linguistic review produces a more comprehensive assessment of LLM-generated translations.
+- A standardized evaluation methodology improves transparency, reproducibility, and comparability across evaluation projects.
+
+---
+
+## Future Work
+
+Future work may extend this evaluation by:
+
+- Evaluating larger and more diverse translation datasets.
+- Comparing additional automatic evaluation metrics such as BLEU, chrF, MetricX, and BERTScore.
+- Including multiple independent human reviewers to measure inter-rater agreement.
+- Expanding the evaluation to additional language pairs and specialized domains.
+- Investigating the relationship between automatic evaluation metrics and human preferences across different translation styles.
+
+---
+
+## LEPS Compliance
+
+This evaluation complies with the **LLM Evaluation Project Standard (LEPS) v1.0** by incorporating:
+
+- Standardized project metadata
+- Consistent evaluation workflow
+- Clearly defined evaluation criteria
+- Evidence-based scoring and justification
+- Automatic and human evaluation
+- Transparent reporting
+- Documented limitations
+- Reproducible evaluation methodology
+
+The project demonstrates the application of LEPS to a hybrid evaluation combining neural automatic evaluation (COMET) with expert human linguistic assessment.
 
 ---
 

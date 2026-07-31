@@ -7,7 +7,7 @@
 | **Project Type** | LLM Evaluation Case Study |
 | **Evaluation Method** | COMET Neural Evaluation |
 | **Domain** | English–Arabic Machine Translation |
-| **Models Compared** | ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), Claude Sonnet 5 Thinking |
+| **Models Compared** | ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), Claude (Sonnet 5 Thinking) |
 | **Status** | Completed |
 | **Version** | 1.0 |
 | **Date** | July 2026 |

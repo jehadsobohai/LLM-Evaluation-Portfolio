@@ -194,4 +194,90 @@ Comparative evaluation of Modern Standard Arabic responses using a structured li
 
 **Case Study**
 
-👉 [View Case Study](./prompts/arabic_llm_evaluation_
+👉 [View Case Study](./prompts/arabic_llm_evaluation_01.md)
+
+---
+
+## 📄 Medical Prompt Engineering Case Study 01 – Patient Education
+
+### Focus
+
+Designing and refining prompts for patient education.
+
+### Highlights
+
+- Prompt engineering
+- Medical communication
+- Prompt refinement
+- Safety considerations
+- Usability improvement
+
+**Case Study**
+
+👉 [View Case Study](./prompts/medical_prompt_01.md)
+
+---
+
+# Evaluation Principles
+
+Projects in this repository follow consistent evaluation practices, including:
+
+- Clearly defined evaluation objectives
+- Structured evaluation rubrics
+- Evidence-based scoring
+- Comparative model analysis
+- Human-in-the-Loop (HITL) validation
+- Automatic evaluation using neural metrics (e.g., COMET)
+- Linguistic quality assessment
+- Cultural and dialect evaluation
+- Transparent documentation
+- Reproducible evaluation workflows
+- Discussion of study limitations
+
+---
+
+# Repository Structure
+
+Each project typically includes:
+
+- Project overview
+- Evaluation objective
+- Evaluation scope
+- Prompt or evaluation task
+- Source text (where applicable)
+- Reference output (where applicable)
+- Model responses
+- Evaluation methodology
+- Human evaluation (where applicable)
+- Automatic evaluation (where applicable)
+- Evaluation rubric
+- Evidence-based analysis
+- Comparative findings
+- Discussion
+- Limitations
+- Conclusion
+- References
+
+---
+
+# About Me
+
+I am a Medical Doctor with a strong interest in Large Language Model evaluation, Arabic language quality assessment, prompt engineering, and AI quality assurance.
+
+My work focuses on developing transparent, reproducible evaluation methodologies that combine structured rubrics, evidence-based reasoning, Human-in-the-Loop (HITL) validation, and automatic evaluation metrics such as COMET to assess LLM performance across multiple tasks and domains.
+
+**LinkedIn:** https://www.linkedin.com/in/jehad-soboh-065469204
+
+---
+
+# Contributing
+
+Feedback, suggestions, and discussions about evaluation methodology are always welcome.
+
+As this portfolio evolves, additional case studies, benchmarking projects, automated evaluation frameworks, and domain-specific LLM evaluations will continue to be added.
+
+---
+
+# License
+
+This project is licensed under the MIT License.

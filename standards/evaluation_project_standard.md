@@ -43,17 +43,17 @@ This standard applies to all evaluation projects published in the LLM Evaluation
 
 ## Table of Contents
 
-1. Purpose
-2. Scope
-3. Project Information Standard
-4. Project Structure Standard
-5. Evaluation Workflow
-6. Evaluation Criteria
-7. Scoring System
-8. Evidence and Justification
-9. Reporting Standard
-10. Compliance Checklist
-11. Version History
+1. [Purpose](#purpose)
+2. [Scope](#scope)
+3. [Standard Project Information](#standard-project-information)
+4. [Standard Project Structure](#standard-project-structure)
+5. [Standard Evaluation Workflow](#standard-evaluation-workflow)
+6. [Standard Evaluation Criteria](#standard-evaluation-criteria)
+7. [Standard Scoring System](#standard-scoring-system)
+8. [Standard Evidence and Justification](#standard-evidence-and-justification)
+9. [Standard Reporting](#standard-reporting)
+10. [Project Compliance Checklist](#project-compliance-checklist)
+11. [Version History](#version-history)
 
 ---
 

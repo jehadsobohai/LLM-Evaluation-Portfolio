@@ -2,19 +2,30 @@
 
 Welcome to my LLM Evaluation Portfolio.
 
-This repository showcases practical case studies focused on evaluating Large Language Models (LLMs) using structured, transparent, and evidence-based methodologies. It demonstrates my approach to prompt engineering, AI response evaluation, translation quality assessment, linguistic evaluation, and technical documentation through reproducible evaluation workflows.
+This repository showcases practical case studies focused on evaluating Large Language Models (LLMs) using structured, transparent, and evidence-based methodologies.
 
-Each case study follows a consistent evaluation process, including clearly defined objectives, structured rubrics, evidence-based scoring, transparent decision-making, and documented limitations.
+The portfolio demonstrates practical experience in:
+
+- Automatic LLM evaluation using neural metrics (e.g., COMET)
+- Human-in-the-Loop (HITL) evaluation
+- Prompt engineering
+- Translation quality assessment
+- Arabic linguistic evaluation
+- Comparative model analysis
+- AI quality assurance
+- Technical documentation
+
+Each project follows a reproducible evaluation workflow with clearly defined objectives, structured rubrics, evidence-based analysis, transparent decision-making, and documented limitations.
 
 > **New to this portfolio?**
 >
-> If you're interested in **translation evaluation**, start with **[Human-in-the-Loop English–Arabic LLM Translation Evaluation Case Study](./prompts/evaluation_001_llm_translation_hitl_case_study.md)**, which demonstrates a complete Human-in-the-Loop (HITL) evaluation workflow from initial assessment through expert review and evidence-based revision.
+> 🚀 **Start here:** **[Evaluation 002 – COMET-Based Evaluation of English–Arabic LLM Translation Quality](./prompts/evaluation_002_comet_translation_evaluation_case_study.md)** to explore a complete end-to-end workflow for automatic translation evaluation using the COMET neural metric, including reproducible benchmarking and comparison with expert human assessment.
 >
-> If you're interested in **Arabic conversational evaluation**, see **[Egyptian Arabic LLM Evaluation Case Study 01 – Conversational Support](./prompts/egyptian-arabic-llm-evaluation-case-study-01-conversational-support.md)** for a comprehensive example of structured LLM response evaluation.
+> 📖 **Next:** **[Evaluation 001 – Human-in-the-Loop English–Arabic LLM Translation Evaluation](./prompts/evaluation_001_llm_translation_hitl_case_study.md)** to see a structured expert-driven evaluation workflow featuring linguistic analysis, evidence-based scoring, and Human-in-the-Loop (HITL) validation.
 
 ---
 
-## Table of Contents
+# Table of Contents
 
 - [About This Repository](#about-this-repository)
 - [Repository Goals](#repository-goals)
@@ -28,94 +39,131 @@ Each case study follows a consistent evaluation process, including clearly defin
 
 ---
 
-## About This Repository
+# About This Repository
 
-The purpose of this portfolio is to demonstrate practical skills in evaluating LLM outputs using structured, reproducible, and evidence-based methodologies.
+The purpose of this portfolio is to demonstrate practical skills in evaluating Large Language Models using structured, reproducible, and evidence-based methodologies.
 
 Each case study includes:
 
 - Clearly defined evaluation objectives
-- Original prompts or tasks
+- Original prompts or evaluation tasks
+- Source material (where applicable)
 - Model responses
-- Structured evaluation criteria and rubrics
+- Structured evaluation methodology
+- Evaluation criteria and rubrics
 - Evidence-based scoring and justification
-- Transparent evaluation methodology
-- Human review (where applicable)
+- Comparative model analysis
+- Human evaluation (where applicable)
+- Automatic evaluation (where applicable)
 - Study limitations
-- Key findings and lessons learned
+- Key findings
+- Technical documentation
+
+The portfolio combines qualitative and quantitative evaluation approaches to demonstrate practical LLM evaluation workflows suitable for research, benchmarking, and AI quality assurance.
 
 ---
 
-## Repository Goals
+# Repository Goals
 
 This portfolio aims to:
 
 - Demonstrate practical LLM evaluation skills through real-world case studies.
 - Showcase structured, transparent, and reproducible evaluation methodologies.
-- Document evidence-based comparative analyses of LLM outputs.
-- Apply Human-in-the-Loop (HITL) evaluation to improve assessment quality.
-- Build a growing collection of evaluation case studies across multiple domains.
+- Compare multiple Large Language Models using evidence-based analysis.
+- Demonstrate Human-in-the-Loop (HITL) evaluation methodologies.
+- Demonstrate automatic evaluation using neural metrics such as COMET.
+- Document reproducible evaluation workflows.
+- Build a growing collection of LLM evaluation case studies across multiple domains.
 
 ---
 
-## Current Areas of Focus
+# Current Areas of Focus
 
-The current case studies demonstrate practical experience in:
+Current projects demonstrate practical experience in:
 
-- Prompt Engineering
 - LLM Evaluation
-- AI Response Evaluation
-- Translation Quality Evaluation
-- Modern Standard Arabic (MSA) Evaluation
-- Egyptian Arabic Evaluation
+- Automatic Translation Evaluation
+- COMET Evaluation
 - Human-in-the-Loop (HITL) Evaluation
 - Comparative Model Analysis
+- Prompt Engineering
+- AI Response Evaluation
+- Translation Quality Evaluation
+- Arabic Linguistic Evaluation
+- Modern Standard Arabic (MSA)
+- Egyptian Arabic
 - Medical Prompt Engineering
-- Linguistic Quality Assessment
+- AI Quality Assurance
 - Technical Documentation
 
-As the portfolio grows, additional case studies may cover:
+Future projects may explore:
 
 - Medical AI Evaluation
 - AI Safety Evaluation
 - Hallucination Detection
 - Reasoning Evaluation
 - Benchmark Development
+- Agent Evaluation
+- Evaluation Automation
 - Software Quality Assurance
-- Automated Evaluation Frameworks
 
 ---
 
-## Projects
+# Projects
 
-### 📄 Human-in-the-Loop English–Arabic LLM Translation Evaluation Case Study
+## 📄 Evaluation 002 – COMET-Based Evaluation of English–Arabic LLM Translation Quality ⭐ Featured
 
-**Focus**
+### Focus
+
+Automatic evaluation of English-to-Arabic translations generated by multiple Large Language Models using the COMET neural evaluation metric, with comparison against expert human linguistic assessment.
+
+### Highlights
+
+- ChatGPT (GPT-5.5)
+- Gemini 3.6 Flash
+- Claude Sonnet 5 Thinking
+- COMET automatic evaluation
+- Human vs Automatic Evaluation
+- Translation benchmarking
+- Reproducible evaluation workflow
+- Comparative model analysis
+
+**Case Study**
+
+👉 [View Evaluation 002](./prompts/evaluation_002_comet_translation_evaluation_case_study.md)
+
+---
+
+## 📄 Evaluation 001 – Human-in-the-Loop English–Arabic LLM Translation Evaluation
+
+### Focus
 
 Comparative evaluation of English-to-Arabic healthcare translations using a structured Human-in-the-Loop (HITL) evaluation methodology.
 
-**Highlights**
+### Highlights
 
-- ChatGPT (GPT-5.5) vs Google Gemini (3.6 Flash) vs Claude (Sonnet 5 Thinking)
+- ChatGPT (GPT-5.5)
+- Gemini 3.6 Flash
+- Claude Sonnet 5 Thinking
 - Translation quality assessment
-- Human linguistic review
+- Expert linguistic review
 - Evidence-based scoring
 - Transparent evaluation revision
 - Comparative model analysis
 
 **Case Study**
 
-[View Case Study](./prompts/evaluation_001_llm_translation_hitl_case_study.md)
+👉 [View Evaluation 001](./prompts/evaluation_001_llm_translation_hitl_case_study.md)
 
 ---
 
-### 📄 Egyptian Arabic LLM Evaluation Case Study 01 – Conversational Support
+## 📄 Egyptian Arabic LLM Evaluation Case Study 01 – Conversational Support
 
-**Focus**
+### Focus
 
 Comparative evaluation of conversational responses in Egyptian Arabic.
 
-**Highlights**
+### Highlights
 
 - Instruction following
 - Helpfulness
@@ -126,103 +174,24 @@ Comparative evaluation of conversational responses in Egyptian Arabic.
 
 **Case Study**
 
-[View Case Study](./prompts/egyptian-arabic-llm-evaluation-case-study-01-conversational-support.md)
+👉 [View Case Study](./prompts/egyptian-arabic-llm-evaluation-case-study-01-conversational-support.md)
 
 ---
 
-### 📄 Modern Standard Arabic LLM Evaluation Case Study 01
+## 📄 Modern Standard Arabic LLM Evaluation Case Study 01
 
-**Focus**
+### Focus
 
-Comparative evaluation of Modern Standard Arabic (MSA) responses using a structured linguistic evaluation framework.
+Comparative evaluation of Modern Standard Arabic responses using a structured linguistic evaluation framework.
 
-**Highlights**
+### Highlights
 
-- ChatGPT vs Google Gemini
-- Grammar and fluency assessment
+- ChatGPT vs Gemini
+- Grammar assessment
+- Fluency evaluation
 - Instruction following
-- Clarity evaluation
 - Overall linguistic quality
 
 **Case Study**
 
-[View Case Study](./prompts/arabic_llm_evaluation_01.md)
-
----
-
-### 📄 Medical Prompt Engineering Case Study 01 – Patient Education
-
-**Focus**
-
-Designing and refining prompts for patient education.
-
-**Highlights**
-
-- Prompt engineering
-- Medical communication
-- Prompt refinement
-- Clarity and usability
-- Safety considerations
-
-**Case Study**
-
-[View Case Study](./prompts/medical_prompt_01.md)
-
----
-
-## Evaluation Principles
-
-Projects in this repository follow consistent evaluation practices, including:
-
-- Structured evaluation rubrics
-- Comparative model analysis
-- Evidence-based scoring
-- Human-in-the-Loop (HITL) validation
-- Linguistic quality assessment
-- Cultural and dialect evaluation
-- Transparent documentation of methodology
-- Discussion of study limitations
-- Reproducible evaluation workflows
-
----
-
-## Repository Structure
-
-Each project is documented independently and typically contains:
-
-- Evaluation objective
-- Evaluation scope
-- Prompt or task
-- Source text (where applicable)
-- Model responses
-- Evaluation methodology
-- Evaluation criteria and rubric
-- Evidence-based scoring
-- Comparative analysis
-- Human review (where applicable)
-- Conclusions
-- Lessons learned
-- Study limitations
-- References
-
----
-
-## About Me
-
-I am a Medical Doctor with a strong interest in Large Language Model (LLM) evaluation, Arabic language quality assessment, prompt engineering, and AI quality assurance.
-
-My work focuses on developing transparent, reproducible evaluation methodologies that combine structured rubrics, evidence-based reasoning, and Human-in-the-Loop (HITL) validation to assess LLM performance across different tasks and domains.
-
-**LinkedIn:** [Jehad Soboh](https://www.linkedin.com/in/jehad-soboh-065469204)
-
----
-
-## Contributing
-
-Feedback and suggestions on the evaluation methodology are welcome. As this portfolio evolves, additional case studies, evaluation frameworks, and benchmarking projects will continue to be added.
-
----
-
-## License
-
-This project is licensed under the MIT License.
+👉 [View Case Study](./prompts/arabic_llm_evaluation_

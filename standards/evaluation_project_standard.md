@@ -5,3 +5,412 @@
 This document defines the standard structure, metadata, workflow, and reporting format used across all evaluation projects in the LLM Evaluation Portfolio.
 
 Following a consistent standard ensures that evaluations are transparent, reproducible, and comparable across different tasks, domains, and evaluation methodologies.
+
+---
+
+## Scope
+
+This standard applies to all evaluation projects published in the LLM Evaluation Portfolio, including but not limited to:
+
+- Human Evaluation
+- Automatic Evaluation
+- Hybrid Evaluation
+- Translation Evaluation
+- Medical LLM Evaluation
+- Prompt Evaluation
+- RAG Evaluation
+- Safety Evaluation
+- Benchmark Evaluation
+
+---
+
+# LLM Evaluation Project Standard
+
+## Document Information
+
+| Field | Value |
+|--------|-------|
+| **Document ID** | LLM-EPS-001 |
+| **Title** | LLM Evaluation Project Standard |
+| **Version** | 1.0 |
+| **Status** | Active |
+| **Owner** | Jehad Soboh |
+| **Repository** | LLM Evaluation Portfolio |
+| **Effective Date** | August 2026 |
+| **Last Updated** | August 2026 |
+
+---
+
+## Table of Contents
+
+1. Purpose
+2. Scope
+3. Project Information Standard
+4. Project Structure Standard
+5. Evaluation Workflow
+6. Evaluation Criteria
+7. Scoring System
+8. Evidence and Justification
+9. Reporting Standard
+10. Compliance Checklist
+11. Version History
+
+---
+
+# Standard Project Information
+
+Every evaluation project must begin with the following metadata.
+
+## Template
+
+| Field | Description |
+|--------|-------------|
+| Project ID | Unique project identifier (e.g., Evaluation 001) |
+| Project Type | Type of project (e.g., LLM Evaluation Case Study) |
+| Domain | Evaluation domain (e.g., Machine Translation, Medical QA) |
+| Task | Specific evaluation task |
+| Evaluation Method | Human, Automatic, Hybrid, or Benchmark |
+| Models Compared | List of evaluated models |
+| Status | Draft, In Progress, or Completed |
+| Version | Current project version |
+| Date | Publication or completion date |
+
+### Example
+
+| Field | Value |
+|--------|-------|
+| Project ID | Evaluation 002 |
+| Project Type | LLM Evaluation Case Study |
+| Domain | English–Arabic Machine Translation |
+| Task | Translation Quality Evaluation |
+| Evaluation Method | Hybrid (COMET + Human Evaluation) |
+| Models Compared | ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), Claude Sonnet 5 Thinking |
+| Status | Completed |
+| Version | 1.0 |
+| Date | July 2026 |
+
+---
+
+# Standard Project Structure
+
+Every evaluation project should follow the same structure.
+
+1. Project Information
+2. Executive Summary
+3. Introduction
+4. Evaluation Objective
+5. Evaluation Scope
+6. Evaluation Methodology
+7. Evaluation Workflow
+8. Evaluation Criteria
+9. Source Data / Prompt
+10. Model Responses
+11. Evaluation Results
+12. Comparative Analysis
+13. Discussion
+14. Limitations
+15. Conclusion
+16. References
+
+---
+
+# Standard Evaluation Workflow
+
+Every evaluation project should follow the workflow below.
+
+```text
+1. Define the evaluation objective
+            ↓
+2. Design the evaluation task
+            ↓
+3. Prepare the source data or prompt
+            ↓
+4. Generate responses from the selected models
+            ↓
+5. Apply automatic evaluation (if applicable)
+            ↓
+6. Conduct human evaluation (if applicable)
+            ↓
+7. Analyze and compare the results
+            ↓
+8. Document findings and conclusions
+```
+
+## Workflow Principles
+
+- Clearly define the evaluation objective before testing.
+- Use the same prompt or input for all models.
+- Preserve model responses without modification.
+- Apply consistent evaluation criteria across all models.
+- Clearly distinguish automatic evaluation from human evaluation.
+- Document all observations, limitations, and conclusions.
+
+---
+
+# Standard Evaluation Criteria
+
+Evaluation criteria should be selected according to the project objectives. Not every project requires every criterion.
+
+## Core Evaluation Criteria
+
+| Criterion | Description |
+|-----------|-------------|
+| Accuracy | Correctness of the response. |
+| Instruction Following | Degree to which the model follows the prompt. |
+| Completeness | Extent to which the response addresses all required aspects. |
+| Clarity | Readability and ease of understanding. |
+| Fluency | Naturalness and grammatical quality of the language. |
+| Terminology | Appropriate and consistent use of domain-specific terms. |
+| Reasoning | Logical consistency and quality of the explanation. |
+| Safety | Absence of harmful, misleading, or unsafe content. |
+| Faithfulness | Consistency with the source material without unsupported additions. |
+| Overall Quality | Overall assessment considering all applicable criteria. |
+
+## Project-Specific Criteria
+
+Additional criteria may be introduced when required by the evaluation task.
+
+Examples include:
+
+- Cultural Appropriateness
+- Linguistic Fidelity
+- Stylistic Consistency
+- Hallucination Risk
+- Context Awareness
+- Retrieval Quality
+- Citation Accuracy
+
+---
+
+# Standard Scoring System
+
+A consistent scoring system should be used across evaluation projects whenever applicable.
+
+## Rating Scale
+
+| Score | Interpretation |
+|--------|----------------|
+| **5** | Excellent – Fully satisfies the evaluation criterion with no significant issues. |
+| **4** | Good – Minor issues that do not substantially affect overall quality. |
+| **3** | Acceptable – Meets the minimum requirements but has noticeable weaknesses. |
+| **2** | Poor – Significant issues affecting quality or usability. |
+| **1** | Very Poor – Fails to satisfy the evaluation criterion. |
+
+## Overall Score
+
+The overall score should reflect the combined assessment of all applicable evaluation criteria.
+
+When appropriate, projects may:
+
+- Assign equal weights to all criteria.
+- Use weighted scoring based on project objectives.
+- Clearly document the scoring methodology.
+
+## Example Score Table
+
+| Model | Accuracy | Completeness | Clarity | Overall |
+|--------|---------:|-------------:|---------:|--------:|
+| ChatGPT | 5 | 5 | 5 | 5.0 |
+| Gemini | 5 | 4 | 5 | 4.7 |
+| Claude | 4 | 5 | 5 | 4.7 |
+
+## Ranking
+
+Projects comparing multiple models should include a final ranking based on the evaluation results.
+
+Example:
+
+| Rank | Model |
+|------|-------|
+| 1 | ChatGPT |
+| 2 | Claude |
+| 3 | Gemini |
+
+---
+
+# Standard Evidence and Justification
+
+Evaluation scores should always be supported by objective evidence.
+
+## Principles
+
+- Every assigned score should include a clear justification.
+- Justifications should reference specific examples from the model response.
+- Distinguish between objective findings and subjective observations.
+- Avoid unsupported preferences or personal opinions.
+- When applicable, support conclusions with automatic evaluation metrics and expert human review.
+
+## Evidence Sources
+
+Evidence may include:
+
+- Source text or prompt
+- Model responses
+- Human evaluation
+- Automatic evaluation metrics (e.g., COMET)
+- Comparative analysis
+- Domain-specific references
+
+## Example
+
+**Criterion:** Terminology
+
+**Score:** 5/5
+
+**Justification:**
+
+The translation consistently uses appropriate Modern Standard Arabic medical terminology. Key concepts are translated accurately and remain faithful to the source text without introducing ambiguity.
+
+---
+
+**Criterion:** Faithfulness
+
+**Score:** 4/5
+
+**Justification:**
+
+The response preserves the meaning of the source text but includes a minor stylistic expansion that is not explicitly present in the original. This does not alter the intended meaning but slightly reduces fidelity.
+
+---
+
+## Transparency
+
+When uncertainty exists:
+
+- Explain why.
+- Document any assumptions.
+- Clearly identify evaluation limitations.
+
+---
+
+# Standard Reporting
+
+Every evaluation project should conclude with a standardized reporting structure to ensure consistency across the portfolio.
+
+## Required Sections
+
+### Results Summary
+
+Provide a concise summary of the evaluation findings.
+
+### Comparative Analysis
+
+Compare model performance using the selected evaluation criteria.
+
+Discuss:
+
+- Major strengths
+- Major weaknesses
+- Significant differences
+- Overall ranking
+
+### Discussion
+
+Interpret the evaluation results.
+
+Address questions such as:
+
+- Did the models satisfy the evaluation objective?
+- Were there meaningful differences between models?
+- Were automatic and human evaluations consistent?
+- What insights were obtained?
+
+### Limitations
+
+Clearly state any limitations affecting the evaluation.
+
+Examples:
+
+- Small sample size
+- Single prompt evaluation
+- Human reviewer bias
+- Domain-specific constraints
+- Metric limitations
+
+### Conclusion
+
+Summarize the overall findings without introducing new evidence.
+
+### Lessons Learned
+
+Document observations that may improve future evaluations.
+
+### Future Work
+
+Suggest possible improvements or extensions to the evaluation.
+
+---
+
+# Project Compliance Checklist
+
+Before publishing an evaluation project, verify that it complies with the LLM Evaluation Project Standard.
+
+## Project Metadata
+
+- [ ] Project Information is complete.
+- [ ] Version number is specified.
+- [ ] Project status is specified.
+- [ ] Evaluation method is identified.
+- [ ] Models are listed.
+
+---
+
+## Evaluation Design
+
+- [ ] Evaluation objective is clearly defined.
+- [ ] Evaluation scope is documented.
+- [ ] Evaluation workflow is described.
+- [ ] Evaluation criteria are specified.
+
+---
+
+## Evaluation Assets
+
+- [ ] Source prompt or input is included.
+- [ ] Reference data is provided (if applicable).
+- [ ] Model responses are documented.
+- [ ] Evaluation rubric is included.
+
+---
+
+## Evaluation Results
+
+- [ ] Scores are reported consistently.
+- [ ] Rankings are provided (if applicable).
+- [ ] Automatic evaluation results are included (if applicable).
+- [ ] Human evaluation results are included (if applicable).
+
+---
+
+## Evidence
+
+- [ ] Every score includes a justification.
+- [ ] Conclusions are supported by evidence.
+- [ ] Limitations are documented.
+- [ ] Assumptions are clearly stated.
+
+---
+
+## Reporting
+
+- [ ] Comparative analysis is included.
+- [ ] Discussion is included.
+- [ ] Conclusion is supported by findings.
+- [ ] Lessons learned are documented.
+- [ ] References are provided.
+
+---
+
+## Reproducibility
+
+- [ ] Evaluation methodology is documented.
+- [ ] Required files are included.
+- [ ] Evaluation process can be reproduced by another reviewer.
+
+---
+
+## Version History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.0 | August 2026 | Initial release of the LLM Evaluation Project Standard. |

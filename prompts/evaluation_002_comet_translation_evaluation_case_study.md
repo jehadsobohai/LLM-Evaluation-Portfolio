@@ -11,15 +11,16 @@
 7. [Source Text](#source-text)
 8. [Reference Translation](#reference-translation)
 9. [Candidate Translations](#candidate-translations)
-10. [COMET Evaluation Methodology](#comet-evaluation-methodology)
-11. [Installing COMET](#installing-comet)
-12. [Running COMET](#running-comet)
-13. [COMET Results](#comet-results)
-14. [Comparison with Human Evaluation](#comparison-with-human-evaluation)
-15. [Discussion](#discussion)
-16. [Limitations](#limitations)
-17. [Conclusion](#conclusion)
-18. [References](#references)
+10. [Model Responses](#model-responses)
+11. [COMET Evaluation Methodology](#comet-evaluation-methodology)
+12. [Installing COMET](#installing-comet)
+13. [Running COMET](#running-comet)
+14. [COMET Results](#comet-results)
+15. [Comparison with Human Evaluation](#comparison-with-human-evaluation)
+16. [Discussion](#discussion)
+17. [Limitations](#limitations)
+18. [Conclusion](#conclusion)
+19. [References](#references)
 
 ---
 
@@ -180,6 +181,38 @@ The generated translations were evaluated using both:
 
 1. Expert human linguistic assessment
 2. COMET automatic evaluation
+
+---
+
+## Model Responses
+
+The following translations were generated independently by each Large Language Model using the same English source text without additional prompts or post-editing.
+
+### ChatGPT (GPT-5.5)
+
+> *يُحدث الذكاء الاصطناعي تحولًا في قطاع الرعاية الصحية من خلال مساعدة الأطباء على تشخيص الأمراض بسرعة أكبر وبدقة أعلى. ويمكنه تحليل الصور الطبية، وتحديد الأنماط في بيانات المرضى، ودعم عملية اتخاذ القرارات السريرية. وعلى الرغم من الإمكانات الكبيرة التي يتمتع بها الذكاء الاصطناعي، فإنه ينبغي أن يكون أداةً مكملةً لعمل المتخصصين في الرعاية الصحية، لا بديلًا عنهم.
+
+*
+
+---
+
+### Gemini 3.6 Flash
+
+> *يقوم الذكاء الاصطناعي برسم ملامح جديدة للرعاية الصحية من خلال مساعدة الأطباء على تشخيص الأمراض بسرعة ودقة أكبر؛ حيث يمكنه تحليل الصور الطبية، والتعرف على الأنماط في بيانات المرضى، ودعم اتخاذ القرارات السريرية. ورغم ما يمتلكه الذكاء الاصطناعي من إمكانات هائلة، إلا أنه ينبغي أن يكون مكملًا لدور أخصائيي الرعاية الصحية لا بديلًا عنهم.
+
+*
+
+---
+
+### Claude Sonnet 5 Thinking
+
+> *يُحدِث الذكاء الاصطناعي تحوّلًا في مجال الرعاية الصحية من خلال مساعدة الأطباء على تشخيص الأمراض بسرعة ودقة أكبر. فهو قادر على تحليل الصور الطبية، والتعرّف على الأنماط في بيانات المرضى، ودعم عملية اتخاذ القرار السريري. ورغم ما يمتلكه الذكاء الاصطناعي من إمكانات هائلة، إلا أنه ينبغي أن يكون مكمّلًا لعمل المتخصصين في الرعاية الصحية لا بديلًا عنهم.
+
+*
+
+---
+
+Presenting the complete model outputs allows readers to perform their own qualitative comparison before reviewing the COMET scores and the expert human evaluation. This improves transparency and makes the evaluation methodology fully reproducible.
 
 ---
 

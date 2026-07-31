@@ -25,39 +25,45 @@ All three models produced accurate, publication-quality Modern Standard Arabic t
 
 ## Table of Contents
 
-- [Project Information](#project-information)
-- [Evaluation Objective](#evaluation-objective)
-- [Prompt](#prompt)
-- [Model Responses](#model-responses)
-- [Evaluation Criteria](#evaluation-criteria)
-- [Evaluation Methodology](#evaluation-methodology)
-- [Initial Evaluation](#initial-evaluation)
-- [Human Linguistic Analysis](#human-linguistic-analysis)
-- [Revised Evaluation](#revised-evaluation)
-- [Key Changes After Human Review](#key-changes-after-human-review)
-- [Lessons Learned](#lessons-learned)
-- [Skills Demonstrated](#skills-demonstrated)
-- [Study Limitations](#study-limitations)
-- [Overall Conclusion](#overall-conclusion)
-- [References](#references)
+1. [Project Information](#project-information)
+2. [Evaluation Objective](#evaluation-objective)
+3. [Evaluation Scope](#evaluation-scope)
+4. [Prompt](#prompt)
+5. [Model Responses](#model-responses)
+6. [Evaluation Criteria](#evaluation-criteria)
+7. [Evaluation Methodology](#evaluation-methodology)
+8. [Initial Evaluation](#initial-evaluation)
+9. [Human Linguistic Analysis](#human-linguistic-analysis)
+10. [Revised Evaluation](#revised-evaluation)
+11. [Key Changes After Human Review](#key-changes-after-human-review)
+12. [Lessons Learned](#lessons-learned)
+13. [Skills Demonstrated](#skills-demonstrated)
+14. [Study Limitations](#study-limitations)
+15. [Future Work](#future-work)
+16. [Overall Conclusion](#overall-conclusion)
+17. [References](#references)
+18. [Document Information](#document-information)
 
 ---
 
 ## Project Information
 
-| Item | Details |
-|------|---------|
-| **Project Type** | Comparative LLM Evaluation Case Study |
-| **Primary Domain** | Machine Translation |
-| **Secondary Domain** | Arabic Language Evaluation |
-| **Task** | English → Modern Standard Arabic (MSA) Translation |
+| Field | Value |
+|--------|-------|
+| **Project ID** | Evaluation 001 |
+| **Project Type** | LLM Evaluation Case Study |
+| **Domain** | English–Arabic Machine Translation |
+| **Task** | Translation Quality Evaluation |
+| **Evaluation Method** | Human-in-the-Loop (HITL) Evaluation |
 | **Models Compared** | ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), Claude (Sonnet 5 Thinking) |
 | **Evaluation Framework** | AI Evaluation Framework |
-| **Methodology** | Translation Rubric, Arabic Language Rubric, Standard 1–5 Scoring Guide, Human Linguistic Analysis , Evidence-Based Revision |
-| **Evaluation Workflow** | Initial Evaluation → Human Linguistic Analysis → Evidence Validation → Revised Evaluation |
 | **Status** | Completed |
 | **Version** | 1.1 |
 | **Date** | July 2026 |
+
+> **Project Standard**
+
+This evaluation follows the **LLM Evaluation Project Standard (LEPS) v1.0**, ensuring a standardized project structure, evaluation workflow, evidence-based scoring, transparent reporting, and reproducible methodology.
 
 ---
 
@@ -159,6 +165,38 @@ Each translation was assessed against the following criteria:
 Each criterion is scored on a **5-point scale**, where **5.0** represents excellent performance.
 
 The final ranking follows the AI Evaluation Framework's decision rules. **Meaning Preservation** and **Accuracy** are treated as the primary evaluation criteria. When multiple translations satisfy these criteria, the final preference is determined using secondary criteria, including Style & Tone, Terminology, Instruction Following, and overall translation quality.
+
+---
+
+## Evaluation Workflow
+
+This evaluation follows the workflow defined in the **LLM Evaluation Project Standard (LEPS) v1.0**.
+
+1. Define the evaluation objective.
+2. Prepare the source text and evaluation prompt.
+3. Generate translations using the selected LLMs.
+4. Perform the initial AI-generated evaluation.
+5. Conduct an independent Human Linguistic Analysis.
+6. Validate reviewer observations against the evaluation framework.
+7. Revise the evaluation using evidence-based findings.
+8. Document the final assessment, conclusions, and limitations.
+
+---
+
+## Evaluation Assets
+
+The evaluation was conducted using the following assets:
+
+| Asset | Description |
+|--------|-------------|
+| Source Text | Original English healthcare paragraph |
+| Evaluation Prompt | English-to-Arabic translation task |
+| ChatGPT Translation | GPT-5.5 generated translation |
+| Gemini Translation | Google Gemini 3.6 Flash generated translation |
+| Claude Translation | Claude Sonnet 5 Thinking generated translation |
+| AI Evaluation Framework | Translation and Arabic Language Rubrics |
+| Human Evaluation | Independent linguistic review |
+| Revised Evaluation | Evidence-based Human-in-the-Loop assessment |
 
 ---
 
@@ -731,6 +769,19 @@ Overall, **ChatGPT (GPT-5.5)** is the preferred translation because it best bala
 
 ---
 
+## Results Summary
+
+The Human-in-the-Loop (HITL) evaluation produced the following key findings:
+
+- All three models generated fluent, publication-quality Modern Standard Arabic translations.
+- All translations accurately preserved the source meaning and healthcare terminology.
+- ChatGPT achieved the strongest balance of meaning preservation, stylistic fidelity, and natural language quality.
+- Claude ranked a close second, differing mainly in stylistic register.
+- Gemini remained highly accurate but adopted a more literary style than the source text.
+- The human review confirmed the overall ranking while strengthening the supporting evidence and improving scoring consistency.
+
+---
+
 ## Key Changes After Human Review
 
 The Human Linguistic Analysis refined the initial AI-generated evaluation by strengthening the supporting evidence and improving consistency between qualitative observations and assigned scores.
@@ -867,6 +918,25 @@ Future case studies could extend this work by:
 
 ---
 
+## LEPS Compliance
+
+This evaluation complies with the **LLM Evaluation Project Standard (LEPS) v1.0** by incorporating:
+
+- Standardized project metadata
+- Clearly defined evaluation objectives and scope
+- Structured evaluation workflow
+- Transparent evaluation methodology
+- Evidence-based scoring and justification
+- Human-in-the-Loop (HITL) validation
+- Comparative model analysis
+- Comprehensive reporting
+- Documented limitations
+- Reproducible evaluation process
+
+The project demonstrates the application of LEPS to a structured Human-in-the-Loop evaluation of English–Arabic machine translation quality.
+
+---
+
 # Overall Conclusion
 
 This case study demonstrates the value of combining a structured AI evaluation framework with evidence-based Human-in-the-Loop (HITL) review for evaluating English–Arabic machine translation.
@@ -908,10 +978,13 @@ The following resources were used to conduct and document this evaluation.
 
 ## Document Information
 
-| Item | Value |
-|------|-------|
-| **Case Study** | English–Arabic Translation Evaluation 01 – Healthcare Translation |
+| Field | Value |
+|--------|-------|
+| **Project ID** | Evaluation 001 |
+| **Document Title** | Human-in-the-Loop English–Arabic LLM Translation Evaluation Case Study |
+| **Project Type** | LLM Evaluation Case Study |
+| **Evaluation Method** | Human-in-the-Loop (HITL) Evaluation |
 | **Version** | 1.1 |
-| **Status** | Final |
-| **Workflow** | Human-in-the-Loop (HITL) Evaluation |
+| **Status** | Completed |
 | **Last Updated** | July 2026 |
+| **Project Standard** | LEPS v1.0 |

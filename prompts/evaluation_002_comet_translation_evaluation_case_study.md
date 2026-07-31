@@ -1,5 +1,19 @@
 # Evaluation 002: COMET-Based Evaluation of English–Arabic LLM Translation Quality
 
+## Project Information
+
+| Field | Value |
+|--------|-------|
+| **Project Type** | LLM Evaluation Case Study |
+| **Evaluation Method** | COMET Neural Evaluation |
+| **Domain** | English–Arabic Machine Translation |
+| **Models Compared** | ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), Claude Sonnet 5 Thinking |
+| **Status** | Completed |
+| **Version** | 1.0 |
+| **Date** | July 2026 |
+
+---
+
 ## Table of Contents
 
 1. [Project Overview](#project-overview)

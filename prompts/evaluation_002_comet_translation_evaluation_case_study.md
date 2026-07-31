@@ -38,12 +38,16 @@ This evaluation follows the **LLM Evaluation Project Standard (LEPS) v1.0**, ens
 14. [COMET Evaluation Methodology](#comet-evaluation-methodology)
 15. [Installing COMET](#installing-comet)
 16. [Running COMET](#running-comet)
-17. [COMET Results](#comet-results)
+17. [Automatic Evaluation Results](#automatic-evaluation-results)
 18. [Comparison with Human Evaluation](#comparison-with-human-evaluation)
-19. [Discussion](#discussion)
-20. [Limitations](#limitations)
-21. [Conclusion](#conclusion)
-22. [References](#references)
+19. [Results Summary](#results-summary)
+20. [Discussion](#discussion)
+21. [Limitations](#limitations)
+22. [Conclusion](#conclusion)
+23. [Lessons Learned](#lessons-learned)
+24. [Future Work](#future-work)
+25. [LEPS Compliance](#leps-compliance)
+26. [References](#references)
 
 ---
 

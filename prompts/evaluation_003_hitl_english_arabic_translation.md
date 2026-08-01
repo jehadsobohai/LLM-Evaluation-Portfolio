@@ -1,4 +1,4 @@
-# Human-in-the-Loop English–Arabic LLM Translation Evaluation Case Study
+# Evaluation 003 – Human-in-the-Loop English–Arabic Translation Evaluation
 ---
 
 ## Case Study Overview

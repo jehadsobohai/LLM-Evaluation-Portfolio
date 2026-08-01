@@ -1,4 +1,4 @@
-# Evaluation 002: COMET-Based Evaluation of English–Arabic LLM Translation Quality
+# Evaluation 004 – COMET-Based English–Arabic Translation Evaluation
 
 ## Project Information
 

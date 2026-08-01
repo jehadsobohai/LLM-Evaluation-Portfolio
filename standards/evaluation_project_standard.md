@@ -413,3 +413,8 @@ A project is considered LEPS-compliant when it follows the required project stru
 | Version | Date | Description |
 |----------|------|-------------|
 | 1.0 | August 2026 | Initial release of the LLM Evaluation Project Standard. |
+
+---
+> | **Author** | Jehad Soboh |
+| **Copyright** | © 2026 Jehad Soboh |
+| **License** | MIT License |

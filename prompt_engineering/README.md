@@ -102,3 +102,11 @@ prompt_engineering/
 - 📘 **[LLM Evaluation Project Standard (LEPS)](../standards/evaluation_project_standard.md)**
 - 📂 **[Evaluation Projects](../prompts/README.md)**
 - 🏠 **[LLM Evaluation Portfolio](../README.md)**
+
+---
+
+# License
+
+Copyright © 2026 Jehad Soboh
+
+This project is licensed under the **MIT License**. See the **LICENSE** file for details.

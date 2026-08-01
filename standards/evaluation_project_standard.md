@@ -21,6 +21,22 @@ The standard defines project documentation requirements rather than prescribing 
 
 ---
 
+# Definitions
+
+For the purposes of this standard:
+
+**Evaluation Criterion** — A characteristic used to assess model performance.
+
+**Evaluation Method** — The procedure used to assess model outputs (e.g., human, automatic, hybrid).
+
+**Evidence** — Observable information supporting evaluation findings.
+
+**Project** — A documented AI evaluation conducted in accordance with LEPS.
+
+**Reproducibility** — The ability for another evaluator to repeat the evaluation using the documented methodology and obtain comparable findings.
+
+---
+
 # LLM Evaluation Project Standard
 
 ## Document Information
@@ -43,15 +59,17 @@ The standard defines project documentation requirements rather than prescribing 
 
 1. [Purpose](#purpose)
 2. [Scope](#scope)
-3. [Standard Project Information](#standard-project-information)
-4. [Standard Project Structure](#standard-project-structure)
-5. [Standard Evaluation Workflow](#standard-evaluation-workflow)
-6. [Standard Evaluation Criteria](#standard-evaluation-criteria)
-7. [Standard Scoring System](#standard-scoring-system)
-8. [Standard Evidence and Justification](#standard-evidence-and-justification)
-9. [Standard Reporting](#standard-reporting)
-10. [Project Compliance Checklist](#project-compliance-checklist)
-11. [Version History](#version-history)
+3. [Definitions](#definitions)
+4. [Standard Project Information](#standard-project-information)
+5. [Standard Project Structure](#standard-project-structure)
+6. [Standard Evaluation Workflow](#standard-evaluation-workflow)
+7. [Standard Evaluation Criteria](#standard-evaluation-criteria)
+8. [Standard Scoring System](#standard-scoring-system)
+9. [Scoring Calibration](#scoring-calibration)
+10. [Standard Evidence and Justification](#standard-evidence-and-justification)
+11. [Standard Reporting](#standard-reporting)
+12. [Project Compliance Checklist](#project-compliance-checklist)
+13. [Version History](#version-history)
 
 ---
 
@@ -145,6 +163,28 @@ Every evaluation project should follow the workflow below.
 - Clearly distinguish automatic evaluation from human evaluation.
 - Document all observations, limitations, and conclusions.
 
+## Human Evaluation
+
+When human evaluation is conducted:
+
+- Apply the same evaluation criteria across all models.
+- Evaluate responses independently whenever practical.
+- Document evaluator assumptions.
+- Support qualitative judgments with observable evidence.
+
+Projects involving multiple evaluators are encouraged to document any review or calibration procedures used to improve scoring consistency.
+
+## Reproducibility
+
+Projects should document sufficient information to enable another evaluator to reproduce the evaluation, including:
+
+- Evaluation prompts
+- Model versions (when available)
+- Evaluation methodology
+- Evaluation criteria
+- Scoring methodology
+- Supporting evaluation assets
+
 ---
 
 # Standard Evaluation Criteria
@@ -198,13 +238,26 @@ A consistent scoring system should be used across evaluation projects whenever a
 
 ## Overall Score
 
-The overall score should reflect the combined assessment of all applicable evaluation criteria.
+The overall score should summarize model performance across all applicable evaluation criteria.
 
-When appropriate, projects may:
+Projects should clearly document how the overall score is calculated.
 
-- Assign equal weights to all criteria.
-- Use weighted scoring based on project objectives.
-- Clearly document the scoring methodology.
+Acceptable approaches include:
+
+- Arithmetic mean (equal weighting)
+- Weighted mean
+- Criterion-specific aggregation
+- Benchmark-specific scoring methodologies
+
+When weighted scoring is used, the weighting scheme and rationale should be documented.
+
+### Example (Arithmetic Mean)
+
+Overall Score = (Accuracy + Completeness + Clarity) ÷ Number of Criteria
+
+Example:
+
+(5 + 4 + 5) ÷ 3 = 4.67
 
 ## Example Score Table
 
@@ -225,6 +278,24 @@ Example:
 | 1 | ChatGPT |
 | 2 | Claude |
 | 3 | Gemini |
+
+---
+
+# Scoring Calibration
+
+To improve consistency across evaluation projects, evaluators should calibrate their scoring before assigning final ratings.
+
+Calibration helps ensure that the same scoring standards are applied consistently across different models, projects, and evaluation sessions.
+
+## Recommended Practices
+
+- Define evaluation criteria before scoring begins.
+- Review representative examples for each score level when available.
+- Apply the same interpretation of the scoring scale to all evaluated models.
+- Avoid changing scoring standards during an evaluation.
+- Document any project-specific scoring rules or weighting schemes.
+
+Projects involving multiple evaluators should document the calibration process or any procedures used to improve scoring consistency.
 
 ---
 
@@ -295,6 +366,18 @@ Every evaluation project should conclude with a standardized reporting structure
 
 Provide a concise summary of the evaluation findings.
 
+### Confidence Statement
+
+Projects should briefly describe the confidence that can reasonably be placed in the evaluation findings.
+
+Confidence may be influenced by factors such as:
+
+- Sample size
+- Evaluation methodology
+- Human reviewer participation
+- Automatic evaluation metrics
+- Availability of supporting evidence
+
 ### Comparative Analysis
 
 Compare model performance using the selected evaluation criteria.
@@ -328,6 +411,12 @@ Examples:
 - Human reviewer bias
 - Domain-specific constraints
 - Metric limitations
+
+### Sample Size
+
+Projects based on a limited number of prompts, datasets, or evaluation instances should clearly state that their findings may not generalize beyond the evaluated samples.
+
+Such evaluations should be interpreted as exploratory unless supported by additional evidence.
 
 ### Conclusion
 
@@ -380,7 +469,8 @@ A project is considered LEPS-compliant when it follows the required project stru
 ## Evaluation Results
 
 - [ ] Scores are reported consistently.
-- [ ] Rankings are provided (if applicable).
+- [ ] Overall scoring methodology is documented.
+- [ ] Rankings are provided (when comparing multiple models).
 - [ ] Automatic evaluation results are included (if applicable).
 - [ ] Human evaluation results are included (if applicable).
 
@@ -413,11 +503,12 @@ A project is considered LEPS-compliant when it follows the required project stru
 
 ---
 
-## Version History
+# Version History
 
 | Version | Date | Description |
 |----------|------|-------------|
-| 1.0 | August 2026 | Initial release of the LLM Evaluation Project Standard. |
+| **1.1** | August 2026 | Added scoring calibration, explicit overall score calculation guidance, reproducibility recommendations, human evaluation guidance, confidence statements, terminology definitions, and enhanced compliance requirements. |
+| **1.0** | August 2026 | Initial release of the LLM Evaluation Project Standard. |
 
 ---
 > | **Author** | Jehad Soboh |

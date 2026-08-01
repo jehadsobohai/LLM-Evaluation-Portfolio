@@ -1,4 +1,4 @@
-# Arabic LLM Evaluation 01 – Modern Standard Arabic
+# Evaluation 001 – Modern Standard Arabic Educational Content Evaluation
 
 ---
 

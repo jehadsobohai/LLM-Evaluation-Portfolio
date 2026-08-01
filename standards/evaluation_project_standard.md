@@ -2,25 +2,17 @@
 
 ## Purpose
 
-This document defines the standard structure, metadata, workflow, and reporting format used across all evaluation projects in the LLM Evaluation Portfolio.
+The LLM Evaluation Project Standard (LEPS) establishes a consistent methodology for designing, conducting, documenting, and reporting evaluation projects within the LLM Evaluation Portfolio.
 
-Following a consistent standard ensures that evaluations are transparent, reproducible, and comparable across different tasks, domains, and evaluation methodologies.
+Its objective is to ensure that every project is transparent, reproducible, evidence-based, and directly comparable with other evaluations published in the portfolio.
 
 ---
 
 ## Scope
 
-This standard applies to all evaluation projects published in the LLM Evaluation Portfolio, including but not limited to:
+LEPS applies to all evaluation projects published in the LLM Evaluation Portfolio, including translation evaluation, prompt evaluation, conversational AI assessment, retrieval-augmented generation (RAG), reasoning evaluation, and future benchmarking studies.
 
-- Human Evaluation
-- Automatic Evaluation
-- Hybrid Evaluation
-- Translation Evaluation
-- Medical LLM Evaluation
-- Prompt Evaluation
-- RAG Evaluation
-- Safety Evaluation
-- Benchmark Evaluation
+The standard defines project documentation requirements rather than prescribing a specific evaluation metric or benchmark.
 
 ---
 
@@ -115,6 +107,8 @@ Every evaluation project should follow the same structure.
 ---
 
 # Standard Evaluation Workflow
+
+LEPS organizes every evaluation into a repeatable sequence of planning, execution, analysis, and reporting. Following the same workflow across all projects improves consistency, transparency, and reproducibility while making evaluation results easier to compare.
 
 Every evaluation project should follow the workflow below.
 
@@ -230,7 +224,9 @@ Example:
 
 # Standard Evidence and Justification
 
-Evaluation scores should always be supported by objective evidence.
+## Evidence and Justification
+
+Every conclusion presented in an evaluation should be supported by observable evidence. Quantitative scores should be accompanied by qualitative explanations, and any subjective observations should be clearly distinguished from objective findings.
 
 ## Principles
 
@@ -344,6 +340,8 @@ Suggest possible improvements or extensions to the evaluation.
 # Project Compliance Checklist
 
 Before publishing an evaluation project, verify that it complies with the LLM Evaluation Project Standard.
+
+A project is considered LEPS-compliant when it follows the required project structure, documents its evaluation methodology, applies transparent evaluation criteria, supports conclusions with evidence, and reports findings according to this standard.
 
 ## Project Metadata
 

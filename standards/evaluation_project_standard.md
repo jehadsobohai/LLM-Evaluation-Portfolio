@@ -1,3 +1,7 @@
+> | **Author** | Jehad Soboh |
+| **Copyright** | © 2026 Jehad Soboh |
+| **License** | MIT License |
+---
 # LLM Evaluation Project Standard
 
 ## Purpose

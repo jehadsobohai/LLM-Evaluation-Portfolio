@@ -22,11 +22,12 @@ The standard defines project documentation requirements rather than prescribing 
 
 | Field | Value |
 |--------|-------|
-| **Document ID** | LLM-EPS-001 |
+| **Document ID** | LEPS-001 |
 | **Title** | LLM Evaluation Project Standard |
+| **Abbreviation** | LEPS |
 | **Version** | 1.0 |
 | **Status** | Active |
-| **Owner** | Jehad Soboh |
+| **Author** | Jehad Soboh |
 | **Repository** | LLM Evaluation Portfolio |
 | **Effective Date** | August 2026 |
 | **Last Updated** | August 2026 |

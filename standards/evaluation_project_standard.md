@@ -2,9 +2,9 @@
 
 ## Purpose
 
-The LLM Evaluation Project Standard (LEPS) establishes a consistent methodology for designing, conducting, documenting, and reporting evaluation projects within the LLM Evaluation Portfolio.
+The **LLM Evaluation Project Standard (LEPS) v1.0** was developed by **Jehad Soboh** for the **LLM Evaluation Portfolio**.
 
-Its objective is to ensure that every project is transparent, reproducible, evidence-based, and directly comparable with other evaluations published in the portfolio.
+Its purpose is to establish a consistent methodology for planning, conducting, documenting, and reporting Large Language Model (LLM) evaluation projects. By standardizing project structure, evaluation workflows, evidence-based scoring, and reporting practices, LEPS aims to ensure that all portfolio projects are transparent, reproducible, and directly comparable.
 
 ---
 

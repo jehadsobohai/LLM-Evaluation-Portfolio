@@ -4,19 +4,42 @@
 
 ## Project Information
 
-**Project Type:** LLM Evaluation Case Study
+| Field | Value |
+|--------|-------|
+| **Project ID** | Evaluation 003 |
+| **Project Type** | LLM Evaluation Case Study |
+| **Domain** | Egyptian Arabic Conversational AI |
+| **Task** | Conversational Support Evaluation |
+| **Evaluation Method** | Human Evaluation |
+| **Models Compared** | ChatGPT (GPT-5.5), Google Gemini (3.6 Flash) |
+| **Status** | Completed |
+| **Version** | 1.1 |
+| **Date** | July 2026 |
 
-**Domain:** Egyptian Arabic Evaluation
+> **Project Standard**
 
-**Models Compared:**
-- ChatGPT (GPT-5.5)
-- Google Gemini (3.6 Flash)
+This evaluation follows the **LLM Evaluation Project Standard (LEPS) v1.0**, ensuring a standardized project structure, evaluation workflow, evidence-based scoring, transparent reporting, and reproducible methodology.
 
-**Status:** Completed
+---
 
-**Version:** 1.1
+## Table of Contents
 
-**Date:** July 2026
+1. [Project Information](#project-information)
+2. [Objective](#objective)
+3. [Evaluation Scope](#evaluation-scope)
+4. [Prompt](#prompt)
+5. [Model Responses](#model-responses)
+6. [Evaluation Criteria](#evaluation-criteria)
+7. [Evaluation Workflow](#evaluation-workflow)
+8. [Evaluation Methodology](#evaluation-methodology)
+9. [Evaluation](#evaluation)
+10. [Comparison Summary](#comparison-summary)
+11. [Overall Preference](#overall-preference)
+12. [Lessons Learned](#lessons-learned)
+13. [Skills Demonstrated](#skills-demonstrated)
+14. [Conclusion](#conclusion)
+15. [Study Limitations](#study-limitations)
+16. [References](#references)
 
 ---
 
@@ -25,6 +48,43 @@
 Evaluate and compare the ability of ChatGPT and Google Gemini to generate natural, supportive, and culturally appropriate conversational responses in Egyptian Arabic.
 
 The evaluation focuses on how well each model follows the prompt, produces authentic Egyptian Arabic, communicates empathy, and generates responses that resemble natural conversations between close friends.
+
+---
+
+## Evaluation Scope
+
+This evaluation examines the ability of Large Language Models to generate supportive conversational responses in Egyptian Arabic.
+
+The assessment focuses on a single conversational support task and compares model performance using a structured human evaluation framework. The evaluation emphasizes linguistic quality, instruction following, cultural appropriateness, empathy, and conversational naturalness within the context of informal Egyptian Arabic.
+
+---
+
+## Evaluation Workflow
+
+This evaluation follows the workflow defined in the **LLM Evaluation Project Standard (LEPS) v1.0**.
+
+1. Define the evaluation objective.
+2. Design the conversational prompt.
+3. Generate responses using the selected LLMs.
+4. Evaluate each response using predefined criteria.
+5. Compare model performance across all evaluation dimensions.
+6. Analyze strengths and weaknesses.
+7. Document findings, limitations, and conclusions.
+
+---
+
+## Evaluation Assets
+
+The evaluation was conducted using the following assets:
+
+| Asset | Description |
+|--------|-------------|
+| Prompt | Egyptian Arabic conversational support task |
+| ChatGPT Response | GPT-5.5 generated response |
+| Gemini Response | Google Gemini 3.6 Flash generated response |
+| Evaluation Rubric | Structured human evaluation criteria |
+| Human Evaluation | Native-speaker assessment |
+| Comparative Analysis | Criterion-by-criterion comparison of model responses |
 
 ---
 
@@ -282,6 +342,18 @@ The response effectively captures Egyptian conversational culture through famili
 
 ---
 
+## Results Summary
+
+The evaluation produced the following key findings:
+
+- Both ChatGPT and Google Gemini fully satisfied the prompt requirements and generated fluent, supportive responses in Egyptian Arabic.
+- ChatGPT demonstrated excellent instruction following, fluency, and dialect consistency.
+- Google Gemini produced a more conversational and emotionally engaging response, closely reflecting everyday Egyptian communication.
+- The evaluation identified meaningful qualitative differences in conversational naturalness, empathy, and tone despite both models achieving high overall performance.
+- For this specific conversational support task, Google Gemini was the preferred model based on overall conversational authenticity.
+
+---
+
 # Overall Preference
 
 ## Preferred Model
@@ -348,6 +420,36 @@ Model performance may also vary across prompts, domains, conversation contexts, 
 ## Model Selection
 
 This evaluation compares ChatGPT (GPT-5.5) with Google Gemini 3.6 Flash. The objective is to evaluate the models that were available and selected for this task rather than to compare equivalent performance tiers. Because flagship and lightweight models may differ in capability, future studies should compare models within similar tiers to improve experimental fairness.
+
+---
+
+## Future Work
+
+Future work may extend this evaluation by:
+
+- Evaluating additional conversational scenarios in Egyptian Arabic.
+- Including multiple independent native-speaker evaluators to measure inter-rater agreement.
+- Comparing additional Large Language Models across equivalent capability tiers.
+- Expanding the evaluation to other Arabic dialects.
+- Investigating automatic evaluation methods for dialectal conversational quality.
+
+---
+
+## LEPS Compliance
+
+This evaluation complies with the **LLM Evaluation Project Standard (LEPS) v1.0** by incorporating:
+
+- Standardized project metadata
+- Clearly defined evaluation objectives and scope
+- Structured evaluation workflow
+- Transparent evaluation methodology
+- Evidence-based scoring and justification
+- Comparative model analysis
+- Comprehensive reporting
+- Documented limitations
+- Reproducible evaluation process
+
+The project demonstrates the application of LEPS to a structured human evaluation of conversational support in Egyptian Arabic.
 
 ---
 

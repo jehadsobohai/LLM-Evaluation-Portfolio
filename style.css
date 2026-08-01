@@ -4,11 +4,18 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family:Inter,sans-serif;
+    font-family:'Inter',sans-serif;
     background:#0b1120;
     color:#fff;
+    overflow-x:hidden;
 }
+
+/* Hero */
 
 .hero{
     min-height:100vh;
@@ -17,16 +24,27 @@ body{
     background:linear-gradient(135deg,#0b1120,#111827);
 }
 
+/* Navigation */
+
 .navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:22px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:25px 8%;
+    background:rgba(11,17,32,.75);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    z-index:1000;
 }
 
 .logo{
-    font-size:1.3rem;
+    font-size:1.35rem;
     font-weight:700;
+    letter-spacing:.5px;
 }
 
 .navbar ul{
@@ -36,9 +54,17 @@ body{
 }
 
 .navbar a{
-    color:white;
+    color:#fff;
     text-decoration:none;
+    font-weight:500;
+    transition:.3s;
 }
+
+.navbar a:hover{
+    color:#60a5fa;
+}
+
+/* Hero Content */
 
 .hero-content{
     flex:1;
@@ -47,39 +73,77 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:40px;
+    padding:120px 40px 40px;
 }
 
 .hero-content h1{
     font-size:4rem;
+    line-height:1.1;
     margin-bottom:20px;
 }
 
 .hero-content p{
     max-width:700px;
     font-size:1.2rem;
+    line-height:1.7;
     color:#cbd5e1;
 }
 
+/* Buttons */
+
 .buttons{
     margin-top:40px;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 28px;
+    padding:14px 30px;
     background:#2563eb;
-    color:white;
-    border-radius:10px;
+    color:#fff;
     text-decoration:none;
-    margin:10px;
+    border-radius:12px;
     transition:.3s;
+    font-weight:600;
 }
 
 .btn:hover{
-    transform:translateY(-4px);
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(37,99,235,.35);
 }
 
 .secondary{
     background:#1f2937;
+}
+
+.secondary:hover{
+    background:#374151;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    .hero-content h1{
+        font-size:2.7rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
 }

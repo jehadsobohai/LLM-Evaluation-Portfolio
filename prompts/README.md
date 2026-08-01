@@ -79,3 +79,11 @@ As the portfolio expands, future projects may explore:
 - Medical AI Evaluation
 - Benchmark Development
 - Evaluation Automation
+- 
+---
+
+# License
+
+Copyright © 2026 Jehad Soboh
+
+This project is licensed under the **MIT License**. See the **LICENSE** file for details.

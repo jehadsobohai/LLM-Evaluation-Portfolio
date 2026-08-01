@@ -1,4 +1,4 @@
-Prompt 001 – Medical Patient Education Prompt Engineering
+# Prompt 001 – Medical Patient Education Prompt Engineering
 
 ---
 

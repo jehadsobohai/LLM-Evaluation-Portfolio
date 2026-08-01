@@ -338,4 +338,7 @@ As this portfolio evolves, additional evaluation case studies, benchmarking proj
 
 # License
 
-This project is licensed under the MIT License.
+Copyright © 2026 Jehad Soboh
+
+This project is licensed under the **MIT License**. See the **LICENSE** file for details.
+

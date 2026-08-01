@@ -21,7 +21,8 @@ The standard defines project documentation requirements rather than prescribing 
 
 ---
 
-## Note: The LLM Evaluation Project Standard (LEPS) is an original project standard developed by Jehad Soboh for the LLM Evaluation Portfolio. LEPS defines standardized project structure, evaluation workflows, documentation, and reporting practices for LLM evaluation projects. It is intended to complement—not replace—existing evaluation methodologies, benchmarks, metrics, and domain-specific evaluation frameworks.
+> ## Note: 
+The LLM Evaluation Project Standard (LEPS) is an original project standard developed by Jehad Soboh for the LLM Evaluation Portfolio. LEPS defines standardized project structure, evaluation workflows, documentation, and reporting practices for LLM evaluation projects. It is intended to complement—not replace—existing evaluation methodologies, benchmarks, metrics, and domain-specific evaluation frameworks.
 
 ---
 

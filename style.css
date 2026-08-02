@@ -114,17 +114,20 @@ body {
 }
 
 /* ========================= */
-/* Hero Section */
+/* Hero Section (Fixed Layout) */
 /* ========================= */
 
 .hero {
-    min-height: 90vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Changed from center to flex-start */
     align-items: center;
     background: linear-gradient(135deg, #0b1120, #111827);
-    padding: 180px 30px 80px; /* Increased top padding to 180px to clear the fixed navbar */
+    padding-top: 180px; /* Gives explicit, guaranteed clearance under the navbar */
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .hero-content {

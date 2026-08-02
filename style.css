@@ -83,8 +83,11 @@ body {
     width: 90%;
     max-width: 1200px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;    /* Stacks logo on top of links */
+    justify-content: center;   /* Centers contents vertically */
+    align-items: center;       /* Centers contents horizontally */
+    text-align: center;
+    gap: 12px;                 /* Adds clean spacing between name and links */
     padding: 18px 35px;
     background: rgba(17, 24, 39, 0.65);
     backdrop-filter: blur(18px);
@@ -96,12 +99,18 @@ body {
 .logo {
     font-size: 1.4rem;
     font-weight: 700;
+    text-align: center;
+    width: 100%;
 }
 
 .navbar ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
+    justify-content: center;   /* Keeps links centered in row */
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;           /* Prevents overflow on mobile screens */
 }
 
 .navbar a {

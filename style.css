@@ -173,21 +173,28 @@ body {
 
 .buttons {
     display: flex;
-    justify-content: center;
-    gap: 18px;
-    flex-wrap: wrap;
-    margin-top: 35px;
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center;     /* Aligns buttons vertically */
+    gap: 15px;               /* Consistent spacing between buttons */
+    flex-wrap: wrap;         /* Allows clean stacking on smaller screens */
+    width: 100%;             /* Spans full container width */
+    max-width: 800px;        /* Keeps button group balanced */
+    margin: 35px auto 0;     /* Auto margins center the container itself */
+    text-align: center;
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: white;
     background: #2563eb;
-    padding: 14px 30px;
+    padding: 14px 24px;
     border-radius: 12px;
     font-weight: 600;
     transition: 0.35s ease;
+    text-align: center;
 }
 
 .btn:hover {

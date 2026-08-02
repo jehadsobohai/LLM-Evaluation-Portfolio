@@ -211,6 +211,23 @@ section h2 {
 }
 
 /* ========================= */
+/* Modern Glassmorphic Cards */
+/* ========================= */
+
+.project-card, .stat-card {
+    background: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover, .stat-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(96, 165, 250, 0.5);
+    box-shadow: 0 12px 30px -10px rgba(37, 99, 235, 0.3);
+}
+
+/* ========================= */
 /* Statistics Cards */
 /* ========================= */
 
@@ -222,17 +239,9 @@ section h2 {
 }
 
 .stat-card {
-    background: #111827;
-    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 18px;
     padding: 35px 20px;
     text-align: center;
-    transition: 0.35s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-8px);
-    border-color: #3b82f6;
 }
 
 .stat-card h2 {
@@ -272,20 +281,11 @@ section h2 {
 }
 
 .project-card {
-    background: #111827;
-    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     padding: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: 0.35s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
-    border-color: #3b82f6;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .project-card h3 {
@@ -400,4 +400,4 @@ footer p {
     .stats {
         grid-template-columns: 1fr 1fr;
     }
-}
+    }

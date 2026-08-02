@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: COMET Translation Evaluation | Jehad Soboh</title>
+    
+    <style>
+        html, body {
+            background-color: #0b1120 !important;
+            color: #ffffff;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <div class="background">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html" style="color:white; text-decoration:none;">Jehad Soboh</a></div>
+            <ul>
+                <li><a href="index.html#projects">← Back to Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Case Study Hero -->
+        <section class="hero" style="margin-top: 140px;">
+            <div class="hero-content" data-aos="fade-up">
+                <span class="badge">Case Study #004</span>
+                <h1>COMET English–Arabic Translation Evaluation</h1>
+                <p>A hybrid automated and human evaluation comparing multi-LLM performance in complex cross-lingual translation tasks.</p>
+            </div>
+        </section>
+
+        <!-- Case Study Details -->
+        <section class="case-study-body" data-aos="fade-up">
+            <div class="cs-block">
+                <h2>Project Overview</h2>
+                <p class="summary-text" style="text-align: left; margin: 0;">
+                    This project evaluates the translation accuracy and contextual fluency of three state-of-the-art Large Language Models translating complex technical and medical English prose into Egyptian and Modern Standard Arabic.
+                </p>
+            </div>
+
+            <!-- Figures & Tables Section -->
+            <div class="cs-block">
+                <h2>Figures & Quantitative Results</h2>
+                <p style="color: #cbd5e1; margin-bottom: 20px;">Below is the comparative score matrix measuring neural automated metric performance (COMET) alongside blinded expert human quality ratings.</p>
+                
+                <div class="table-container">
+                    <table class="eval-table">
+                        <thead>
+                            <tr>
+                                <th>Model Evaluated</th>
+                                <th>COMET Score</th>
+                                <th>Human Fluency (1-5)</th>
+                                <th>Clinical Accuracy (1-5)</th>
+                                <th>Primary Error Type Observed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Model A (GPT-4o)</strong></td>
+                                <td>0.892</td>
+                                <td>4.8</td>
+                                <td>4.9</td>
+                                <td>Minor stylistic preference</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Model B (Claude 3.5)</strong></td>
+                                <td>0.884</td>
+                                <td>4.7</td>
+                                <td>4.8</td>
+                                <td>Over-formalization</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Model C (Llama 3)</strong></td>
+                                <td>0.810</td>
+                                <td>3.9</td>
+                                <td>4.1</td>
+                                <td>Dialectal register drift</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Side-by-Side Model Output Sample -->
+            <div class="cs-block">
+                <h2>Sample Scored Evaluation Output</h2>
+                <div class="research-grid">
+                    <div class="research-box">
+                        <h3>Source Input (English)</h3>
+                        <p style="font-family: monospace; color: #93c5fd;">"The patient presented with acute localized inflammation, requiring immediate fluid management."</p>
+                    </div>
+                    <div class="research-box">
+                        <h3>Evaluated Output & Score (Arabic)</h3>
+                        <p style="font-family: monospace; color: #a7f3d0;" dir="rtl">"حضر المريض يعاني من التهاب حاد موضع، مما يتطلب إدارة فورية للسوائل."</p>
+                        <hr style="margin: 10px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <p style="font-size: 0.85rem; color: #cbd5e1;"><strong>Human Rating:</strong> 4/5 — <em>Minor grammatical agreement error in localizing terms.</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cs-block">
+                <h2>Key Findings & Demonstration</h2>
+                <div class="demonstrates-grid" style="justify-content: flex-start; max-width: 100%;">
+                    <span>High correlation between COMET score and human fluency</span>
+                    <span>Automated metrics miss subtle medical terminology nuances</span>
+                    <span>Structured rubrics eliminate blinded evaluator bias</span>
+                </div>
+            </div>
+
+            <div class="buttons" style="margin-top: 40px;">
+                <a class="btn" href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/evaluation_004_comet_english_arabic_translation.md" target="_blank">Download Full Markdown Report on GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Jehad Soboh</strong></p>
+        <p>Medical Doctor • AI Evaluation • Prompt Engineering • Arabic NLP</p>
+        <p>© 2026 Jehad Soboh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>
+

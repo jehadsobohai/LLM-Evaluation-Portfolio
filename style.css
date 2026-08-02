@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #0b1120;
 }
 
 body {
@@ -114,20 +115,17 @@ body {
 }
 
 /* ========================= */
-/* Hero Section (Fixed Layout) */
+/* Hero Section */
 /* ========================= */
 
 .hero {
-    min-height: 85vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Changed from center to flex-start */
+    justify-content: flex-start;
     align-items: center;
     background: linear-gradient(135deg, #0b1120, #111827);
-    padding-top: 180px; /* Gives explicit, guaranteed clearance under the navbar */
-    padding-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 60px 30px;
 }
 
 .hero-content {
@@ -384,10 +382,6 @@ footer p {
         gap: 15px;
     }
 
-    .hero-content {
-        padding-top: 40px; /* Ensures clearance on smaller screen dimensions */
-    }
-
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -407,5 +401,4 @@ footer p {
     .stats {
         grid-template-columns: 1fr 1fr;
     }
-    }
-    
+}

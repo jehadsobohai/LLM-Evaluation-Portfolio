@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <!-- Critical Inline Style (Prevents White Screen Flash) -->
     <style>
         html, body {
-            background-color: #0b1120;
+            background-color: #0b1120 !important;
             color: #ffffff;
         }
     </style>
@@ -21,13 +21,13 @@
     <meta property="og:description" content="Portfolio showcasing evaluation methodology for Machine Translation, Arabic NLP, and LLM safety.">
     <meta property="og:type" content="website">
     
-    <!-- Self-Contained SVG Favicon (Fixes Broken Icon Issue) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <!-- Dynamic Emoji Favicon -->
+    <link rel="icon" href="https://fav.farm/🤖" />
 
     <!-- Google Fonts & AOS Library -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -43,193 +43,170 @@
     <header>
         <nav class="navbar">
             <div class="logo">Jehad Soboh</div>
-            <ul class="nav-links">
-                <li><a href="#summary" data-en="Overview" data-ar="نظرة عامة">Overview</a></li>
-                <li><a href="#methodology" data-en="Methodology" data-ar="المنهجية">Methodology</a></li>
-                <li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
-                <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
-                <li><a href="#contact" data-en="Contact" data-ar="تواصل معي">Contact</a></li>
+            <ul>
+                <li><a href="#summary">Overview</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="controls">
-                <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme">☀️ / 🌙</button>
-                <button id="lang-toggle" class="control-btn" aria-label="Toggle Language">AR</button>
-            </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" style="margin-top: 140px;">
             <div class="hero-content" data-aos="fade-up">
-                <span class="badge" data-en="AI Evaluation • Prompt Engineering • Arabic NLP" data-ar="تقييم الذكاء الاصطناعي • هندسة الأوامر • معالجة اللغة العربية">AI Evaluation • Prompt Engineering • Arabic NLP</span>
-                <h1 data-en="LLM Evaluation Portfolio" data-ar="معرض أعمال تقييم النماذج اللغوية">LLM Evaluation Portfolio</h1>
-                <p data-en="Medical Doctor bridging clinical accuracy and AI quality assurance through structured evaluation, Arabic NLP, and evidence-based assessment methodologies."
-                   data-ar="طبيب بشري يربط بين الدقة الطبية وضمان جودة الذكاء الاصطناعي من خلال التقييم المنهجي، معالجة اللغة العربية، ومنهجيات التقييم القائمة على الأدلة.">
-                   Medical Doctor bridging clinical accuracy and AI quality assurance through structured evaluation, Arabic NLP, and evidence-based assessment methodologies.
-                </p>
+                <span class="badge">AI Evaluation • Prompt Engineering • Arabic NLP</span>
+                <h1>LLM Evaluation Portfolio</h1>
+                <p>Medical Doctor bridging clinical accuracy and AI quality assurance through structured evaluation, Arabic NLP, and evidence-based assessment methodologies.</p>
                 
                 <div class="buttons">
-                    <a class="btn" href="#projects" data-en="View Portfolio" data-ar="عرض المشاريع">View Portfolio</a>
+                    <a class="btn" href="#projects">View Portfolio</a>
                     <a class="btn secondary" href="https://github.com/jehadsobohai" target="_blank">GitHub</a>
                     <a class="btn secondary" href="https://www.linkedin.com/in/jehad-soboh-065469204" target="_blank">LinkedIn</a>
                 </div>
             </div>
         </section>
 
-        <!-- Professional Summary -->
+        <!-- 1. Professional Summary (Highest Priority) -->
         <section id="summary" class="about" data-aos="fade-up">
-            <h2 data-en="Professional Summary" data-ar="الملخص المهني">Professional Summary</h2>
-            <p class="summary-text" 
-               data-en="I specialize in evaluating Large Language Models (LLMs) through structured, evidence-based methodologies. My work combines expert human evaluation, automated evaluation metrics, comparative analysis, and technical documentation to assess AI system quality across multilingual and domain-specific tasks."
-               data-ar="متخصص في تقييم النماذج اللغوية الكبيرة (LLMs) من خلال منهجيات هيكلية قائمة على الأدلة. يجمع عملي بين التقييم البشري الخبير، مقاييس التقييم الآلية، التحليل المقارن، والتوثيق التقني لتقييم جودة أنظمة الذكاء الاصطناعي عبر المهام متعددة اللغات والمتخصصة.">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
                 I specialize in evaluating Large Language Models (LLMs) through structured, evidence-based methodologies. My work combines expert human evaluation, automated evaluation metrics, comparative analysis, and technical documentation to assess AI system quality across multilingual and domain-specific tasks.
             </p>
         </section>
 
-        <!-- Quantifiable Achievements -->
+        <!-- 10. Quantifiable Achievements (Statistics) -->
         <section class="stats">
             <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
                 <h2>4+</h2>
-                <p data-en="Evaluation Case Studies" data-ar="دراسات حالة تقييمية">Evaluation Case Studies</p>
+                <p>Evaluation Case Studies</p>
             </div>
             <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
                 <h2>3</h2>
-                <p data-en="LLMs Compared" data-ar="نماذج لغوية تم مقارنتها">LLMs Compared</p>
+                <p>LLMs Compared</p>
             </div>
             <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
                 <h2>2</h2>
-                <p data-en="Evaluation Methodologies" data-ar="منهجيات تقييم">Evaluation Methodologies</p>
+                <p>Evaluation Methodologies</p>
             </div>
             <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
                 <h2>En / Ar</h2>
-                <p data-en="Translation Evaluations" data-ar="تقييمات الترجمة">Translation Evaluations</p>
+                <p>Translation Evaluations</p>
             </div>
         </section>
 
-        <!-- Evaluation Methodology -->
+        <!-- 2 & 3. Evaluation Methodology & Core Demonstrations -->
         <section id="methodology" class="methodology-section" data-aos="fade-up">
-            <h2 data-en="Evaluation Methodology" data-ar="منهجية التقييم">Evaluation Methodology</h2>
-            <p class="methodology-desc"
-               data-en="My evaluation workflow combines clearly defined evaluation criteria, evidence-based scoring, expert human assessment, and automated metrics where appropriate. Each project emphasizes transparency, reproducibility, and clear documentation to support consistent evaluation outcomes."
-               data-ar="تجمع سير عمل التقييم الخاصة بي بين معايير التقييم المحددة بوضوح، التقييم القائم على الأدلة، التقييم البشري الخبير، والمقاييس الآلية عند الإمكان. يركز كل مشروع على الشفافية، إمكانية إعادة الإنتاج، والتوثيق الواضح.">
+            <h2>Evaluation Methodology</h2>
+            <p class="methodology-desc">
                 My evaluation workflow combines clearly defined evaluation criteria, evidence-based scoring, expert human assessment, and automated metrics where appropriate. Each project emphasizes transparency, reproducibility, and clear documentation to support consistent evaluation outcomes.
             </p>
 
-            <h3 class="section-subheading" data-en="What This Portfolio Demonstrates" data-ar="ما يظهره هذا المعرض">What This Portfolio Demonstrates</h3>
+            <h3 style="text-align: center; margin: 40px 0 20px; color: #60a5fa;">What This Portfolio Demonstrates</h3>
             <div class="demonstrates-grid">
-                <span data-en="Structured LLM evaluation workflows" data-ar="سير عمل هيكلي لتقييم النماذج اللغوية">Structured LLM evaluation workflows</span>
-                <span data-en="Human evaluation methodologies" data-ar="منهجيات التقييم البشري">Human evaluation methodologies</span>
-                <span data-en="Comparative model analysis" data-ar="تحليل النماذج المقارن">Comparative model analysis</span>
-                <span data-en="Translation quality evaluation" data-ar="تقييم جودة الترجمة">Translation quality evaluation</span>
-                <span data-en="Arabic NLP evaluation" data-ar="تقييم معالجة اللغة العربية">Arabic NLP evaluation</span>
-                <span data-en="Prompt engineering" data-ar="هندسة الأوامر">Prompt engineering</span>
-                <span data-en="AI quality assurance" data-ar="ضمان جودة الذكاء الاصطناعي">AI quality assurance</span>
-                <span data-en="Technical documentation" data-ar="التوثيق التقني">Technical documentation</span>
+                <span>Structured LLM evaluation workflows</span>
+                <span>Human evaluation methodologies</span>
+                <span>Comparative model analysis</span>
+                <span>Translation quality evaluation</span>
+                <span>Arabic NLP evaluation</span>
+                <span>Prompt engineering</span>
+                <span>AI quality assurance</span>
+                <span>Technical documentation</span>
             </div>
         </section>
 
-        <!-- Featured Projects -->
+        <!-- 5. Featured Projects with Key Takeaways -->
         <section id="projects" class="projects">
-            <h2 data-aos="fade-up" data-en="Featured Projects" data-ar="المشاريع المميزة">Featured Projects</h2>
+            <h2 data-aos="fade-up">Featured Projects</h2>
             <div class="project-grid">
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-body">
-                        <h3 data-en="COMET Translation Evaluation" data-ar="تقييم الترجمة باستخدام COMET">COMET Translation Evaluation</h3>
-                        <p data-en="Automatic evaluation of English–Arabic translation quality using COMET, combined with comparative analysis and expert human assessment."
-                           data-ar="التقييم الآلي لجودة الترجمة بين الإنجليزية والعربية باستخدام مقياس COMET، مع تحليل مقارن وتقييم بشري خبير.">
-                           Automatic evaluation of English–Arabic translation quality using COMET, combined with comparative analysis and expert human assessment.
-                        </p>
+                    <div>
+                        <h3>COMET Translation Evaluation</h3>
+                        <p>Automatic evaluation of English–Arabic translation quality using COMET, combined with comparative analysis and expert human assessment.</p>
                         
                         <div class="takeaways">
-                            <h4 data-en="Key Takeaways" data-ar="أبرز النقاط">Key Takeaways</h4>
+                            <h4>Key Takeaways</h4>
                             <ul>
-                                <li data-en="Compared multiple LLMs." data-ar="مقارنة نماذج لغوية متعددة.">Compared multiple LLMs.</li>
-                                <li data-en="Combined human and automated evaluation." data-ar="دمج التقييم البشري والآلي.">Combined human and automated evaluation.</li>
-                                <li data-en="Documented evidence supporting evaluation decisions." data-ar="توثيق الأدلة الداعمة لقرارات التقييم.">Documented evidence supporting evaluation decisions.</li>
-                                <li data-en="Identified strengths and limitations of each model." data-ar="تحديد نقاط القوة والقيود لكل نموذج.">Identified strengths and limitations of each model.</li>
+                                <li>Compared multiple LLMs.</li>
+                                <li>Combined human and automated evaluation.</li>
+                                <li>Documented evidence supporting evaluation decisions.</li>
+                                <li>Identified strengths and limitations of each model.</li>
                             </ul>
                         </div>
                     </div>
 
                     <a class="btn" 
                        href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/evaluation_004_comet_english_arabic_translation.md" 
-                       target="_blank" data-en="View Case Study →" data-ar="عرض دراسة الحالة ←">
+                       target="_blank">
                         View Case Study →
                     </a>
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-body">
-                        <h3 data-en="Human Evaluation" data-ar="التقييم البشري">Human Evaluation</h3>
-                        <p data-en="Evidence-based human evaluation of translation quality using structured linguistic criteria and comparative scoring."
-                           data-ar="تقييم بشري قائم على الأدلة لجودة الترجمة باستخدام معايير لغوية هيكلية ودرجات مقارنة.">
-                           Evidence-based human evaluation of translation quality using structured linguistic criteria and comparative scoring.
-                        </p>
+                    <div>
+                        <h3>Human Evaluation</h3>
+                        <p>Evidence-based human evaluation of translation quality using structured linguistic criteria and comparative scoring.</p>
                         
                         <div class="takeaways">
-                            <h4 data-en="Key Takeaways" data-ar="أبرز النقاط">Key Takeaways</h4>
+                            <h4>Key Takeaways</h4>
                             <ul>
-                                <li data-en="Structured qualitative error taxonomy." data-ar="تصنيف نوعي هيكلي للأخطاء.">Structured qualitative error taxonomy.</li>
-                                <li data-en="Blinded human scoring protocol." data-ar="بروتوكول تقييم بشري محجوب.">Blinded human scoring protocol.</li>
-                                <li data-en="Rigorous comparative analysis." data-ar="تحليل مقارن دقيق.">Rigorous comparative analysis.</li>
+                                <li>Structured qualitative error taxonomy.</li>
+                                <li>Blinded human scoring protocol.</li>
+                                <li>Rigorous comparative analysis.</li>
                             </ul>
                         </div>
                     </div>
 
                     <a class="btn" 
                        href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/evaluation_003_hitl_english_arabic_translation.md" 
-                       target="_blank" data-en="View Case Study →" data-ar="عرض دراسة الحالة ←">
+                       target="_blank">
                         View Case Study →
                     </a>
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-body">
-                        <h3 data-en="Arabic Conversational AI" data-ar="الذكاء الاصطناعي الحواري العربي">Arabic Conversational AI</h3>
-                        <p data-en="Evaluation of Egyptian Arabic conversational responses for fluency, cultural appropriateness, empathy, and natural language quality."
-                           data-ar="تقييم الاستجابات الحوارية بالعامية المصرية من حيث الطلاقة، الملاءمة الثقافية، التعاطف، وجودة اللغة.">
-                           Evaluation of Egyptian Arabic conversational responses for fluency, cultural appropriateness, empathy, and natural language quality.
-                        </p>
+                    <div>
+                        <h3>Arabic Conversational AI</h3>
+                        <p>Evaluation of Egyptian Arabic conversational responses for fluency, cultural appropriateness, empathy, and natural language quality.</p>
                         
                         <div class="takeaways">
-                            <h4 data-en="Key Takeaways" data-ar="أبرز النقاط">Key Takeaways</h4>
+                            <h4>Key Takeaways</h4>
                             <ul>
-                                <li data-en="Dialectal Arabic fluency benchmarking." data-ar="قياس طلاقة اللهجات العربية.">Dialectal Arabic fluency benchmarking.</li>
-                                <li data-en="Cultural context evaluation." data-ar="تقييم السياق الثقافي.">Cultural context evaluation.</li>
-                                <li data-en="Empathy and safety validation." data-ar="التحقق من التعاطف والسلامة.">Empathy and safety validation.</li>
+                                <li>Dialectal Arabic fluency benchmarking.</li>
+                                <li>Cultural context evaluation.</li>
+                                <li>Empathy and safety validation.</li>
                             </ul>
                         </div>
                     </div>
 
                     <a class="btn" 
                        href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/evaluation_002_egyptian_arabic_conversational_support.md" 
-                       target="_blank" data-en="View Case Study →" data-ar="عرض دراسة الحالة ←">
+                       target="_blank">
                         View Case Study →
                     </a>
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-body">
-                        <h3 data-en="Prompt Engineering" data-ar="هندسة الأوامر">Prompt Engineering</h3>
-                        <p data-en="Prompt design and refinement for improving response quality, consistency, safety, and task performance."
-                           data-ar="تصميم وتحسين الأوامر لتحسين جودة الاستجابة، الاتساق، السلامة، وأداء المهام.">
-                           Prompt design and refinement for improving response quality, consistency, safety, and task performance.
-                        </p>
+                    <div>
+                        <h3>Prompt Engineering</h3>
+                        <p>Prompt design and refinement for improving response quality, consistency, safety, and task performance.</p>
                         
                         <div class="takeaways">
-                            <h4 data-en="Key Takeaways" data-ar="أبرز النقاط">Key Takeaways</h4>
+                            <h4>Key Takeaways</h4>
                             <ul>
-                                <li data-en="Iterative prompt optimization." data-ar="تحسين تكراري للأوامر.">Iterative prompt optimization.</li>
-                                <li data-en="Domain-specific instruction design." data-ar="تصميم تعليمات متخصصة في المجال.">Domain-specific instruction design.</li>
-                                <li data-en="Safety & constraint enforcement." data-ar="تطبيق قيود السلامة.">Safety & constraint enforcement.</li>
+                                <li>Iterative prompt optimization.</li>
+                                <li>Domain-specific instruction design.</li>
+                                <li>Safety & constraint enforcement.</li>
                             </ul>
                         </div>
                     </div>
 
                     <a class="btn" 
                        href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompt_engineering/prompt_001_medical_patient_education.md" 
-                       target="_blank" data-en="View Project →" data-ar="عرض المشروع ←">
+                       target="_blank">
                         View Project →
                     </a>
                 </div>
@@ -237,12 +214,12 @@
             </div>
         </section>
 
-        <!-- Technical Skills -->
+        <!-- 6. Categorized Technical Skills -->
         <section id="skills" class="skills-section" data-aos="fade-up">
-            <h2 data-en="Technical Skills" data-ar="المهارات التقنية">Technical Skills</h2>
+            <h2>Technical Skills</h2>
             
             <div class="skill-group">
-                <h3 data-en="Evaluation" data-ar="التقييم">Evaluation</h3>
+                <h3>Evaluation</h3>
                 <div class="skills">
                     <span>LLM Evaluation</span>
                     <span>Human Evaluation</span>
@@ -252,7 +229,7 @@
             </div>
 
             <div class="skill-group">
-                <h3 data-en="Natural Language Processing" data-ar="معالجة اللغة الطبيعية">Natural Language Processing</h3>
+                <h3>Natural Language Processing</h3>
                 <div class="skills">
                     <span>Arabic NLP</span>
                     <span>Translation Evaluation</span>
@@ -261,7 +238,7 @@
             </div>
 
             <div class="skill-group">
-                <h3 data-en="AI Engineering" data-ar="هندسة الذكاء الاصطناعي">AI Engineering</h3>
+                <h3>AI Engineering</h3>
                 <div class="skills">
                     <span>Prompt Engineering</span>
                     <span>AI Quality Assurance</span>
@@ -269,9 +246,8 @@
             </div>
 
             <div class="skill-group">
-                <h3 data-en="Development & Tools" data-ar="التطوير والأدوات">Development & Tools</h3>
+                <h3>Development & Tools</h3>
                 <div class="skills">
-                    <span>Python</span>
                     <span>Git</span>
                     <span>GitHub</span>
                     <span>Markdown</span>
@@ -280,23 +256,67 @@
             </div>
         </section>
 
-        <!-- Research & Future Directions -->
+        <!-- 4 & 7. Current Research Interests & Future Work -->
         <section class="research-section" data-aos="fade-up">
-            <h2 data-en="Current Research & Future Directions" data-ar="الأبحاث الحالية والتوجهات المستقبلية">Current Research & Future Directions</h2>
+            <h2>Current Research & Future Directions</h2>
             
             <div class="research-grid">
                 <div class="research-box">
-                    <h3 data-en="Current Research Interests" data-ar="اهتمامات البحث الحالية">Current Research Interests</h3>
+                    <h3>Current Research Interests</h3>
                     <ul>
-                        <li data-en="Arabic Large Language Models" data-ar="النماذج اللغوية العربية الكبيرة">Arabic Large Language Models</li>
-                        <li data-en="Translation Quality Evaluation" data-ar="تقييم جودة الترجمة">Translation Quality Evaluation</li>
-                        <li data-en="Human–AI Comparative Evaluation" data-ar="التقييم المقارن بين الإنسان والذكاء الاصطناعي">Human–AI Comparative Evaluation</li>
-                        <li data-en="Medical AI" data-ar="الذكاء الاصطناعي الطبي">Medical AI</li>
-                        <li data-en="AI Safety" data-ar="سلامة الذكاء الاصطناعي">AI Safety</li>
-                        <li data-en="Reasoning Evaluation" data-ar="تقييم قدرات الاستدلال">Reasoning Evaluation</li>
-                        <li data-en="Retrieval-Augmented Generation (RAG)" data-ar="التوليد المعزز بالاسترجاع (RAG)">Retrieval-Augmented Generation (RAG)</li>
-                        <li data-en="Evaluation Automation" data-ar="أتمتة التقييم">Evaluation Automation</li>
+                        <li>Arabic Large Language Models</li>
+                        <li>Translation Quality Evaluation</li>
+                        <li>Human–AI Comparative Evaluation</li>
+                        <li>Medical AI</li>
+                        <li>AI Safety</li>
+                        <li>Reasoning Evaluation</li>
+                        <li>Retrieval-Augmented Generation (RAG)</li>
+                        <li>Evaluation Automation</li>
                     </ul>
                 </div>
 
-                <div cl
+                <div class="research-box">
+                    <h3>Future Work</h3>
+                    <ul>
+                        <li>Medical LLM Evaluation</li>
+                        <li>Multilingual Benchmarking</li>
+                        <li>Hallucination Detection</li>
+                        <li>RAG Evaluation</li>
+                        <li>Agent Evaluation</li>
+                        <li>AI Safety Evaluation</li>
+                        <li>Evaluation Automation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Targeted Call to Action (CTA) -->
+        <section id="contact" class="contact" data-aos="fade-up">
+            <h2>Contact & Collaboration</h2>
+            <p>
+                Interested in AI evaluation, Arabic NLP, prompt engineering, or research collaboration? I'm open to discussions, collaborations, and opportunities related to evaluating and improving Large Language Models.
+            </p>
+            <div class="buttons">
+                <a class="btn" href="https://www.linkedin.com/in/jehad-soboh-065469204" target="_blank">LinkedIn</a>
+                <a class="btn secondary" href="https://github.com/jehadsobohai" target="_blank">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Jehad Soboh</strong></p>
+        <p>Medical Doctor • AI Evaluation • Prompt Engineering • Arabic NLP • AI Quality Assurance</p>
+        <p>Built with HTML, CSS, and GitHub Pages</p>
+        <p>© 2026 Jehad Soboh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

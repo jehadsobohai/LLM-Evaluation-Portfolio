@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jehad Soboh | LLM Evaluation & AI Quality Assurance Portfolio</title>
     
-    <!-- Critical Inline Style (Prevents White Screen Flash / FOUC) -->
+    <!-- Critical Inline Style (Prevents White Screen Flash) -->
     <style>
         html, body {
             background-color: #0b1120 !important;
@@ -16,7 +16,7 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Open Graph Metadata for Social Sharing -->
+    <!-- Open Graph Metadata -->
     <meta property="og:title" content="Jehad Soboh | LLM Evaluation & AI Quality Assurance">
     <meta property="og:description" content="Portfolio showcasing evaluation methodology for Machine Translation, Arabic NLP, and LLM safety.">
     <meta property="og:type" content="website">
@@ -24,12 +24,10 @@
     <!-- Dynamic Emoji Favicon -->
     <link rel="icon" href="https://fav.farm/🤖" />
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts & AOS Library -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- AOS Scroll Animations CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -46,7 +44,8 @@
         <nav class="navbar">
             <div class="logo">Jehad Soboh</div>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#summary">Overview</a></li>
+                <li><a href="#methodology">Methodology</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -55,12 +54,12 @@
     </header>
 
     <main>
-        <!-- Hero Section (With Guaranteed Clearance Under Fixed Navbar) -->
+        <!-- Hero Section -->
         <section class="hero" style="margin-top: 140px;">
             <div class="hero-content" data-aos="fade-up">
                 <span class="badge">AI Evaluation • Prompt Engineering • Arabic NLP</span>
                 <h1>LLM Evaluation Portfolio</h1>
-                <p>Medical Doctor bridging clinical accuracy and AI quality assurance through rigorous evaluation, Arabic NLP, and evidence-based assessment methodologies.</p>
+                <p>Medical Doctor bridging clinical accuracy and AI quality assurance through structured evaluation, Arabic NLP, and evidence-based assessment methodologies.</p>
                 
                 <div class="buttons">
                     <a class="btn" href="#projects">View Portfolio</a>
@@ -70,48 +69,75 @@
             </div>
         </section>
 
-        <!-- Statistics Section -->
+        <!-- 1. Professional Summary (Highest Priority) -->
+        <section id="summary" class="about" data-aos="fade-up">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                I specialize in evaluating Large Language Models (LLMs) through structured, evidence-based methodologies. My work combines expert human evaluation, automated evaluation metrics, comparative analysis, and technical documentation to assess AI system quality across multilingual and domain-specific tasks.
+            </p>
+        </section>
+
+        <!-- 10. Quantifiable Achievements (Statistics) -->
         <section class="stats">
             <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
                 <h2>4+</h2>
-                <p>Evaluation Projects</p>
+                <p>Evaluation Case Studies</p>
             </div>
             <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
                 <h2>3</h2>
                 <p>LLMs Compared</p>
             </div>
             <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
-                <h2>12+</h2>
-                <p>Technical Skills</p>
+                <h2>2</h2>
+                <p>Evaluation Methodologies</p>
             </div>
             <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
-                <h2>2</h2>
-                <p>Evaluation Frameworks</p>
+                <h2>En / Ar</h2>
+                <p>Translation Evaluations</p>
             </div>
         </section>
 
-        <!-- About Me Section -->
-        <section id="about" class="about" data-aos="fade-up">
-            <h2>About Me</h2>
-            <p>
-                I am a Medical Doctor with a strong interest in Large Language Model evaluation, Arabic Natural Language Processing (NLP), prompt engineering, and AI quality assurance.
+        <!-- 2 & 3. Evaluation Methodology & Core Demonstrations -->
+        <section id="methodology" class="methodology-section" data-aos="fade-up">
+            <h2>Evaluation Methodology</h2>
+            <p class="methodology-desc">
+                My evaluation workflow combines clearly defined evaluation criteria, evidence-based scoring, expert human assessment, and automated metrics where appropriate. Each project emphasizes transparency, reproducibility, and clear documentation to support consistent evaluation outcomes.
             </p>
-            <p>
-                This portfolio showcases practical evaluation projects covering translation quality, conversational AI, educational content, and multilingual language models. Each project demonstrates structured evaluation methodologies that combine expert human assessment with automated evaluation techniques to produce transparent, reproducible, and evidence-based results.
-            </p>
-            <p>
-                My current work focuses on developing practical evaluation workflows, improving evaluation quality, and expanding this portfolio with projects in medical AI, reasoning evaluation, hallucination detection, Retrieval-Augmented Generation (RAG), AI safety, multilingual benchmarking, and evaluation automation.
-            </p>
+
+            <h3 style="text-align: center; margin: 40px 0 20px; color: #60a5fa;">What This Portfolio Demonstrates</h3>
+            <div class="demonstrates-grid">
+                <span>Structured LLM evaluation workflows</span>
+                <span>Human evaluation methodologies</span>
+                <span>Comparative model analysis</span>
+                <span>Translation quality evaluation</span>
+                <span>Arabic NLP evaluation</span>
+                <span>Prompt engineering</span>
+                <span>AI quality assurance</span>
+                <span>Technical documentation</span>
+            </div>
         </section>
 
-        <!-- Featured Projects Section -->
+        <!-- 5. Featured Projects with Key Takeaways -->
         <section id="projects" class="projects">
             <h2 data-aos="fade-up">Featured Projects</h2>
             <div class="project-grid">
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>COMET Translation Evaluation</h3>
-                    <p>Automatic evaluation of English–Arabic translation quality using COMET, combined with comparative analysis and expert human assessment.</p>
+                    <div>
+                        <h3>COMET Translation Evaluation</h3>
+                        <p>Automatic evaluation of English–Arabic translation quality using COMET, combined with comparative analysis and expert human assessment.</p>
+                        
+                        <div class="takeaways">
+                            <h4>Key Takeaways</h4>
+                            <ul>
+                                <li>Compared multiple LLMs.</li>
+                                <li>Combined human and automated evaluation.</li>
+                                <li>Documented evidence supporting evaluation decisions.</li>
+                                <li>Identified strengths and limitations of each model.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <a class="btn" 
                        href="https://github.com/jehadsobohai/YOUR_REPOSITORY_NAME/blob/main/prompts/evaluation_004_comet_english_arabic_translation.md" 
                        target="_blank">
@@ -120,8 +146,20 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Human Evaluation</h3>
-                    <p>Evidence-based human evaluation of translation quality using structured linguistic criteria and comparative scoring.</p>
+                    <div>
+                        <h3>Human Evaluation</h3>
+                        <p>Evidence-based human evaluation of translation quality using structured linguistic criteria and comparative scoring.</p>
+                        
+                        <div class="takeaways">
+                            <h4>Key Takeaways</h4>
+                            <ul>
+                                <li>Structured qualitative error taxonomy.</li>
+                                <li>Blinded human scoring protocol.</li>
+                                <li>Rigorous comparative analysis.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <a class="btn" 
                        href="https://github.com/jehadsobohai/YOUR_REPOSITORY_NAME/blob/main/prompts/evaluation_003_hitl_english_arabic_translation.md" 
                        target="_blank">
@@ -130,8 +168,20 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Arabic Conversational AI</h3>
-                    <p>Evaluation of Egyptian Arabic conversational responses for fluency, cultural appropriateness, empathy, and natural language quality.</p>
+                    <div>
+                        <h3>Arabic Conversational AI</h3>
+                        <p>Evaluation of Egyptian Arabic conversational responses for fluency, cultural appropriateness, empathy, and natural language quality.</p>
+                        
+                        <div class="takeaways">
+                            <h4>Key Takeaways</h4>
+                            <ul>
+                                <li>Dialectal Arabic fluency benchmarking.</li>
+                                <li>Cultural context evaluation.</li>
+                                <li>Empathy and safety validation.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <a class="btn" 
                        href="https://github.com/jehadsobohai/YOUR_REPOSITORY_NAME/blob/main/prompts/evaluation_002_egyptian_arabic_conversational_support.md" 
                        target="_blank">
@@ -140,8 +190,20 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <h3>Prompt Engineering</h3>
-                    <p>Prompt design and refinement for improving response quality, consistency, safety, and task performance.</p>
+                    <div>
+                        <h3>Prompt Engineering</h3>
+                        <p>Prompt design and refinement for improving response quality, consistency, safety, and task performance.</p>
+                        
+                        <div class="takeaways">
+                            <h4>Key Takeaways</h4>
+                            <ul>
+                                <li>Iterative prompt optimization.</li>
+                                <li>Domain-specific instruction design.</li>
+                                <li>Safety & constraint enforcement.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <a class="btn" 
                        href="https://github.com/jehadsobohai/YOUR_REPOSITORY_NAME/blob/main/prompt_engineering/prompt_001_medical_patient_education.md" 
                        target="_blank">
@@ -152,12 +214,12 @@
             </div>
         </section>
 
-        <!-- Technical Skills Section -->
+        <!-- 6. Categorized Technical Skills -->
         <section id="skills" class="skills-section" data-aos="fade-up">
             <h2>Technical Skills</h2>
             
             <div class="skill-group">
-                <h3>LLM Evaluation</h3>
+                <h3>Evaluation</h3>
                 <div class="skills">
                     <span>LLM Evaluation</span>
                     <span>Human Evaluation</span>
@@ -172,14 +234,20 @@
                     <span>Arabic NLP</span>
                     <span>Translation Evaluation</span>
                     <span>COMET</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>AI Engineering</h3>
+                <div class="skills">
                     <span>Prompt Engineering</span>
+                    <span>AI Quality Assurance</span>
                 </div>
             </div>
 
             <div class="skill-group">
                 <h3>Development & Tools</h3>
                 <div class="skills">
-                    <span>Python</span>
                     <span>Git</span>
                     <span>GitHub</span>
                     <span>Markdown</span>
@@ -188,24 +256,46 @@
             </div>
         </section>
 
-        <!-- Current Focus Section -->
-        <section class="focus" data-aos="fade-up">
-            <h2>Current Focus & Research</h2>
-            <div class="skills">
-                <span>Medical AI</span>
-                <span>RAG Evaluation</span>
-                <span>Hallucination Detection</span>
-                <span>AI Safety</span>
-                <span>Benchmarking</span>
-                <span>Evaluation Automation</span>
-                <span>Reasoning Evaluation</span>
+        <!-- 4 & 7. Current Research Interests & Future Work -->
+        <section class="research-section" data-aos="fade-up">
+            <h2>Current Research & Future Directions</h2>
+            
+            <div class="research-grid">
+                <div class="research-box">
+                    <h3>Current Research Interests</h3>
+                    <ul>
+                        <li>Arabic Large Language Models</li>
+                        <li>Translation Quality Evaluation</li>
+                        <li>Human–AI Comparative Evaluation</li>
+                        <li>Medical AI</li>
+                        <li>AI Safety</li>
+                        <li>Reasoning Evaluation</li>
+                        <li>Retrieval-Augmented Generation (RAG)</li>
+                        <li>Evaluation Automation</li>
+                    </ul>
+                </div>
+
+                <div class="research-box">
+                    <h3>Future Work</h3>
+                    <ul>
+                        <li>Medical LLM Evaluation</li>
+                        <li>Multilingual Benchmarking</li>
+                        <li>Hallucination Detection</li>
+                        <li>RAG Evaluation</li>
+                        <li>Agent Evaluation</li>
+                        <li>AI Safety Evaluation</li>
+                        <li>Evaluation Automation</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- 8. Targeted Call to Action (CTA) -->
         <section id="contact" class="contact" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>Interested in AI evaluation, prompt engineering, Arabic NLP, or research collaboration? Feel free to connect.</p>
+            <h2>Contact & Collaboration</h2>
+            <p>
+                Interested in AI evaluation, Arabic NLP, prompt engineering, or research collaboration? I'm open to discussions, collaborations, and opportunities related to evaluating and improving Large Language Models.
+            </p>
             <div class="buttons">
                 <a class="btn" href="https://www.linkedin.com/in/jehad-soboh-065469204" target="_blank">LinkedIn</a>
                 <a class="btn secondary" href="https://github.com/jehadsobohai" target="_blank">GitHub</a>
@@ -221,7 +311,6 @@
         <p>© 2026 Jehad Soboh. All Rights Reserved.</p>
     </footer>
 
-    <!-- AOS Animations Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({

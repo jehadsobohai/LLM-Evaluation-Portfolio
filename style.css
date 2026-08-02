@@ -212,6 +212,45 @@ section h2 {
 }
 
 /* ========================= */
+/* Timeline Section */
+/* ========================= */
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 20px;
+    background: rgba(17, 24, 39, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px 25px;
+    align-items: center;
+}
+
+.timeline-item.upcoming {
+    border-style: dashed;
+    border-color: rgba(96, 165, 250, 0.3);
+}
+
+.timeline-date {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #60a5fa;
+    min-width: 110px;
+}
+
+.timeline-content ul {
+    list-style: none;
+    color: #cbd5e1;
+}
+
+/* ========================= */
 /* Professional Summary & Methodology */
 /* ========================= */
 
@@ -341,6 +380,57 @@ section h2 {
 
 .takeaways li {
     margin-bottom: 4px;
+}
+
+/* ========================= */
+/* Case Study & Table Styling */
+/* ========================= */
+
+.case-study-body {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.cs-block {
+    margin-bottom: 50px;
+}
+
+.cs-block h2 {
+    text-align: left;
+    font-size: 1.8rem;
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.eval-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.eval-table th, .eval-table td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.eval-table th {
+    background: rgba(37, 99, 235, 0.15);
+    color: #93c5fd;
+    font-size: 0.95rem;
+}
+
+.eval-table td {
+    color: #cbd5e1;
+    font-size: 0.95rem;
 }
 
 /* ========================= */
@@ -474,4 +564,9 @@ footer p {
     .stats {
         grid-template-columns: 1fr 1fr;
     }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
     }
+}

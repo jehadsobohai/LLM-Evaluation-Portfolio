@@ -1,5 +1,7 @@
 # LLM Evaluation Portfolio
 
+> 🌐 **Live Portfolio Website:** [jehadsobohai.github.io/LLM-Evaluation-Portfolio](https://jehadsobohai.github.io/LLM-Evaluation-Portfolio/)
+
 Welcome to the **LLM Evaluation Portfolio**, a collection of structured evaluation case studies demonstrating practical methodologies for assessing Large Language Models (LLMs).
 
 This repository showcases practical evaluation projects built using structured, transparent, reproducible, and evidence-based methodologies across multiple real-world tasks and domains.
@@ -325,6 +327,8 @@ My work focuses on developing standardized, transparent, and reproducible method
 
 **LinkedIn:**  
 https://www.linkedin.com/in/jehad-soboh-065469204
+
+**Portfolio Website:** [jehadsobohai.github.io/LLM-Evaluation-Portfolio](https://jehadsobohai.github.io/LLM-Evaluation-Portfolio/)
 
 ---
 

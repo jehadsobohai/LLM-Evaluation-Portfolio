@@ -328,7 +328,8 @@ My work focuses on developing standardized, transparent, and reproducible method
 **LinkedIn:**  
 https://www.linkedin.com/in/jehad-soboh-065469204
 
-**Portfolio Website:** [jehadsobohai.github.io/LLM-Evaluation-Portfolio](https://jehadsobohai.github.io/LLM-Evaluation-Portfolio/)
+**Portfolio Website:** 
+[jehadsobohai.github.io/LLM-Evaluation-Portfolio](https://jehadsobohai.github.io/LLM-Evaluation-Portfolio/)
 
 ---
 

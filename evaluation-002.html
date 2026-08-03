@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study: Egyptian Arabic Conversational AI | Jehad Soboh</title>
+    <title>Case Study: Evaluation 002 – Egyptian Arabic Conversational Support | Jehad Soboh</title>
     
     <style>
         html, body {
@@ -13,7 +13,9 @@
     </style>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +42,9 @@
         <!-- Case Study Hero -->
         <section class="hero" style="margin-top: 140px;">
             <div class="hero-content" data-aos="fade-up">
-                <span class="badge">Case Study #002</span>
+                <span class="badge">Evaluation 002 • LEPS v1.0 Compliant</span>
                 <h1>Egyptian Arabic Conversational Support Evaluation</h1>
-                <p>Evaluating dialectal Arabic fluency, cultural contextual appropriateness, and conversational empathy in modern LLMs.</p>
+                <p>Evaluating ChatGPT (GPT-5.5) and Google Gemini (3.6 Flash) for natural, supportive, and culturally authentic Egyptian Arabic conversational responses.</p>
             </div>
         </section>
 
@@ -51,47 +53,64 @@
             <div class="cs-block">
                 <h2>Project Overview</h2>
                 <p class="summary-text" style="text-align: left; margin: 0;">
-                    Dialectal Arabic evaluation poses unique challenges due to regional nuances and informal idioms. This evaluation benchmarks LLM responses in Egyptian Dialectal Arabic (EGY) against Modern Standard Arabic (MSA) baselines.
+                    This evaluation benchmarks LLMs on their ability to act as a close friend sending a supportive message in Egyptian Dialectal Arabic. Evaluated under the LEPS v1.0 framework by a native speaker across 8 qualitative criteria.
                 </p>
             </div>
 
             <!-- Figures & Tables Section -->
             <div class="cs-block">
-                <h2>Evaluation Matrix: Dialectal Accuracy</h2>
-                <p style="color: #cbd5e1; margin-bottom: 20px;">Human review scores measuring cultural resonance, dialect consistency, and natural sentence flow.</p>
+                <h2>Comparison Summary Matrix</h2>
+                <p style="color: #cbd5e1; margin-bottom: 20px;">Criterion-by-criterion human evaluation scoring on a 5-point scale.</p>
                 
                 <div class="table-container">
                     <table class="eval-table">
                         <thead>
                             <tr>
-                                <th>Tested Model</th>
-                                <th>Dialect Consistency</th>
-                                <th>Cultural Authenticity</th>
-                                <th>MSA Leakage Rate</th>
-                                <th>Empathy Score</th>
+                                <th>Criterion</th>
+                                <th>ChatGPT (GPT-5.5)</th>
+                                <th>Google Gemini (3.6 Flash)</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Model A (GPT-4o)</strong></td>
-                                <td>4.9 / 5.0</td>
-                                <td>4.8 / 5.0</td>
-                                <td>Very Low (&lt;5%)</td>
-                                <td>4.9 / 5.0</td>
+                                <td><strong>Instruction Following</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
                             </tr>
                             <tr>
-                                <td><strong>Model B (Claude 3.5)</strong></td>
-                                <td>4.6 / 5.0</td>
-                                <td>4.5 / 5.0</td>
-                                <td>Low (~12%)</td>
-                                <td>4.7 / 5.0</td>
+                                <td><strong>Egyptian Arabic Naturalness</strong></td>
+                                <td>4.5 / 5</td>
+                                <td><strong>5.0 / 5</strong></td>
                             </tr>
                             <tr>
-                                <td><strong>Model C (Open Source LLM)</strong></td>
-                                <td>3.2 / 5.0</td>
-                                <td>3.0 / 5.0</td>
-                                <td>High (&gt;40%)</td>
-                                <td>3.5 / 5.0</td>
+                                <td><strong>Fluency</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dialect Consistency & Spelling</strong></td>
+                                <td><strong>5.0 / 5</strong></td>
+                                <td>4.5 / 5</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Clarity</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Empathy</strong></td>
+                                <td>4.0 / 5</td>
+                                <td><strong>5.0 / 5</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tone</strong></td>
+                                <td>4.5 / 5</td>
+                                <td><strong>5.0 / 5</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cultural Appropriateness</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
                             </tr>
                         </tbody>
                     </table>
@@ -100,17 +119,19 @@
 
             <!-- Side-by-Side Model Output Sample -->
             <div class="cs-block">
-                <h2>Sample Scored Evaluation Output</h2>
+                <h2>Model Response Comparison</h2>
                 <div class="research-grid">
                     <div class="research-box">
-                        <h3>User Prompt (Egyptian Dialect)</h3>
-                        <p style="font-family: monospace; color: #93c5fd;" dir="rtl">"حاسس بإحباط شديد ومش عارف أبدأ منين عشان أنظم وقتي."</p>
+                        <h3>ChatGPT (GPT-5.5)</h3>
+                        <p style="font-family: monospace; color: #93c5fd;" dir="rtl">"بص يا صاحبي، أنا عارف إن الضغط لما بيزيد بيخلي الواحد يحس إنه خلاص مش قادر... ولو حبيت تفضفض..."</p>
+                        <hr style="margin: 10px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <p style="font-size: 0.85rem; color: #cbd5e1;"><strong>Evaluation:</strong> Excellent dialect consistency and spelling, but slightly more polished than casual chat between friends.</p>
                     </div>
                     <div class="research-box">
-                        <h3>Model Output & Evaluation</h3>
-                        <p style="font-family: monospace; color: #a7f3d0;" dir="rtl">"ولا تضايق نفسك خالص، الطبيعي إننا نحس بكده لما المهام تزيد. تعالى نقسم كل حاجة خطوة خطوة."</p>
+                        <h3>Google Gemini (3.6 Flash) — Preferred 🥇</h3>
+                        <p style="font-family: monospace; color: #a7f3d0;" dir="rtl">"ولا يهمك يا صاحبي، الشغل عمره ما بيخلص... وتعال ننزل نشرب كباية شاي أو قهوة... الشغل يروح في داهية."</p>
                         <hr style="margin: 10px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
-                        <p style="font-size: 0.85rem; color: #cbd5e1;"><strong>Human Rating:</strong> 5/5 — <em>Excellent natural warmth, perfect Egyptian dialect phrasing without robotic MSA intrusion.</em></p>
+                        <p style="font-size: 0.85rem; color: #cbd5e1;"><strong>Evaluation:</strong> Highly authentic phrases ("يروح في داهية") and offers concrete companionship (tea/coffee), driving higher empathy.</p>
                     </div>
                 </div>
             </div>
@@ -118,14 +139,14 @@
             <div class="cs-block">
                 <h2>Key Findings & Demonstration</h2>
                 <div class="demonstrates-grid" style="justify-content: flex-start; max-width: 100%;">
-                    <span>Benchmarked Egyptian dialectal fluency against standard MSA</span>
-                    <span>Evaluated cultural context sensitivity in supportive responses</span>
-                    <span>Identified common regional error patterns in open-weight models</span>
+                    <span>Google Gemini 3.6 Flash selected as preferred model for dialectal authenticity</span>
+                    <span>ChatGPT GPT-5.5 demonstrated superior written dialect consistency</span>
+                    <span>Structured rubrics isolate subtle tone and cultural nuances from basic fluency</span>
                 </div>
             </div>
 
             <div class="buttons" style="margin-top: 40px;">
-                <a class="btn" href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/evaluation_002_egyptian_arabic_conversational_support.md" target="_blank">View Case Study on GitHub</a>
+                <a class="btn" href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/evaluation_002_egyptian_arabic_conversational_support.md" target="_blank">View Full Report on GitHub</a>
             </div>
         </section>
     </main>
@@ -142,4 +163,3 @@
     </script>
 </body>
 </html>
-

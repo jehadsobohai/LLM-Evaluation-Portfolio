@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study: Prompt Engineering & Medical Patient Education | Jehad Soboh</title>
+    <title>Case Study: Prompt 001 – Medical Patient Education | Jehad Soboh</title>
     
     <style>
         html, body {
@@ -13,7 +13,9 @@
     </style>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +42,9 @@
         <!-- Case Study Hero -->
         <section class="hero" style="margin-top: 140px;">
             <div class="hero-content" data-aos="fade-up">
-                <span class="badge">Case Study #001</span>
-                <h1>Prompt Engineering for Medical Patient Education</h1>
-                <p>Designing, optimizing, and evaluating system prompts to deliver accurate, empathetic, and jargon-free medical guidance.</p>
+                <span class="badge">Evaluation 001 • July 2026</span>
+                <h1>Medical Patient Education Prompt Engineering</h1>
+                <p>Design and evaluation of an LLM prompt that explains hypertension to a newly diagnosed patient using simple, non-medical language.</p>
             </div>
         </section>
 
@@ -51,47 +53,39 @@
             <div class="cs-block">
                 <h2>Project Overview</h2>
                 <p class="summary-text" style="text-align: left; margin: 0;">
-                    This project focuses on crafting system instructions that enforce strict medical safety boundaries, eliminate clinical jargon, and ensure high patient readability without compromising scientific accuracy.
+                    This case study demonstrates a structured prompt engineering workflow using Google Gemini (3.6 Flash) for a patient education task. It illustrates how iterative prompt refinement significantly improves response empathy, clarity, and safety without changing the underlying model.
                 </p>
             </div>
 
             <!-- Figures & Tables Section -->
             <div class="cs-block">
-                <h2>Evaluation & Constraint Performance</h2>
-                <p style="color: #cbd5e1; margin-bottom: 20px;">Comparative analysis of unprompted baseline outputs vs. optimized system prompt outputs across core clinical criteria.</p>
+                <h2>Evaluation Breakdown (Initial Response)</h2>
+                <p style="color: #cbd5e1; margin-bottom: 20px;">Performance assessment of the unprompted baseline across core clinical communication criteria.</p>
                 
                 <div class="table-container">
                     <table class="eval-table">
                         <thead>
                             <tr>
-                                <th>Prompt Version</th>
-                                <th>Readability Grade</th>
-                                <th>Jargon Elimination</th>
-                                <th>Safety Constraint Adherence</th>
-                                <th>Empathy Rating</th>
+                                <th>Criterion</th>
+                                <th>Score</th>
+                                <th>Assessment Summary</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Baseline Prompt</strong></td>
-                                <td>College Level (High)</td>
-                                <td>42% Redacted</td>
-                                <td>65% Compliance</td>
-                                <td>2.5 / 5.0</td>
+                                <td><strong>Medical Accuracy</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>Completely accurate; provides comprehensive details on hypertension causes and complications.</td>
                             </tr>
                             <tr>
-                                <td><strong>Iterative Draft v2</strong></td>
-                                <td>9th Grade Level</td>
-                                <td>80% Redacted</td>
-                                <td>90% Compliance</td>
-                                <td>4.1 / 5.0</td>
+                                <td><strong>Clarity</strong></td>
+                                <td>3.5 / 5</td>
+                                <td>Clear explanation overall, but technical terms (systolic, diastolic, mmHg) confuse lay readers.</td>
                             </tr>
                             <tr>
-                                <td><strong>Final Optimized System Prompt</strong></td>
-                                <td>6th–7th Grade Level</td>
-                                <td>98% Redacted</td>
-                                <td>100% Compliance</td>
-                                <td>4.9 / 5.0</td>
+                                <td><strong>Instruction Following</strong></td>
+                                <td>4.0 / 5</td>
+                                <td>Explains hypertension as requested, but produces far more detail than necessary for a basic query.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -100,15 +94,19 @@
 
             <!-- Side-by-Side Model Output Sample -->
             <div class="cs-block">
-                <h2>Side-by-Side Response Comparison</h2>
+                <h2>Baseline vs. Refined Prompt Comparison</h2>
                 <div class="research-grid">
                     <div class="research-box">
-                        <h3>Baseline Response (Unoptimized)</h3>
-                        <p style="font-family: monospace; color: #fca5a5;">"The patient exhibits acute gastroenteritis secondary to viral exposure. Rehydration via oral electrolyte solutions is recommended."</p>
+                        <h3>Initial Output (Unrestricted)</h3>
+                        <p style="font-family: monospace; color: #fca5a5;">"Hypertension is the medical term for high blood pressure... Measured in mmHg: Systolic (120–129) and Diastolic (<80)... Primary (Essential) vs Secondary..."</p>
+                        <hr style="margin: 10px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <p style="font-size: 0.85rem; color: #cbd5e1;"><strong>Issue:</strong> Too technical, lacks empathy, reads like a general health article.</p>
                     </div>
                     <div class="research-box">
-                        <h3>Optimized Response (System Prompted)</h3>
-                        <p style="font-family: monospace; color: #a7f3d0;">"You likely have a stomach bug causing irritation. The most important step right now is to sip small amounts of water or electrolyte drinks to stay hydrated."</p>
+                        <h3>Refined System Output (Optimized)</h3>
+                        <p style="font-family: monospace; color: #a7f3d0;">"First, take a deep breath—you are going to be okay, and we can manage this together. Think of your blood vessels like a garden hose..."</p>
+                        <hr style="margin: 10px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <p style="font-size: 0.85rem; color: #cbd5e1;"><strong>Outcome:</strong> Under 150 words, non-medical language, empathetic, and encourages medical follow-up.</p>
                     </div>
                 </div>
             </div>
@@ -116,14 +114,14 @@
             <div class="cs-block">
                 <h2>Key Findings & Demonstration</h2>
                 <div class="demonstrates-grid" style="justify-content: flex-start; max-width: 100%;">
-                    <span>Iterative prompt engineering significantly lowers reading grade levels</span>
-                    <span>Safety framing prevents harmful diagnostic overconfidence</span>
-                    <span>Structured constraints effectively eliminate complex medical terminology</span>
+                    <span>Iterative prompt engineering improves output without changing model weights</span>
+                    <span>Role-play instructions successfully enforce patient-friendly tone</span>
+                    <span>Strict constraints eliminate complex medical jargon and numerical tables</span>
                 </div>
             </div>
 
             <div class="buttons" style="margin-top: 40px;">
-                <a class="btn" href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompt_engineering/prompt_001_medical_patient_education.md" target="_blank">View Raw Project on GitHub</a>
+                <a class="btn" href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompt_engineering/prompt_001_medical_patient_education.md" target="_blank">View Raw Case Study on GitHub</a>
             </div>
         </section>
     </main>
@@ -140,4 +138,3 @@
     </script>
 </body>
 </html>
-

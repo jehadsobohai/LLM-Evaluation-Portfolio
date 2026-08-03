@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study: COMET Translation Evaluation | Jehad Soboh</title>
+    <title>Case Study: Evaluation 004 – COMET Translation Evaluation | Jehad Soboh</title>
     
     <style>
         html, body {
@@ -13,7 +13,9 @@
     </style>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +42,9 @@
         <!-- Case Study Hero -->
         <section class="hero" style="margin-top: 140px;">
             <div class="hero-content" data-aos="fade-up">
-                <span class="badge">Case Study #004</span>
-                <h1>COMET English–Arabic Translation Evaluation</h1>
-                <p>A hybrid automated and human evaluation comparing multi-LLM performance in complex cross-lingual translation tasks.</p>
+                <span class="badge">Evaluation 004 • LEPS v1.0 Compliant</span>
+                <h1>COMET-Based English–Arabic Translation Evaluation</h1>
+                <p>A hybrid evaluation combining neural metric scores (wmt22-comet-da) with expert human assessment across three SOTA LLMs.</p>
             </div>
         </section>
 
@@ -51,47 +53,47 @@
             <div class="cs-block">
                 <h2>Project Overview</h2>
                 <p class="summary-text" style="text-align: left; margin: 0;">
-                    This project evaluates the translation accuracy and contextual fluency of three state-of-the-art Large Language Models translating complex technical and medical English prose into Egyptian and Modern Standard Arabic.
+                    This study benchmarks ChatGPT (GPT-5.5), Gemini 3.6 Flash, and Claude Sonnet 5 Thinking on English-to-Arabic healthcare translation using COMET—a neural evaluation metric trained on human judgments that evaluates semantic preservation rather than simple n-gram overlap.
                 </p>
             </div>
 
             <!-- Figures & Tables Section -->
             <div class="cs-block">
-                <h2>Figures & Quantitative Results</h2>
-                <p style="color: #cbd5e1; margin-bottom: 20px;">Below is the comparative score matrix measuring neural automated metric performance (COMET) alongside blinded expert human quality ratings.</p>
+                <h2>Automatic Quantitative Results (wmt22-comet-da)</h2>
+                <p style="color: #cbd5e1; margin-bottom: 20px;">COMET scores (>0.90 indicates excellent semantic fidelity to human reference translation).</p>
                 
                 <div class="table-container">
                     <table class="eval-table">
                         <thead>
                             <tr>
+                                <th>Rank</th>
                                 <th>Model Evaluated</th>
                                 <th>COMET Score</th>
-                                <th>Human Fluency (1-5)</th>
-                                <th>Clinical Accuracy (1-5)</th>
-                                <th>Primary Error Type Observed</th>
+                                <th>Human Eval Rank</th>
+                                <th>Primary Distinction</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Model A (GPT-4o)</strong></td>
-                                <td>0.892</td>
-                                <td>4.8</td>
-                                <td>4.9</td>
-                                <td>Minor stylistic preference</td>
+                                <td>🥇 1</td>
+                                <td><strong>ChatGPT (GPT-5.5)</strong></td>
+                                <td><strong>0.9165</strong></td>
+                                <td>🥇 1st</td>
+                                <td>Highest semantic match & closest neutral style match.</td>
                             </tr>
                             <tr>
-                                <td><strong>Model B (Claude 3.5)</strong></td>
-                                <td>0.884</td>
-                                <td>4.7</td>
-                                <td>4.8</td>
-                                <td>Over-formalization</td>
+                                <td>🥈 2</td>
+                                <td><strong>Gemini 3.6 Flash</strong></td>
+                                <td><strong>0.9146</strong></td>
+                                <td>🥉 3rd</td>
+                                <td>Highly accurate, but adopt more literary/expressive phrasing.</td>
                             </tr>
                             <tr>
-                                <td><strong>Model C (Llama 3)</strong></td>
-                                <td>0.810</td>
-                                <td>3.9</td>
-                                <td>4.1</td>
-                                <td>Dialectal register drift</td>
+                                <td>🥉 3</td>
+                                <td><strong>Claude Sonnet 5 Thinking</strong></td>
+                                <td><strong>0.9097</strong></td>
+                                <td>🥈 2nd</td>
+                                <td>Preferred by humans over Gemini due to stylistic balance.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -100,17 +102,15 @@
 
             <!-- Side-by-Side Model Output Sample -->
             <div class="cs-block">
-                <h2>Sample Scored Evaluation Output</h2>
+                <h2>Automatic vs. Human Alignment Analysis</h2>
                 <div class="research-grid">
                     <div class="research-box">
-                        <h3>Source Input (English)</h3>
-                        <p style="font-family: monospace; color: #93c5fd;">"The patient presented with acute localized inflammation, requiring immediate fluid management."</p>
+                        <h3>COMET Metric Perspective</h3>
+                        <p style="font-family: monospace; color: #93c5fd;">"Evaluates neural embeddings against professional human reference. Ranks Gemini (0.9146) slightly above Claude (0.9097) due to tight semantic overlap."</p>
                     </div>
                     <div class="research-box">
-                        <h3>Evaluated Output & Score (Arabic)</h3>
-                        <p style="font-family: monospace; color: #a7f3d0;" dir="rtl">"حضر المريض يعاني من التهاب حاد موضع، مما يتطلب إدارة فورية للسوائل."</p>
-                        <hr style="margin: 10px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
-                        <p style="font-size: 0.85rem; color: #cbd5e1;"><strong>Human Rating:</strong> 4/5 — <em>Minor grammatical agreement error in localizing terms.</em></p>
+                        <h3>Expert Human Perspective</h3>
+                        <p style="font-family: monospace; color: #a7f3d0;">"Prefers Claude over Gemini because Claude maintains a neutral, publication-ready register, whereas Gemini introduces literary metaphors ('يرسم ملامح جديدة')."</p>
                     </div>
                 </div>
             </div>
@@ -118,14 +118,14 @@
             <div class="cs-block">
                 <h2>Key Findings & Demonstration</h2>
                 <div class="demonstrates-grid" style="justify-content: flex-start; max-width: 100%;">
-                    <span>High correlation between COMET score and human fluency</span>
-                    <span>Automated metrics miss subtle medical terminology nuances</span>
-                    <span>Structured rubrics eliminate blinded evaluator bias</span>
+                    <span>All 3 LLMs scored >0.90 on COMET, demonstrating publication-grade quality</span>
+                    <span>Proved COMET & human evaluation align on top performer (ChatGPT GPT-5.5)</span>
+                    <span>Highlighted limitations of neural metrics in distinguishing stylistic register shifts</span>
                 </div>
             </div>
 
             <div class="buttons" style="margin-top: 40px;">
-                <a class="btn" href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/evaluation_004_comet_english_arabic_translation.md" target="_blank">Download Full Markdown Report on GitHub</a>
+                <a class="btn" href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/evaluation_004_comet_english_arabic_translation.md" target="_blank">View Full Report on GitHub</a>
             </div>
         </section>
     </main>
@@ -142,4 +142,3 @@
     </script>
 </body>
 </html>
-

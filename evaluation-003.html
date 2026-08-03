@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study: HITL English–Arabic Translation | Jehad Soboh</title>
+    <title>Case Study: Evaluation 003 – HITL English–Arabic Translation | Jehad Soboh</title>
     
     <style>
         html, body {
@@ -13,7 +13,9 @@
     </style>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +42,9 @@
         <!-- Case Study Hero -->
         <section class="hero" style="margin-top: 140px;">
             <div class="hero-content" data-aos="fade-up">
-                <span class="badge">Case Study #003</span>
-                <h1>HITL Human-in-the-Loop Translation Evaluation</h1>
-                <p>Evidence-based qualitative error taxonomy and human scoring protocol for English to Arabic translation quality assurance.</p>
+                <span class="badge">Evaluation 003 • HITL Framework</span>
+                <h1>Human-in-the-Loop English–Arabic Translation</h1>
+                <p>Evaluating ChatGPT (GPT-5.5), Google Gemini (3.6 Flash), and Claude (Sonnet 5 Thinking) on healthcare translation quality.</p>
             </div>
         </section>
 
@@ -51,43 +53,67 @@
             <div class="cs-block">
                 <h2>Project Overview</h2>
                 <p class="summary-text" style="text-align: left; margin: 0;">
-                    Automated metrics often fail to capture semantic nuances in translation. This project establishes a human-in-the-loop (HITL) qualitative error taxonomy to score accuracy, fluency, and terminology fidelity.
+                    This case study evaluates healthcare machine translation using an initial AI-generated evaluation refined by an independent Human Linguistic Analysis. The final rankings prioritize stylistic fidelity, medical terminology, and Modern Standard Arabic (MSA) conventions.
                 </p>
             </div>
 
             <!-- Figures & Tables Section -->
             <div class="cs-block">
-                <h2>Linguistic Error Categorization</h2>
-                <p style="color: #cbd5e1; margin-bottom: 20px;">Breakdown of qualitative human evaluation across evaluated translation sets.</p>
+                <h2>Final Revised Evaluation Scores</h2>
+                <p style="color: #cbd5e1; margin-bottom: 20px;">Scores after human expert review and evidence validation against the AI Evaluation Framework.</p>
                 
                 <div class="table-container">
                     <table class="eval-table">
                         <thead>
                             <tr>
-                                <th>Error Category</th>
-                                <th>Definition</th>
-                                <th>Severity Impact</th>
-                                <th>Frequency Count</th>
+                                <th>Criterion</th>
+                                <th>ChatGPT (GPT-5.5)</th>
+                                <th>Claude (Sonnet 5)</th>
+                                <th>Google Gemini (3.6 Flash)</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Critical Mistranslation</strong></td>
-                                <td>Alters underlying clinical or legal meaning</td>
-                                <td>High (Disqualifying)</td>
-                                <td>2 Observed</td>
+                                <td><strong>Meaning Preservation</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
+                                <td>4.5 / 5</td>
                             </tr>
                             <tr>
-                                <td><strong>Terminology Inconsistency</strong></td>
-                                <td>Uses non-standard technical vocabulary</td>
-                                <td>Medium</td>
-                                <td>6 Observed</td>
+                                <td><strong>Accuracy</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
                             </tr>
                             <tr>
-                                <td><strong>Grammatical Agreement</strong></td>
-                                <td>Gender or number disagreement in Arabic syntax</td>
-                                <td>Low</td>
-                                <td>11 Observed</td>
+                                <td><strong>Language Quality</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fluency</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Style & Tone</strong></td>
+                                <td><strong>5.0 / 5</strong></td>
+                                <td>4.5 / 5</td>
+                                <td>4.0 / 5</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Terminology</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
+                                <td>5.0 / 5</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Instruction Following</strong></td>
+                                <td>5.0 / 5</td>
+                                <td>4.5 / 5</td>
+                                <td>4.5 / 5</td>
                             </tr>
                         </tbody>
                     </table>
@@ -96,17 +122,19 @@
 
             <!-- Side-by-Side Model Output Sample -->
             <div class="cs-block">
-                <h2>Blinded Evaluation Sample</h2>
+                <h2>Linguistic Analysis & Style Comparisons</h2>
                 <div class="research-grid">
                     <div class="research-box">
-                        <h3>Source Text</h3>
-                        <p style="font-family: monospace; color: #93c5fd;">"The clinical trial demonstrated statistically significant reduction in symptom severity."</p>
+                        <h3>ChatGPT (GPT-5.5) — Ranked 1st 🥇</h3>
+                        <p style="font-family: monospace; color: #a7f3d0;" dir="rtl">"يُحدث الذكاء الاصطناعي تحولًا في قطاع الرعاية الصحية... ينبغي أن يكون أداةً مكملةً لعمل المتخصصين..."</p>
+                        <hr style="margin: 10px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <p style="font-size: 0.85rem; color: #cbd5e1;"><strong>Strength:</strong> Closest match to source neutral professional register without interpretive embellishment.</p>
                     </div>
                     <div class="research-box">
-                        <h3>Evaluator Critique</h3>
-                        <p style="font-family: monospace; color: #a7f3d0;" dir="rtl">"أظهرت التجربة السريرية انخفاضًا ملحوظًا إحصائيًا في شدة الأعراض."</p>
+                        <h3>Google Gemini (3.6 Flash) — Ranked 3rd 🥉</h3>
+                        <p style="font-family: monospace; color: #93c5fd;" dir="rtl">"يقوم الذكاء الاصطناعي برسم ملامح جديدة للرعاية الصحية... إمكانات هائلة..."</p>
                         <hr style="margin: 10px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
-                        <p style="font-size: 0.85rem; color: #cbd5e1;"><strong>Human Feedback:</strong> Correctly translates technical phrases ("statistically significant" → "ملحوظًا إحصائيًا"). Grade: Pass.</p>
+                        <p style="font-size: 0.85rem; color: #cbd5e1;"><strong>Weakness:</strong> Stylistically elevated ("يرسم ملامح جديدة") and overly emphatic ("هائلة") compared to neutral English text.</p>
                     </div>
                 </div>
             </div>
@@ -114,14 +142,14 @@
             <div class="cs-block">
                 <h2>Key Findings & Demonstration</h2>
                 <div class="demonstrates-grid" style="justify-content: flex-start; max-width: 100%;">
-                    <span>Designed structured qualitative error taxonomy</span>
-                    <span>Implemented blinded human scoring protocols</span>
-                    <span>Delivered actionable human feedback loops for model fine-tuning</span>
+                    <span>ChatGPT (GPT-5.5) ranked #1 for maintaining neutral journalistic tone</span>
+                    <span>Human review corrected false AI penalty regarding singular MSA terminology</span>
+                    <span>Demonstrated full LEPS v1.0 Human-in-the-Loop workflow validation</span>
                 </div>
             </div>
 
             <div class="buttons" style="margin-top: 40px;">
-                <a class="btn" href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/evaluation_003_hitl_english_arabic_translation.md" target="_blank">View Case Study on GitHub</a>
+                <a class="btn" href="https://github.com/jehadsobohai/LLM-Evaluation-Portfolio/blob/main/prompts/evaluation_003_hitl_english_arabic_translation.md" target="_blank">View Full Report on GitHub</a>
             </div>
         </section>
     </main>
@@ -138,4 +166,3 @@
     </script>
 </body>
 </html>
-
